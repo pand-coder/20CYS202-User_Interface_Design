@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfort Food.</title>
+    <!-- FONT CDN LINK-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS CDN LINK-->
+    <link rel="stylesheet" href="../css/styles2.css">
+
+
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo"> Comfort Food<span>.</span></a>
+        <nav class="navbar">
+            <a href="../index.html"> Home   |</a>
+            <a href="menu.html">  Menu |</a>
+            <a href="../index.html#about">  About Us |</a>
+            <a href="../index.html#contact">  Contact |</a>
+        </nav>
+
+
+        <div class="icons">
+            <a href="menu.html#testimonials" class="fas fa-heart"></a> 
+            <a href="feedback.html" class="fas fa-user"> </a>
+        </div>
+
+
+    </header>
+
+    <section class="home" id="home"> 
+        <div class="content">
+            <center>
+                <h3 class="tt" style="color: rgb(255, 255, 255), 116;">
+                    We Value Your Feedback.
+                </h3>
+            </center>
+    <!--Feedback-->
+            <br> <br>
+            <form id="feedbackForm">
+                <label for="name">Name:</label>
+                <br><br>
+                <input type="text" id="name" name="name" maxlength="24" required>
+                <br><br>
+                <label for="age">Age:</label>
+                <br><br>
+                <input type="number" id="age" name="age" maxlength="3" required>
+                <br><br>
+                <label for="phone">Phone Number:</label>
+                <br><br>
+                <input type="number" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" required>
+                <br><br>
+                <label for="feedback">Feedback:</label>
+                <br><br>
+                <textarea id="feedback" name="feedback" rows="3" cols="90"></textarea>
+                <br><br>
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+    </section>
+    <script src="../js/jsfeedback.js"></script>
+
+
+   </body>
+   </html>

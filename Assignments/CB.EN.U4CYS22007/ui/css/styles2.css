@@ -1,0 +1,368 @@
+:root{
+    --orange:#F28C28;
+}
+
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    outline:none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: .2s linear;
+
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(0,0,0,.3);
+}
+.heading span{
+    color: rgb(67, 32, 32);
+}
+
+form {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: rgb(223, 203, 175);
+    padding: 20px;
+    border-radius: 13px;
+    box-shadow: 80 90 80px rgba(0, 0, 0, 0.1);
+    align-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    
+}
+input, select ,textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 13px;
+    box-sizing: border-box;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size:1.7rem;
+
+}
+
+.btn:hover{
+    background-color: var(--orange);
+    
+}
+
+section{
+    padding:4rem 9%;
+
+
+}
+.home{
+    display:flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url("../assets/feedback.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tt{
+    padding-top: 65px;
+}
+.home .content{
+    max-width: 80rem;
+
+}
+.home .content h3{
+    font-size: 3rem;
+    color:rgb(37, 6, 6);  
+
+}
+.home .content span{
+    font-size: 3.5rem;
+    color: #333;
+    padding: 1rem 0;
+    line-height: 1.5;
+    
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .row .video-container{
+    flex:1 1 40rem;
+    position: relative;
+
+}
+.about .row .video-container video{
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.about .row .content{
+    flex:1 1 40rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #333;
+
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: 5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+
+
+
+    
+}
+
+.about .heading{
+    font-size: 3.5rem;
+}
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#fff;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+
+}
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+
+}
+
+header .logo span{
+    color:rgb(67, 32, 32);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    font: 2rem;
+    padding:0 1 0 1.5rem;
+    color:#666;
+    padding-left: 60px; 
+    
+}
+header .navbar a:hover{
+    color:var(--orange)
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color:#333;
+    margin-left: 1.5rem;
+
+}
+header .icons a:hover{
+    color: var(--orange);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color:#333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor:pointer;
+    border:.1rem solid rgba(0,0,0,.3);
+    display:none;
+
+}
+/* Contact Section Styles */
+.contact {
+    padding: 2rem 9%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.contact .heading {
+    font-size: 3.5rem;
+}
+
+.contact .contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.contact .contact-info {
+    flex: 1 1 50%;
+    text-align: left;
+}
+
+.contact .contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact .contact-info p {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact .contact-image {
+    flex: 1 1 40%;
+    /* Style your contact image container */
+}
+
+/* Adjust styles for responsiveness as needed */
+
+
+@media (max-width:991px){
+    html{
+    font-size: 55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+    section{
+        padding:2rem;
+    }
+    .home{
+        background-position: left;
+    }
+
+
+}
+
+@media (max-width:768px){
+    html .fa-bars{
+        display:block;
+    }
+
+    header .navbar{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+
+    }
+
+    header .navbar a{
+        margin: 1.5 rem;
+        padding:1.5 rem;
+        background:#fff;
+        border:.1rem solid rgba(0,0,0,.1);
+        display:block;
+    }
+    .home .content h3{
+        font-size: 3rem;
+
+    }
+    .home .content span{
+        font-size: 2.5rem;
+
+    }
+
+/* Contact Section Styles */
+.contact {
+    padding: 2rem 9%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.contact .heading {
+    font-size: 3.5rem;
+}
+
+.contact .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+
+
+.contact .contact-info {
+    flex: 1 1 100%;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+.contact .contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact .contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+
+
+@media (min-width: 768px) {
+    .contact .contact-image {
+        flex: 1 1 30%; 
+        margin-bottom: 0;
+    }
+
+    .contact .contact-info {
+        flex: 1 1 70%; 
+    }
+}
+
+
+@media (max-width:450px){
+    html{
+    font-size: 50%;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+
+
+
+
+}
+}
