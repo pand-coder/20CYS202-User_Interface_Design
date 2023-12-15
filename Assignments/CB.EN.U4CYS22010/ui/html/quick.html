@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quick view</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            padding: 10px 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gokulashtami 2023 Cyber Security</h1>
+    </header>
+    <nav>
+        <ul>
+            <a href="#home"><li>Home</li></a>
+            <li><a href="#section1">Sports</a></li>
+            <li><a href="#section2">Cultural</a></li>
+            <li><a href="#section3">Literature</a></li>
+            <li><a href="#section4">Faculty Coordinators</a></li>
+            <li><a href="#section5">Student Coordinators</a></li>
+            <li><a href="#section6">Budgeting</a></li>
+            <li><a href="#view-all">View All</a></li>
+        </ul>
+    </nav>
+    <section id="section1">
+        <h2>SPORTS</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>28</td>
+                    <td>New York</td>
+                </tr>
+                <tr>
+                    <td>Alice</td>
+                    <td>22</td>
+                    <td>Los Angeles</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="section2">
+        <h2>CULTURAL</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Laptop</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>Smartphone</td>
+                    <td>$500</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="section3">
+        <h2>LITERATURE</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>USA</td>
+                    <td>331 million</td>
+                </tr>
+                <tr>
+                    <td>China</td>
+                    <td>1.4 billion</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="section4">
+        <h2>FACULTY CO-ORDINATORS</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Book Title</th>
+                    <th>Author</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Harry Potter</td>
+                    <td>J.K. Rowling</td>
+                </tr>
+                <tr>
+                    <td>To Kill a Mockingbird</td>
+                    <td>Harper Lee</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="section5">
+        <h2>STUDENT CO-ORDINATORS</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Temperature (°C)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>New York</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Los Angeles</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="section6">
+        <h2>BUDGETTING</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Food</th>
+                    <th>Calories</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pizza</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Salad</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</section>
+<section id="home">
+    <h2>HOME</h2>
+    <p>Go back to home page, </p>
+    <a href="index.html">click here!</a>
+</section>
+<script>
+    // JavaScript to handle section toggling
+    const navLinks = document.querySelectorAll("nav a");
+    const sections = document.querySelectorAll("section:not(#new-section)");
+
+    navLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const targetId = link.getAttribute("href").substring(1);
+
+            // Hide all sections except the "New Section"
+            sections.forEach((section) => {
+                section.style.display = "none";
+            });
+
+            // Show the selected section or "View All"
+            if (targetId === "view-all") {
+                sections.forEach((section) => {
+                    section.style.display = "block";
+                });
+            } else {
+                document.getElementById(targetId).style.display = "block";
+            }
+        });
+    });
+</script>
+</body>
+</html>

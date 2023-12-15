@@ -1,0 +1,62 @@
+html, body, .stage, .ring, .img {
+	width:100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	user-select:none;
+  }
+  
+  html, body, .stage {
+	overflow:hidden;
+	background-image: url("../images/co-ordinatorbackgroundimage.jpg");  
+	background-size: cover;
+  }
+  
+  div, svg {
+	position: absolute;
+	
+  }
+  
+  .container {
+	perspective: 2500px;
+	width: 18%;
+	height: 60vh;  
+	left:50%;
+	top:59%;
+	transform:translate(-50%,-50%);
+  }
+  
+/*  .neonText {
+	color: #fff;
+	text-shadow:
+		0 0 7px #fff,
+		0 0 10px #fff,
+		0 0 21px #fff,
+		0 0 42px #0fa,
+		0 0 82px #0fa,
+		0 0 92px #0fa,
+		0 0 102px #0fa,
+		0 0 151px #0fa;
+  }
+  
+  /* Additional styling */
+  
+  .scontainer h1, h2 {
+	text-align: center;
+	color:white;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: "Vibur", sans-serif;
+  }
+	
+  .scontainer h1 {
+	  font-size: 5.5rem;
+  }
+	
+  .scontainer h2 {
+	  font-size: 1.8rem;
+  }
+  
+  .scontainer {
+	bottom: 65vh;
+	right: -2.5vw;
+  }
