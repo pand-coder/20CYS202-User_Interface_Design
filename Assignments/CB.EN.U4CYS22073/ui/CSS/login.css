@@ -1,0 +1,78 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(172, 172, 212);
+    font-family: sans-serif;
+}
+h1{
+    width:390px;
+    margin:40px auto;
+    border-radius:34px;
+}
+h1 span
+{
+    color:antiquewhite;
+    cursor:pointer;
+    background-color: rgb(187, 149, 149);
+}
+h1 [data-class="login"]
+{
+    padding: 10px 50px;
+    border-radius: 34px 0 0 34px;
+}
+h1 [data-class="login"]
+{
+    padding: 10px 50px;
+    border-radius: 34px 0 0 34px;
+}
+h1 [data-class="signup"]
+{
+    padding:10px 40px;
+    border-radius:0 34px 34px 0;
+}
+h1[data-class="login"].active
+{
+    background-color: bisque;
+}
+.active{
+    color:#c91111;
+}
+h1[data-class="signup"].active
+{
+    background-color: rgb(14, 12, 10);
+}
+form {
+    width:390px;
+    margin:auto;
+}
+form input{
+    width:390px;
+    font-size:18px;
+    background:none;
+    display:block;
+    margin:10px auto;
+    text-align: center;
+    padding:14px 10px;
+    outline:none;
+    border:2px solid #fff;
+    color: #fff;
+    border-radius:34px;
+}
+form input[type="submit"]
+{
+    margin:auto 0;
+    cursor: pointer;
+}
+form input[value="Login"]
+{
+    background-color:aquamarine;
+}
+form input[value="Sign Up"]
+{
+    background-color:aquamarine;
+}
+
+.signup
+{
+    display:none
+}

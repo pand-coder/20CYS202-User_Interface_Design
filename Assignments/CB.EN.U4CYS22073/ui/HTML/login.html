@@ -1,0 +1,46 @@
+
+
+<head>
+    <title>Login  | Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body >
+    <style>
+        body {
+            background-image: url("https://media.istockphoto.com/id/1300296030/photo/tropical-beach-palm-trees-sea-wave-and-white-sand.jpg?s=2048x2048&w=is&k=20&c=Uo83RzuVoAoQ_8tJBPEyspQuSHIuw43x7rYrzGClFDo=");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+          }
+    </style>
+    <h1><span class="active" data-class="login">Login</span><span data-class="signup">Sign Up</span></h1>
+    <form class="login">
+        <input type="text" placeholder="type your username">
+        <input type="password" placeholder="type your password">
+        <input type="submit" value="Login">
+    </form>
+    <form class="signup">
+        <input type="text" placeholder="type a username">
+        <input type="password" placeholder="type a password">
+        <input type="email" placeholder="type a email">
+        <input type="text" placeholder="type your name">
+        <input type="submit" value="Sign Up">
+        
+    </form> 
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(function()
+    {
+        $('h1 span').click(function()
+        {
+            $(this).addClass('active').siblings().removeClass('active');
+            $('form').hide();
+            $('.'+$(this).data('class')).fadeIn(500);
+        })
+    })
+</script>
+
+
+</html>
