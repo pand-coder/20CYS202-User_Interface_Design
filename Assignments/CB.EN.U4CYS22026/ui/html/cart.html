@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuov-OwnYourFashion</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+    <section id="header">
+        <a href="index.html"><img src="../img/nouvoup1-removebg-preview (1).png (1).png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a  href="../html/shop.html">Shop</a></li>
+                <li><a href="../html/Blog.html">Blog</a></li>
+                <li><a  href="../html/about.html">About</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close" ><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section id="page-header" class="about-header">
+        <h2>#Buynow</h2>
+        <p>Let's see what you got in the bag</p>
+    </section>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Product 1 -->
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle btn"></i></a></td>
+                    <td><img src="../img/products/p1.jpg" alt=""></td>
+                    <td>Look Mark Shirts</td>
+                    <td>$<span id="price1">79.00</span></td>
+                    <td><input type="number" value="1" min="0" id="quantity1" onchange="updateSubtotal(1)"></td>
+                    <td>$<span id="subtotal1">79.00</span></td>
+                </tr>
+                <!-- Product 2 -->
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="../img/products/p2.jpg"alt=""></td>
+                    <td>IndoPrimo</td>
+                    <td>$<span id="price2">99.00</span></td>
+                    <td><input type="number" value="1" min="0" id="quantity2" onchange="updateSubtotal(2)"></td>
+                    <td>$<span id="subtotal2">99.00</span></td>
+                </tr>
+                <!-- Product 3 -->
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="../img/products/p7.jpg" alt=""></td>
+                    <td>Men's Color Full Printed Half</td>
+                    <td>$<span id="price3">59.00</span></td>
+                    <td><input type="number" value="1" min="0" id="quantity3" onchange="updateSubtotal(3)"></td>
+                    <td>$<span id="subtotal3">59.00</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$<span id="cartSubtotal">237.00</span></td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$<span id="total">237.00</span></strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+    
+    <script>
+        function updateSubtotal(productNumber) {
+            var quantityInput = document.getElementById('quantity' + productNumber);
+            var priceElement = document.getElementById('price' + productNumber);
+            var subtotalElement = document.getElementById('subtotal' + productNumber);
+    
+            var quantity = quantityInput.value;
+            var price = parseFloat(priceElement.innerText);
+            var subtotal = quantity * price;
+            subtotalElement.innerText = (quantity === 0 ? 0 : subtotal.toFixed(2));
+    
+            updateCartTotals();
+        }
+    
+        function updateCartTotals() {
+            var subtotal1 = parseFloat(document.getElementById('subtotal1').innerText);
+            var subtotal2 = parseFloat(document.getElementById('subtotal2').innerText);
+            var subtotal3 = parseFloat(document.getElementById('subtotal3').innerText);
+    
+            var cartSubtotal = subtotal1 + subtotal2 + subtotal3;
+            var total = cartSubtotal;
+    
+            document.getElementById('cartSubtotal').innerText = (cartSubtotal === 0 ? 0 : cartSubtotal.toFixed(2));
+            document.getElementById('total').innerText = (total === 0 ? 0 : total.toFixed(2));
+        }
+    </script>
+    <footer class="section-p1">
+        <div class="col">
+            <img  class="logo" src="../img/nouvoup1-removebg-preview (1).png (1).png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address</strong> AMRITA VISHWA VIDYAPEETHAM , COIMBATORE , 641112</p>
+            <p><strong>Phone:</strong>  +91 99944 62386</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00,Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About </h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help & SupportS</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="../img/pay/app.jpg" alt="">
+                <img src="../img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateway</p>
+            <img src="../img/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>© 2023, Hemujith etc-HTML CSS Ecommerce website</p>
+        </div>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
