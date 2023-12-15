@@ -1,0 +1,612 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    background: url('../images/meta.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(242, 241, 243);
+    
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust as needed for transparency */
+    z-index: 1000;
+  }
+
+  .logo-container {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    width: 40px; /* Adjust the size of your logo */
+    height: 40px; /* Adjust the size of your logo */
+    margin-right: 10px;
+  }
+
+  .logo-text {
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-link {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .search-input {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust as needed for transparency */
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .search-button {
+    background: linear-gradient(to right, violet, rgb(55, 14, 131));
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex; /* Add display: flex; to make it a flex container */
+    align-items: center; /* Center the icon vertically */
+  }
+
+  .search-icon {
+    margin-right: 5px; /* Add margin to the right for spacing */
+    
+  }
+
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .text {
+    width: 40%;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  .image-box {
+    width: 50%;
+    border: 0.5px solid rgb(68, 67, 69);
+    border-radius: 40px;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text h1 {
+    font-family: 'League Spartan', sans-serif; /* Use Poppins font */
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Adjusted margin to reduce space between lines */
+    line-height: 1.2; /* Adjusted line-height to reduce space between lines */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+  }
+  .profile-card h2 {
+    font-size: 20px; /* Adjust the font size as needed */
+    font-weight: bold;
+  }
+  
+
+  .buy-sell-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .profile-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .profile-cards-container {
+    padding-top: 50vh; /* Adjust as needed for spacing */
+  }
+  
+  .profile-cards-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    padding-bottom: 50px; /* Adjust as needed for spacing */
+  }
+ 
+  
+  .profile-card {
+    width: calc(32% - 20px);
+    height: 450px;
+    padding: 10px;
+    background-color: rgba(5, 4, 5, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s ease;
+    
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-10px); /* Shift card up on hover */
+  }
+  
+  .profile-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+    z-index: 1;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Initially transparent */
+  }
+  
+  .profile-card:hover::before {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .profile-card img {
+    width: 100%;
+    border-radius: 0;
+    height: 80%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .cart-icon {
+    background: linear-gradient(to right, violet, rgb(55, 14, 131));
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex; /* Add display: flex; to make it a flex container */
+    align-items: center; /* Center the icon vertically */
+    margin-right: 50px;
+  }
+  
+
+  .gradient-button {
+    background: linear-gradient(to right, violet, rgb(55, 14, 131)); /* Gradient for the button */
+    border: none;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+.nft {
+  /* Styles from the provided NFT card */
+  user-select:none;
+  max-width: 300px;
+  margin: 5rem auto;
+  border: 1px solid #ffffff22;
+  background-color: #282c34;
+  background: linear-gradient(0deg, rgba(40,44,52,1) 0%, rgba(17,0,32,.5) 100%);
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: .7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  overflow: hidden;
+  transition: .5s all;
+}
+
+.nft:hover {
+  border: 1px solid #ffffff44;
+  box-shadow: 0 7px 50px 10px #000000aa;
+  transform: scale(1.015);
+  filter: brightness(1.3);
+}
+
+/* Additional styles from the provided NFT card */
+hr {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #88888855;
+  margin-top: 0;
+}
+
+ins {
+  text-decoration: none;
+}
+
+.nft .main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 1rem;
+}
+
+.nft .tokenImage {
+  border-radius: .5rem;
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.nft .description {
+  margin: .5rem 0;
+  color: #a89ec9;
+}
+
+.nft .tokenInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #a89ec9;
+  margin-right: .2rem;
+}
+
+.nft .price {
+  display: flex;
+  align-items: center;
+  color: #ee83e5;
+  font-weight: 700;
+}
+
+.nft .duration ins {
+  margin: .5rem;
+  margin-bottom: .4rem;
+}
+
+.nft .creator {
+  display: flex;
+  align-items: center;
+  margin-top: .2rem;
+  margin-bottom: -.3rem;
+}
+
+.nft .creator ins {
+  color: #a89ec9;
+  text-decoration: none;
+}
+
+.nft .creator .wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffffff22;
+  padding: .3rem;
+  margin: 0;
+  margin-right: .5rem;
+  border-radius: 100%;
+  box-shadow: inset 0 0 0 4px #000000aa;
+}
+
+.nft .creator img {
+  border-radius: 100%;
+  border: 1px solid #ffffff22;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  margin: 0;
+}
+.glass-box {
+  background: hsla(0, 10%, 90%, 0.1); /* Adjust opacity as needed */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 50px;
+  margin: 20px auto; /* Adjust margin as needed */
+  max-width: 1200px;
+  height: 400px;
+}
+
+.glass-content {
+  text-align: flex-start;
+  color: white;
+  
+}
+
+.glass-content h2 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 54px;
+ 
+    
+}
+
+
+.glass-content p {
+  font-size: 23px;
+  margin-top: 20px; /* Adjust the margin-top for more spacing */
+  line-height: 1.5; /* Adjust the line-height for spacing between lines */
+  font-family: 'League Spartan', sans-serif;
+  font-weight: normal; /* Set the font weight to normal */
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50px; /* Adjust the width of the line */
+  height: 2px; /* Adjust the thickness of the line */
+  background-color: #000; /* Change the color of the line if needed */
+  margin-top: 10px; /* Adjust the space between h2 and the line */
+}
+
+.footer {
+background:  hsla(0, 10%, 90%, 0.1);
+padding: 30px 0px;
+font-family: 'Play', sans-serif;
+text-align: center;
+color: gray;
+width: 160%;
+z-index: 1000;
+}
+
+.footer .row {
+width: 100%;
+margin: 1% 0%;
+padding: 0.6% 0%;
+font-size: 1em;
+}
+
+.footer .row a {
+text-decoration: none;
+color: gray;
+transition: 0.5s;
+}
+
+.footer .row a:hover {
+color: #fff;
+}
+
+.footer .row ul {
+width: 100%;
+}
+
+.footer .row ul li {
+display: inline-block;
+margin: 0px 30px;
+}
+
+.footer .row a i {
+font-size: 2em;
+margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+.footer {
+  text-align: left;
+  padding: 5%;
+}
+.footer .row ul li {
+  display: block;
+  margin: 10px 0px;
+  text-align: left;
+}
+.footer .row a i {
+  margin: 0% 3%;
+}
+}
+.Notable-Collections {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+.center-container {
+font-family: 'League Spartan', sans-serif;
+font-size: 35px;
+font-weight: bold;
+text-align: center;
+position: relative;
+top: 250px; 
+}
+
+.slide-up {
+opacity: 0;
+animation: slide-up 0.75s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+@keyframes slide-up {
+0% {
+    transform: translateY(100px);
+    opacity: 0;
+}
+100% {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+
+.signup-button {
+    background: transparent;
+    border: 2px solid transparent;
+    color: white;
+    padding: 16.5px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: border-color 0.3s ease;
+    border-color: violet;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.Click-here {
+    background: linear-gradient(to right, #ee82ee, rgb(55, 14, 131));
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 80px;
+    
+  }
+.Click-here:hover{
+    transition:background-image 3s ease-in-out;
+    background-image: linear-gradient(90deg, #33116a 0%,#ee82ee 100%);
+}
+
+.custom-model-main {
+text-align: center;
+overflow: hidden;
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0; /* z-index: 1050; */
+-webkit-overflow-scrolling: touch;
+outline: 0;
+opacity: 0;
+-webkit-transition: opacity 0.15s linear, z-index 0.15;
+-o-transition: opacity 0.15s linear, z-index 0.15;
+transition: opacity 0.15s linear, z-index 0.15;
+z-index: -1;
+overflow-x: hidden;
+overflow-y: auto;
+}
+
+.model-open {
+z-index: 99999;
+opacity: 1;
+overflow: hidden;
+}
+.custom-model-inner {
+-webkit-transform: translate(0, -25%);
+-ms-transform: translate(0, -25%);
+transform: translate(0, -25%);
+-webkit-transition: -webkit-transform 0.3s ease-out;
+-o-transition: -o-transform 0.3s ease-out;
+transition: -webkit-transform 0.3s ease-out;
+-o-transition: transform 0.3s ease-out;
+transition: transform 0.3s ease-out;
+transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+display: inline-block;
+vertical-align: middle;
+width: 600px;
+margin: 30px auto;
+max-width: 97%;
+}
+.custom-model-wrap {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+/* Add this CSS for the wallet options */
+.pop-up-content-wrap {
+    text-align: center;
+  }
+  
+.wallet-option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    border: 1px solid #ffffff; /* Add a border for separation */
+    border-radius: 5px;
+}
+  
+.wallet-logo {
+    width: 30px; /* Adjust the logo size as needed */
+    margin-right: 10px;
+}
+  
+.wallet-option:hover {
+    background-color: #f1f1f1; /* Add a hover effect */
+}
+  
+  /* Adjust the close button style */
+.close-btn {
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+}
+  
+
+@media screen and (min-width:800px){
+.custom-model-main:before {
+  content: "";
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+  margin-right: -0px;
+  height: 100%;
+}
+}
+@media screen and (max-width:799px){
+.custom-model-inner{margin-top: 45px;}
+}
+
+.custom-model-inner {
+    /* Add these styles for debugging */
+    background: white;
+    color: black;
+    z-index: 999;
+    border-radius: 10px;
+}
+  
+.bg-overlay {
+    /* Add these styles for debugging */
+    background: rgba(0, 0, 0, 0.6);
+
+}
+  
