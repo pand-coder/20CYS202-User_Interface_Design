@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About |Roomscapeinteriors</title>    
+   <link rel="stylesheet" href="../css/about.css">
+   <script defer src="../js/about.js"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat&family=Yesteryear&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat:wght@200&family=Yesteryear&display=swap" rel="stylesheet">
+<link rel="icon" href="../images/roomscape_logo.jpeg" type="image/icon type">
+<style>
+  .container {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: orange;
+      color: white;
+      margin-right: 80px;
+      border: none;
+      cursor: pointer;
+      margin-left: 80px;
+
+    }
+    .circle:hover {
+  background-color: darkgrey;
+  color:darkgrey;
+}
+
+    #content p {
+      display: none;
+    }
+
+</style>
+</head>
+<body>
+        <div class="navbar">
+          <video autoplay loop muted plays-inline class="back-video">
+            <source src="../images/back_video_about_us.mp4" type="video/mp4">
+          </video>
+            <nav class="nav-scroll">
+       <a href="index2.html" class="logo">RoomScape</a>
+       <div class="nav-links">
+        <ul>
+          <li class="active"><a href="about.html">ABOUT</a></li>
+          <li><a href="our_designers.html">OUR DESIGNERS</a></li>
+          <li><a href="latest2.html">LATEST</a></li>
+          <li><a href="contact2.html">CONTACT US</a></li>  
+      </ul>
+      
+          </nav>
+          <div class="content">
+            <h1 style="font-size: 130px;">About Us</h1>
+            <a href="#usdes">Explore</a>
+          </div>
+          </div>
+          <br><br><br><br><br><br>
+          <div id="usdes">
+            
+          </div>
+          <section class="sec-01">
+            <div class="container1">
+              
+              <div class="content1">
+                <div class="image">
+                  <video autoplay loop muted plays-inline class="back-video">
+                    <source src="../images/about_photo.mp4 " type="video/mp4">
+                  </video>
+                </div>
+                <div class="text-box">
+                  <h2 style="color: black;padding-bottom: 20px;">Why We're great</h2>
+                  <p>As a leader in the Interior design space, we are an imaginative group of problem solvers who are energetic about
+                    sparing our customers time, dissatisfaction, and cash. Utilizing our associations with extravagant suppliers, overall we deliver solutions explicit to our customer's exceptional needs, guaranteeing that the unlimited subtleties are dealt with
+                     and top-level specialist organizations are foreseeing your landing all throughout the adventure of working together.</p>
+                </div>
+              </div>
+              <div class="media-icons">
+
+              </div>
+            </div>
+          </section><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+          <h2 style="text-align: center;color: black;">OUR PROCESS</h2>
+    <hr style="width: 500px; margin: 0 auto;">
+<br><br><br>
+  <div class="container">
+
+    <button class="circle" onclick="showContent(1)"><a href="#">BUILD & INSTALL</a></button>
+    <button class="circle" onclick="showContent(2)"><a href="#">DESIGN AND CREATE</a></button>
+    <button class="circle" onclick="showContent(3)"><a href="#">IDEA AND CONCEPT</a></button>
+    <button class="circle" onclick="showContent(4)"><a href="#">MEET AND AGREE</a></button>
+
+
+  </div>
+  <br><br>
+  <hr>
+
+  <div id="content">
+
+    <p id="content1" style="font-size: 20px;font-family: Georgia, 'Times New Roman', Times, serif;"> ROOMSCAPE INTERIORS – the best interior designers in Kerala, Roomscape interiors are one among few pioneer interior designers in kochi operating parallelly both in construction and interior designing industry. One of the specialties of Greentech interiors is the ability to zinc the interior designing ideas and concepts accordance with architecture designs as well as with clients imaginations.Greentech interiors deliver spaces that help people as well businesses to grow, thrive and magnify. Having a calibre that is sharpened by an experience of over 20 years we build and install spaces of all kinds and flavors and have grown as one of the most competitive, creative, unique and updated interior designing and construction businesses that become better with every passing second. With a team of professionals that believe in nothing but the best, Greentech Interiors boasts of being capable of designing and creating everything a human brain can conceive.</p>
+    <p id="content2" style="font-size: 20px;font-family: Georgia, 'Times New Roman', Times, serif;"> Having established our name as one of the most distinguished interior and design service, the spaces crafted by us are singular in their own way. We design commercial properties, residential properties, hospitalities, office, entertainment centres and gym etc of all types and magnitudes. We are capable of translating every single idea and every single whim of our clients in the best possible manner to deliver a space that is a prized possession for us as well as them.</p>
+    <p id="content3" style="font-size: 20px;font-family: Georgia, 'Times New Roman', Times, serif;"> We at Roomscape don’t believe in making what WE think is good. For us, our clients have the highest priority and their wishes are what we translate into physical, tangible and breathing spaces. We don’t build buildings and decorate them. We bring ideas and concepts to life and thus deliver a dream world for our clients to live in. We bring the best of everything your budget and choices can fathom and have a habit of leaving nothing but smiles etched over the faces of our clients.</p>
+    <p id="content4" style="font-size: 20px;font-family: Georgia, 'Times New Roman', Times, serif;"> At Roomscape Interiors, we believe that interaction and conversation are very crucial for any task to be accomplished. Hence, we place a great value in the regular meetings with our clients to discuss the work progress, designs, colours, materials, and every small thing that can make a difference in the project. Regular meetings and discussions bring out the best of us and in turn the best spaces</p>
+
+  </div><br><br><br>
+
+  <script>
+    function showContent(buttonNumber) {
+      var content = document.getElementById('content');
+      var paragraphs = content.getElementsByTagName('p');
+      
+      
+      for (var i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.display = 'none';
+      }
+      
+      
+      var selectedParagraph = document.getElementById('content' + buttonNumber);
+      selectedParagraph.style.display = 'block';
+    }
+  </script>
+  
+          <footer>
+            <div class="row">
+              <div class="col">
+                <img src="../images/logo.png" class="logo2">
+                <h2 id="name" style="font-size: 20px;">RoomScape</h2><br>
+                <p class="logo2des">Interiors That Reflect Your Style</p>
+              </div>
+              <div class="col">
+                <h3>Office<div class="underline"><span></span></div></h3>
+                <p>ITPL Road</p>
+                <p>Whitefield,Banglore</p>
+                <p>Karnataka,PIN 560066,India</p>
+                <p class="email">roomScapeInteriors@gmail.com</p>
+                <h4>+91 1236547890</h4>
+              </div>
+              <div class="col">
+                <h3>Site Map<div class="underline"><span></span></div></h3>
+                <ul>
+                  <li><a href="index2.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="our designers.html">Our Team</a></li>
+                  <li><a href="latest2.html">Latest</a></li>
+                  <li><a href="contact2.html">Contact US</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <h3>Press and Publications<div class="underline"><span></span></div></h3>
+                <form action="">
+                  <i class="ri-mail-send-line"></i>
+                  <input type="email" placeholder="Enter your email id" style="font-family: 'Montserrat';" required>
+                 <button type="submit"><i class="ri-arrow-right-fill"></i></button>
+                </form>
+                <div class="social-icons">
+                  <i class="ri-instagram-line"></i>&nbsp;&nbsp;
+                  <i class="ri-facebook-line"></i>&nbsp;&nbsp;
+                  <i class="ri-twitter-fill"></i>&nbsp;&nbsp;
+                  <i class="ri-whatsapp-line"></i>&nbsp;&nbsp;
+                  <i class="ri-pinterest-fill"></i>&nbsp;&nbsp;
+                  <i class="ri-linkedin-line"></i>&nbsp;&nbsp;
+              </div>
+              </div>
+            </div>
+            <hr>
+            <p class="copyright">RoomScapeInteriors private limited.  &copy; 2023 - All Rights Reserved<co>
+                 </footer>
+</body>
+
+</html>

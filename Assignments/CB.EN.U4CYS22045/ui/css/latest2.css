@@ -1,0 +1,493 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  background-color:rgba(245, 245, 245, 0.479);
+}
+header{
+  height: 100vh;
+  width: 100wh; 
+}
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1;
+}
+@media(min-aspect-ratio:16/9){
+  .back-video{
+    width: 100%;
+    height:auto;
+  }
+}
+  @media(max-aspect-ratio:16/9){
+    .back-video{
+      width: 100%;
+      height:auto;
+    }
+}
+.content{
+text-align: center;
+position: relative;
+top: 260px;
+font-family:'Poppins',sans-serif;
+
+}
+.content h1{
+  font-size: 160px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.5px;
+  font-family: 'Poppins',sans-serif;
+}
+.content h1:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+.content a{
+  text-decoration:none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 200;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-family: 'Poppins',sans-serif;
+}
+.content a:hover{
+  background-color: #fff;
+  color: black;
+  font-weight:3px ;
+}
+.content1{
+  text-align: center;
+  font-family:'Poppins',sans-serif;
+  }
+  .content1 a{
+    text-decoration:none;
+    display: inline-block;
+    color: black;
+    font-size: 24px;
+    font-weight: 200;
+    border: 2px solid black;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-family: 'Poppins',sans-serif;
+  }
+  .content1 a:hover{
+    background-color: black;
+    color: white;
+    font-weight:3px ;
+  }
+.nav-scroll{
+  background-color: black;
+}
+
+.navbar{
+position: fixed;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+width: 100%;
+box-sizing: border-box;
+z-index: 1;
+}
+
+.navbar a{
+  color: rgb(229, 211, 211);
+}
+.navbar .logo{
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  position: relative;
+  top: -4px;
+  right: -10px;
+}
+.navbar .nav-links{
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-links ul{
+  display: flex;
+}
+.navbar .nav-links ul li{
+  margin: 0 30px;
+  font-weight: bold;
+  font-family: 'Montserrat';
+}
+.navbar .nav-links ul li.active a{
+color: darkcyan;
+}
+.navbar .menu-hamburger{
+display: none;
+position: absolute;
+top: 50px;
+right: 50px;
+width: 35px;
+}
+@media screen and (max-width:900px){
+  .content{
+     display: none;
+  }
+  .logo{
+      position: absolute;
+      top: 20px;
+      left: 40px;
+      z-index: 1;
+  }
+  .navbar{
+      padding: 0;
+      position: absolute;
+  }
+.navbar .menu-hamburger{
+  display: block;
+ position: absolute;
+ right: 50px;
+ top: 30px;
+ cursor: pointer;
+}
+  .nav-links{ 
+      position: absolute;
+      top: 0;
+      left:0;
+      background-color:rgba(255,255,255,0.20);
+      backdrop-filter: blur(4px);
+      width: 100%;
+      height: 100vh; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -100%;
+     transition: all 1.5s ease-in-out;
+    
+  }
+  .nav-links.mobile-menu{
+      margin-left: 0;
+     }
+  .nav-links ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
+  }
+  .navbar .nav-links ul li{
+      margin: 25px 0;  
+      font-size: 1.2em;
+  }
+  .img-box{
+    display: inline-flex;
+
+  }
+}
+.container{
+width: 100%;
+height:100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Montserrat';
+margin-left: 0px;
+margin-right: 0;
+padding: 0;
+}
+.gallery{
+display: flex;
+align-items: center;
+justify-content:center;
+
+}
+.img-box{
+width: 100px;
+height: 500px;
+margin: 0px 5px;
+border-radius: 50px;
+background-image:url("https://i0.wp.com/www.blog.inanyevent.london/wp-content/uploads/2015/10/hilton-london-bankside-hotel-lobby-reception_675x359.jpg?resize=800%2C425&ssl=1") ;
+background-size: cover;
+background-position: center;
+position: relative;
+transition: width 0.5s;
+}
+.img-box:nth-child(2){
+background-image: url("http://www.contemporist.com/wp-content/uploads/2018/03/modern-house-with-swimming-pool-200318-328-01-800x534.jpg");
+background-size: cover;
+background-position: center;
+
+}
+.img-box:nth-child(3){
+background-image: url("https://cf.bstatic.com/xdata/images/hotel/max1024x768/433583590.jpg?k=4a677615e01d7924927fcc3a72909d5b9fc302118cd951f0846620c039dba58e&o=&hp=1");
+background-size: cover;
+background-position: center;
+}
+.img-box:nth-child(4){
+background:url("https://assets.architecturaldigest.in/photos/641c2b121ccc1b91abfe7f5a/master/w_1600,c_limit/Casa-Eterea-1%20%C2%A9%20Prashant%20Ashoka-min.jpg");
+background-size: cover;
+background-position: center;
+}
+.img-box:nth-child(5){
+background:url("https://assets.architecturaldigest.in/photos/641c2b815dd72df91f3512dd/master/w_1600,c_limit/Glass%20Apartment%20Backyard,%20Glass%20Resort%20Finland%20%C2%A9%20Glass%20Resort.jpg");
+background-size: cover;
+background-position: center;
+}
+.img-box:nth-child(6){
+background:url("https://riverwalklakenorman.com/wp-content/uploads/2018/11/LOW-RES-FOR-WEB-IMG-6349-copy-5c01a1835eb57.jpg");
+background-size: cover;
+background-position: center;
+}
+.img-box:nth-child(7){
+background:url("https://www.go-uk.in/images/architecture-masters-in-uk.jpg");
+background-size: cover;
+background-position: center;
+}
+.img-box:nth-child(8){
+background:url("https://i2.wp.com/www.theculturemap.com/wp-content/uploads/2020/06/lotus-temple-india-contemporary-architecture.jpg?resize=840%2C560&ssl=1");
+background-size: cover;
+background-position: center;
+}
+.img-box:nth-child(9){
+background:url("https://i1.wp.com/www.theculturemap.com/wp-content/uploads/2020/06/Sanjay-Puri-the-street-india-contemporary-architecture.jpg?resize=840%2C578&ssl=1");
+background-size: cover;
+background-position: center;
+}
+
+.img-box h3{
+color: #fff;
+position: absolute;
+bottom: 10px;
+left: 30px;
+opacity: 0;
+transition:bottom 0.5s,opacity 0.5s ;
+}
+.img-box p{
+color: #fff;
+position: absolute;
+top: 10px;
+left: 30px;
+opacity: 0;
+transition:top 0.5s,opacity 0.5s ;
+}
+.img-box:hover{
+width: 300px;
+cursor: pointer;
+}
+.img-box:hover h3{
+opacity: 1;
+bottom: 25px;
+
+}
+.img-box:hover p{
+opacity: 1;
+top: 15px;
+}
+.description{
+font-family: 'Montserrat';
+font-size: 20px;
+color: black;
+text-align: center;
+}
+.description1{
+font-family: 'Montserrat';
+font-size: 20px;
+color: black;
+quotes: "“" "”";
+position: relative;
+text-align: center;
+padding: 150px;
+&::before {
+  content: open-quote;
+  font-size: 4em;
+  color: black;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-family: Georgia, serif;
+  padding: 100px;
+
+}
+&::after {
+  content: close-quote;
+  font-size: 4em;
+  bottom: 10px;
+  right:40px;
+  position: absolute;
+  color: black;
+  font-family: Georgia, serif;
+  padding: 100px;
+}
+}
+footer{
+width: 100%;
+bottom: 0;
+position: relative;
+background:linear-gradient(to right,#07080a,#112733);
+color: aliceblue;
+padding: 100px 0 30px;
+border-top-left-radius: 150px;
+font-size: 13px;
+line-height: 20px;
+font-family: 'Montserrat';
+display:grid;
+}
+.row{
+width: 85%;
+margin:auto;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: space-between;
+}
+.col{
+flex-basis: 25%;
+padding: 15px;
+}
+.col:nth-child(2), .col:nth-child(3){
+flex-basis: 15%;
+}
+.logo2{
+width: 150px;
+margin-bottom: 20px;
+position: relative;
+}
+.logo2des{
+font-size: 20px;
+font-weight: 500;
+position: relative;
+left: -60px;
+
+}
+.col h3{
+width: fit-content;
+margin-bottom: 40px;
+position: relative; 
+}
+.email{
+width: fit-content;
+border-bottom: 1px solid #ccc;
+margin:20px 0 ;
+}
+footer ul li{
+list-style: none;
+margin-bottom: 12px;
+}
+
+footer ul li a{
+text-decoration: none;
+color: #fff;
+}
+#comname{
+position: relative;
+left: 20px;
+}
+form{
+padding-bottom: 15px;
+display: flex;
+align-items: center;
+justify-content:space-between ;
+border-bottom:1px solid #ccc ;
+margin-bottom: 50px;
+}
+form .ri-mail-send-line{
+font-size: 18px;
+margin-right: 10px;
+}
+form input{
+width: 100%;
+background: transparent;
+color: #ccc;
+border: 0;
+outline: none;
+}
+form button{
+background: transparent;
+border: 0;
+outline: none;
+cursor: pointer;
+}
+form button .ri-arrow-right-fill{
+font-size: 16px;
+color: aliceblue;
+}
+.social-icons{
+width: 40px;
+height: 40px;
+border-radius:50% ;
+text-align: center;
+line-height:40px;
+font-size: 30px;
+color: #fff;
+margin-right: 15px;
+cursor: pointer;
+display: inline-flex;
+}
+hr{
+width:90% ;
+border: 0;
+border-bottom: 1px solid aliceblue;
+margin: 20px auto;
+}
+.copyright{
+text-align: center;
+}
+.underline{
+width: 100%;
+height: 5px;
+background: #767676;
+border-radius: 3px;
+position: absolute;
+top: 25px;
+left: 0;
+overflow: hidden;
+}
+.underline span{
+width: 15px;
+height: 100%;
+background:#fff;
+border-radius: 3px;
+position: absolute;
+top: 0;
+left: 10px;
+animation: moving 2s linear infinite;
+}
+@keyframes moving{
+0%{
+  left: -20px;
+}
+100%{
+  left: 100%;
+}
+}
+@media (max-width:900px){
+footer{
+  bottom: unset;
+}
+.col{
+  flex-basis: 100%;
+  align-items: center;
+}
+.col:nth-child(2), .col:nth-child(3){
+  flex-basis: 100%;
+ 
+}
+footer h2{
+display: none;
+}
+
+.logo2{
+position: relative;
+right: -300px;
+width: 150px;
+}
+.logo2des{
+  position: relative;
+  left: 220px;
+}
+
+}
