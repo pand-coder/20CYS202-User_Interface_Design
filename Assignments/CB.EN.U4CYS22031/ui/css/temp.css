@@ -1,0 +1,10 @@
+.data{
+ 
+    background: linear-gradient(to left, #d2cfcc, #1c1b1b);
+    border-radius: 10px;
+    padding: 20px ;
+    color: white;
+}
+p{
+    font-size: large;
+}

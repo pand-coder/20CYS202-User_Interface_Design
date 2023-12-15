@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(#0d0d0e,#dae1f1);
+    overflow-x: hidden;
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 1vh;
+
+    padding: 30px, 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header:hover{
+  opacity: 1;
+}
+header .logo{
+    padding-left: 10px;
+    width: 65px;
+    height: 50px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+}
+header ul li a:hover,
+header ul li a.active{
+    color: rgb(44, 42, 42);
+    background: white;
+}
+.section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#dae1f1,transparent);
+    z-index: 1000;
+}
+.section img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.section .king{
+    width: 384px;
+    height: 627px;
+    margin-left: 38.5%;
+}
+.section .board{
+    z-index: 10;
+}
+.text{
+    position: absolute;
+    color: white;
+    font-size: 15vw;
+    right: -350px;
+    z-index: 9;
+}
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px ;
+    border-radius: 40px;
+    background: white;
+    color: rgb(30, 29, 29);
+    z-index: 9;
+    transform: translateY(130px);
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(gray,black);
+    color: white;
+}
+.sec h2{
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: white;
+}
+.sec p{
+    font-size: 1 em;
+    color: white;
+}
+
+.container{
+  position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #45f3ff;
+    
+}
+.link{
+  text-decoration: none;
+  color: wheat;
+  size: 0.8em;
+}
+ 
+  video{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  .card-box{
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 60%;
+      text-align: center;
+      color: #fff;
+      justify-content: space-evenly;
+      display: flex;
+  }
+  .card{
+
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 2;
+  }
+.card:hover{
+    height: 475px;
+  }
+.lines{
+    position: absolute;
+    inset: 0;
+    background: black;
+    overflow: hidden;
+  }
+.lines::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent,#45f3ff,#45f3ff,#45f3ff,transparent);
+    animation: animate 4s linear infinite;
+  }
+  
+  @keyframes animate{
+    0%{
+      transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+      transform: translate(-50%,-50%) rotate(360deg);
+    }
+    }
+.lines::after{
+      content: '';
+      position: absolute;
+      inset: 4px;
+      background: #292929;
+    }
+.imgbox{
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 150px;
+      background: black;
+      transition: 0.5s;
+      z-index: 2001;
+      overflow: hidden;
+    }
+  
+.card:hover .imgbox{
+    width: 250px;
+    height: 250px;
+  }
+  
+.imgbox::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent,#bc0202,#bc0202,#bc0202,transparent);
+    animation: animate2 4s linear infinite;
+  }
+  
+.imgbox::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #292929;
+  }
+  @keyframes animate2{
+    0%{
+      transform: translate(-50%,-50%) rotate(360deg);
+    }
+    100%{
+      transform: translate(-50%,-50%) rotate(0deg);
+    }
+    }
+  
+.imgbox img{
+    position: absolute;
+    top: 5px;
+    bottom: 5%;
+    right: 5px;
+    left: 5px;
+    width: 95%;
+    height: 95%;
+    z-index: 1;
+    object-fit: cover;
+  }
+.content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 35vh;
+  overflow: hidden;
+  z-index: 2000;
+  color: #fff;
+}
+h1{
+  position: absolute;
+  color: white  ;
+  font-size: 3em;
+  padding: 100px;
+}
+.data{
+  display: inline-block;
+}
