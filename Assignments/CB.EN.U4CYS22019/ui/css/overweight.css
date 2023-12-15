@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.background {
+    background-image: url('../IMAGES/uw_background2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.heading-primary {
+    color: crimson;
+    text-align: center;
+}
+
+.heading-secondary {
+    color: darksalmon;
+    font-family: serif;
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+}
+
+td {
+    border: none;
+    padding: 10px;
+}
+
+.class {
+    text-align: center;
+}
+
+.animated-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+header {
+    background-color:wheat;
+    position: relative;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    height: 150px;
+    color:brown;
+}
+
+#logo {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1em; 
+}
+.main_header{
+padding-top: 32px;
+
+}
+

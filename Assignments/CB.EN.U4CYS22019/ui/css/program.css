@@ -1,0 +1,27 @@
+
+
+body {
+    font-family: Arial, sans-serif; /* Example font */
+    margin: 0;
+    padding: 0;
+    background-image: url('../IMAGES/program.jpg');
+}
+
+h1 {
+    
+    font-family:Arial, Helvetica, sans-serif;
+    color: darkred;
+    
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.video embed {
+    text-align: center;
+    width:650px ;
+    height:400px;
+}
+
+

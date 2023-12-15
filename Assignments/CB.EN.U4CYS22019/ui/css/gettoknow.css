@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../IMAGES/health_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+a:hover {
+    background-color: #555;
+}
+
+.link-blue {
+    background-color: #3498db;
+}
+
+.link-red {
+    background-color: #e74c3c;
+}

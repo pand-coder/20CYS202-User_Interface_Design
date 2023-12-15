@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Fitness</title>
+    <link rel="stylesheet" href="../UI/css/style.css">
+    <link rel="icon" href="../UI/images/logo_white-removebg-preview.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            text-align: left;
+            padding: 1em;
+            position: relative;
+            height: 150px;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        .options-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .option {
+            flex: 1 0 300px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .option:hover {
+            transform: scale(1.05);
+        }
+        
+        #logo {
+            width: 190px;
+            height: 190px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 1em;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 100px;
+            margin-left: auto;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        section {
+            margin: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        section:hover {
+            transform: scale(1.02);
+        }
+        
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: grid;
+            grid-gap: 20px;
+        }
+        
+        input,
+        textarea,
+        button {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+        }
+        
+        input:focus,
+        textarea:focus {
+            border-color: #3498db;
+            background-color: #ecf0f1;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="padding-left: 200px; font-size: 30px;">
+            ESCAPE FITNESS
+        </h1>
+        <img id="logo" src="../UI/images/logo_white-removebg-preview.png" alt="Logo">
+
+        <nav>
+            <ul>
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="../UI/html/login.html">LOGIN</a></li> Not a member?
+                <li><a href="../UI/html/Register.html">REGISTER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div id="container">
+            <div class="options-container">
+                <div class="option" onclick="navigateToPage('../UI/html/index2.html')">
+                    <img src="../UI/images/BMICAL.jpeg" alt="Body Harmony Navigator">
+                    <p><b>Body Harmony Navigator</b> - Explore Your Health Journey with BMI Calculator</p>
+                </div>
+
+                <div class="option" onclick="navigateToPage('../UI/html/diet.html')">
+                    <img src="../UI/images/Diet.jpeg" alt="Nutrient-Rich Wellness">
+                    <p><b>Nutrient-Rich Wellness</b> - Discover the Secrets of a Wholesome Diet</p>
+                </div>
+
+                <div class="option" onclick="navigateToPage('../UI/html/workout_3.html')">
+                    <img src="../UI/images/Ex.jpeg" alt="Active Living Adventures">
+                    <p><b>Active Living Adventures</b> - Transform Your Lifestyle with Invigorating Exercise</p>
+                </div>
+
+                <div class="option" onclick="navigateToPage('../UI/html/get_3.html')">
+                    <img src="../UI/images/Get.jpeg" alt="Inner Self Odyssey">
+                    <p><b>Inner Self Odyssey</b> - Embark on a Journey to Understand and Enhance Yourself</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 style="font-family: Josefin Sans;">About Escape Fitness</h2>
+        <p>
+            Escape Fitness isn't just a gym. It's a transformative journey towards a healthier, happier you. Here, you'll ditch the constraints of traditional fitness and embrace a holistic approach to wellness, one that prioritizes understanding your body, celebrating
+            its strengths, and empowering you to reach your goals.
+        </p>
+        <p>
+            At Escape Fitness, we are committed to helping you achieve your fitness goals and live a healthier life.
+        </p>
+        <p>
+            <strong>Uncover Your Body's Secrets:</strong>
+        </p>
+        <ul>
+            <li><strong>BMI Analysis:</strong> Escape Fitness goes beyond the limitations of the BMI by providing a comprehensive body composition analysis.</li>
+            <li><strong>Personalized Guidance:</strong> Our certified trainers interpret your analysis and create a tailored fitness plan.</li>
+            <li><strong>Weight Management Solutions:</strong> We champion sustainable weight loss and muscle gain through healthy habits and effective exercise.</li>
+        </ul>
+        <p>
+            <strong>Holistic Well-being:</strong>
+        </p>
+        <p>
+            Escape Fitness recognizes the importance of mental wellness in your fitness journey. We offer yoga, meditation, and stress management workshops to promote holistic well-being.
+        </p>
+        <p>
+            <strong>Supportive Community:</strong>
+        </p>
+        <p>
+            Join our group classes and social events to connect with like-minded individuals. Our community provides support and motivation, turning your fitness journey into a shared and uplifting experience.
+        </p>
+        <p>
+            For more information or to get started on your fitness journey, contact us. We look forward to guiding you on the path to a healthier, happier lifestyle.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2 style="font-family: Josefin Sans;">Contact Escape Fitness</h2>
+        <p>
+            Contact Escape Fitness today for a free consultation and discover how we can help you reach your fitness goals!
+        </p>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Escape Fitness</p>
+    </footer>
+
+    <script>
+        function navigateToPage(page) {
+            window.location.href = page;
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for reaching out! We will get back to you soon.');
+            // Additional logic to handle form submission
+        });
+    </script>
+</body>
+
+</html>
