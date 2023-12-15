@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Subscription</title>
+    <link rel="icon" type="image/x-icon" href="coffeee.ico">
+    <link rel="stylesheet" href="../css/coffee.css">
+</head>
+<body>
+  <h2>Coffee Selection</h2>
+
+  <div id="coffee-list" class="product-list">
+    <!-- Coffee products will be dynamically added here -->
+  </div>
+
+  <div id="coffee-total">
+    <p>Total Price: $<span id="coffee-total-price">0.00</span></p>
+    <button id="mybtn" onclick="window.location.href = 'payment_portal.html'">Place Order</button>
+    <button onclick="window.location.href = 'coffee_home.html'">Cancel</button>
+  </div>
+
+  <script src="../js/coffee.js"></script>
+
+</body>
+</html>
