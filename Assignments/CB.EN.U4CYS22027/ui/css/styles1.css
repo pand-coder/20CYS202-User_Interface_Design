@@ -1,0 +1,216 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span {
+  color: #a4123f;
+}
+
+/* Header styles */
+header {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4vh 4vw;
+  background-color: white;
+  color: #ffffff;
+}
+
+header img {
+  width: 20vw;
+  margin-bottom: 2vh;
+}
+
+/* Navigation styles */
+nav {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 2vh 0;
+  background-color: #a4123f;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1.5vh 3vw;
+  font-size: 1.5vw;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #0c3a6f;
+}
+
+/* Main section styles */
+main {
+  padding: 4vh 4vw;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 6vw;
+  margin-bottom: 2vh;
+  color: #0c3a6f;
+}
+
+p {
+  font-size: 2vw;
+  margin-bottom: 2vh;
+  color: #333333;
+}
+
+a {
+  display: inline-block;
+  padding: 1.5vh 3vw;
+  background-color: #a4123f;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 1.5vw;
+  transition: background-color 0.3s ease-in-out;
+}
+
+a:hover {
+  background-color: #0c3a6f;
+}
+
+/* Calendar styles */
+.calendar-container {
+  /* Add styles for the calendar container */
+}
+
+.calendar {
+  display: grid;
+  grid-template-rows: auto repeat(6, 1fr);
+  grid-template-columns: repeat(7, minmax(120px, 1fr));
+  gap: 0;
+  background-color: white;
+  overflow: auto;
+}
+
+.dayname {
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  overflow: hidden;
+  background-color: #0c3a6f;
+  font-weight: bold;
+}
+
+.day {
+  padding: 10px;
+  background: linear-gradient(-145deg, transparent, rgba(0, 0, 0, 0.025));
+  z-index: 1;
+  position: relative;
+}
+
+.day .day-number {
+  font-weight: bold;
+}
+
+.event {
+  border-left-width: 3px;
+  padding: 8px 12px;
+  margin: 10px;
+  border-left-style: solid;
+  position: relative;
+}
+
+.event-weekend-1 {
+  border-left-color:#a4123f;
+  grid-column: 2 / span 1;
+  grid-row: 3;
+  background: darkblue;
+  align-self: center;
+  text-align: end;
+  color: white;
+  margin-top: -5px;
+}
+
+.day:nth-of-type(7n + 7) {
+  border-right: 0;
+}
+
+.day:nth-of-type(n + 1):nth-of-type(-n + 7) {
+  grid-row: 2;
+}
+
+.day:nth-of-type(n + 8):nth-of-type(-n + 14) {
+  grid-row: 3;
+}
+
+.day:nth-of-type(n + 15):nth-of-type(-n + 21) {
+  grid-row: 4;
+}
+
+.day:nth-of-type(n + 22):nth-of-type(-n + 28) {
+  grid-row: 5;
+}
+
+.day:nth-of-type(n + 29):nth-of-type(-n + 35) {
+  grid-row: 6;
+}
+
+.day:nth-of-type(7n + 1) {
+  grid-column: 1/1;
+}
+
+.day:nth-of-type(7n + 2) {
+  grid-column: 2/2;
+}
+
+.day:nth-of-type(7n + 3) {
+  grid-column: 3/3;
+}
+
+.day:nth-of-type(7n + 4) {
+  grid-column: 4/4;
+}
+
+.day:nth-of-type(7n + 5) {
+  grid-column: 5/5;
+}
+
+.day:nth-of-type(7n + 6) {
+  grid-column: 6/6;
+}
+
+.day:nth-of-type(7n + 7) {
+  grid-column: 7/7;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 2vh 4vw;
+  background-color: #f2f2f2;
+  color: #333333;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* Media queries for improved responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 8vw;
+  }
+
+  p {
+    font-size: 3vw;
+  }
+
+  a {
+    padding: 2vh 4vw;
+    border-radius: 2vw;
+    font-size: 2vw;
+  }
+}
+
+body {
+  padding: 20px;
+  background-color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
