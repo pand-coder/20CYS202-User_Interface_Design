@@ -1,0 +1,144 @@
+body {
+    background-color: #F5F5F5;
+    background-image: url(../images/login3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+img{
+    width: 190px;
+    padding: 10px;
+    border-radius: 200px;
+}
+
+.form {
+    background-color: rgb(251, 230, 191);
+    width: 302px;
+    margin-left: 890px;
+    padding: 50px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #008000;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+input[type="text"],input[type="email"],input[type="tel"],input[type="address"],input[type="password"] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 2px solid #008000;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    background: #F5F5F5;
+    font-family: cursive;
+}
+
+input[type="email"]{
+    margin-top: 25px;
+}
+
+input[type="text"],input[type="email"],input[type="tel"],input[type="password"],input[type="address"],input[type="password"]:hover {
+    border-color: #006400;
+    box-shadow: 0 0 5px #006400, inset 0 0 5px #006400; 
+    background: #FFFFFF;
+}
+
+.register {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #FFFFFF;
+    background-color: #039d03;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.register:hover {
+    background-color: #006400;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    img {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .form {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"],input[type="email"],input[type="tel"],input[type="address"],input[type="password"] {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+a.Login {
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 10px;
+    color: #FFFFFF;
+    background-color: #039d03;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: cursive;
+    border-radius: 20PX;
+}
+
+a.Login:hover {
+    background-color: #006400;
+    
+    
+}
+
+h3 a{
+    text-align: center;
+    text-decoration: none;
+    
+    
+}
+
+h3 span {
+    color: #006400;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+h3 span:hover{
+    font-size: 22px;
+}
