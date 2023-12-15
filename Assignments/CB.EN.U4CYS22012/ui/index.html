@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Intuitive Interiors</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#form-section">Book Visit</a></li>
+        <li><a href="#reviews">Customer Reviews</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="slideshow-container" id="slides">
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <h1> Intuitive Interiors</h1>
+</div>
+
+<div class="section-container">
+  <h2 class="section-title">About Us </h2>
+  <p class="section-description">Established in 1985, Intuitive Interiors has been a beacon of innovation in the world of interior design. From our humble beginnings to becoming a renowned name in the industry, our journey is rooted in a commitment to delivering exceptional design solutions.In here, every project tells a story, and we're here to craft yours. Explore our history, discover our values, and let us be the architects of your design aspirations.</p>
+</div>
+
+  <div class="gallery-section" id="projects">
+    <h2>Our Projects</h2>
+
+    <div class="grid">
+      <div class="grid-item" onclick="openPopup('./images/bedroom/image1.jpg','images/bedroom/')" style="background-image: url('./images/bedroom/gallery_bedroom_main.jpg');">
+        <div class="overlay">BEDROOMS</div>
+      </div>
+      <div class="grid-item" onclick="openPopup('./images/gameofficeroom/image1.jpg','images/gameofficeroom/')" style="background-image: url('./images/gameofficeroom/gallery_office_main.jpg');">
+        <div class="overlay">GAMEROOMS / HOME OFFICES</div>
+      </div>
+      <div class="grid-item" onclick="openPopup('image1.jpeg','images/kitchen/')" style="background-image: url('./images/kitchen/gallery_kitchen_main.jpg');">
+        <div class="overlay">KITCHENS</div>
+      </div>
+      <div class="grid-item" onclick="openPopup('./images/livingroom/image1.jpeg','images/livingroom/')" style="background-image: url('./images/livingroom/gallery_livingroom_main.jpg');">
+        <div class="overlay">LIVING ROOMS</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="imagePopup">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <img src="" alt="Popup Image" id="popupImage" class="popup-content">
+    <button class="prev-btn" onclick="changeImage(-1)">&#8249;</button>
+    <button class="next-btn" onclick="changeImage(1)">&#8250;</button>
+  </div>
+
+  <section id="form-section">
+    <div class="text-section" style="color: white">
+      <h2>Who We Are</h2>
+      <p>We are a dedicated team of professionals committed to providing exceptional interior design solutions.</p>
+    </div>
+    <div class="form-section">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="name">Phone:</label>
+        <input type="number" id="name" name="name" required>
+
+        <label for="name">Address:</label>
+        <input type="text" id="name" name="name" required>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+    <div class="container1">
+        <div class="left-half" style="text-align: left; font-size: 4em; color: black;">
+          <h2>Customer Review</h2>
+        </div>
+        <div class="right-half">
+          <div class="reviews-container">
+            <div class="review">
+              <img src="./images/profile1.jpg" alt="User 1" class="profile-pic">
+              <div class="review-content">
+                <h3>Rashi</h3>
+                <p>I hired XYZ Interior Design for a complete home makeover, and I am beyond thrilled with the results. The team's creativity and attention to detail transformed my space into a stylish and functional haven. From concept to execution, they exceeded my expectations. Highly recommend!</p>
+              </div>
+            </div>
+            <div class="review">
+                <img src="./images/profile3.jpg" alt="User 1" class="profile-pic">
+                <div class="review-content">
+                  <h3>Ram</h3>
+                  <p>XYZ Interior Design truly understands the client's vision. The designers were patient and collaborative, ensuring every element reflected my taste. The end result is a home that feels uniquely 'me.' The quality of materials used is impressive, and the team's professionalism made the entire process enjoyable.</p>
+                </div>
+              </div>
+              <div class="review">
+                <img src="./images/profile2.jpg" alt="User 1" class="profile-pic">
+                <div class="review-content">
+                  <h3>Morpheus</h3>
+                  <p>Remember, All I'm offering is the truth... Nothing more.</p>
+                </div>
+              </div>
+              <div class="review">
+                <img src="./images/kitchen/profile4.jpg" alt="User 1" class="profile-pic">
+                <div class="review-content">
+                  <h3>Gandalf, The Gray</h3>
+                  <p>YOU SHALL NOT PASS!!!!</p>
+                </div>
+              </div><div class="review">
+                <img src="./images/profile5.jpg" alt="User 1" class="profile-pic">
+                <div class="review-content">
+                  <h3>Jake</h3>
+                  <p>I regret choosing XYZ Interior Design for my office renovation. The design lacked innovation, and the execution was mediocre. Some promised features were overlooked, and the overall aesthetic was uninspiring. I had higher expectations based on their portfolio, but the reality did not match up.</p>
+                </div>
+              </div>
+    
+          </div>
+        </div>
+      </div>
+      
+      
+  <footer id="footer">
+    <div class="branches" style="text-align: center;">
+        <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 200%;">BRANCHES</h3>
+        <a href="index.html">Bengaluru </a><a href="index.html"> Chennai </a><a href="index.html"> Kolkata </a><a href="index.html"> Gurugram </a><a href="index.html"> Pondicherry</a>
+    </div>
+    <div class="contact-info">
+        <div class="left" style="text-align: left;">
+            <h4>CONTACT INFO</h4>
+            <p>Email: applehomes@example.com</p>
+            <p>Phone: +91 98400 50120</p>
+        </div>
+        <div class="right" style="text-align: right;">
+            <h4>ADDRESS</h4>
+            <p>The nice little shop, opp nice office, Pondicherry-69420</p>
+        </div>
+    </div>
+    <div class="social-icons">
+      <a href="./html/socials.html" target="_self"><img src="./images/facebook_icon.png" alt="Facebook"></a>
+      <a href="./html/socials.html" target="_self"><img src="./images/whatsapp_icon.png" alt="WhatsApp"></a>
+      <a href="./html/socials.html" target="_self"><img src="./images/Instagram_icon.png.webp" alt="Instagram"></a>
+    </div>
+  </footer>
+
+<!-- ... (remaining code) ... -->
+
+
+  <script src="./scripts/index_script.js"></script>
+</body>
+</html>
