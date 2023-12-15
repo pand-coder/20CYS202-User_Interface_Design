@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(pexels-stephan-seeber-1261728.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form id="signinForm">
+        <div style="text-align: center;">
+            <h2 style="color: #333;">Sign In Page</h2>
+        </div>
+
+        <label for="signinUsername">Enter Username</label>
+        <input type="text" id="signinUsername" placeholder="hemanth_2503">
+
+        <label for="signinPassword">Enter Password:</label>
+        <input type="password" id="signinPassword" placeholder="abc@123">
+
+        <input type="submit" value="Continue">
+    </form>
+
+    <script>
+        document.getElementById('signinForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            if (validateSignIn()) {
+                alert('Login successful!');
+                
+                window.location.href = 'main.html';
+            } else {
+                alert('Login failed. Please check your username and password.');
+            }
+        });
+
+        function validateSignIn() {
+            
+            var username = document.getElementById('signinUsername').value;
+            var password = document.getElementById('signinPassword').value;
+
+            
+            var validUsername = 'hemanth_2503';
+            var validPassword = 'abc@123';
+
+            
+            if (username === validUsername && password === validPassword) {
+                return true;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
