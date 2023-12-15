@@ -1,0 +1,195 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Pathway Extreme', sans-serif;
+  transition:.3s;
+  user-select:none;
+}
+
+
+body{
+
+  display:flex;
+  justify-content:end;
+  align-items:center;
+  min-height:100vh;
+  padding:0px 10%; 
+  overflow:hidden;
+
+  
+}
+
+
+body:before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.65);
+}
+
+
+.note{
+  position:absolute;
+  bottom:10px;
+  left:10px;
+  color:rgb(170, 47, 47);
+}
+
+.main{
+  width:100%;
+  height:100vh;
+background:url('https://ichef.bbci.co.uk/news/976/cpsprodpb/E84C/production/_128286495_e6bee2b51bfe8d37d9bb1a27b0600745b67a3a19.jpg');
+  background-size:cover;
+  background-position:center;
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index:-2;
+  animation:zoom 5s linear infinite;
+}
+
+
+@keyframes zoom{
+  0%{
+    transform:scale(1);
+  }
+  
+  
+  50%{
+    transform:scale(1.02);
+  }
+  
+  100%{
+    transform:scale(1);
+  }
+}
+
+
+.main-logo{
+  width:200px;
+  position:absolute;
+  top:20px;
+  left:20px;
+}
+
+
+form{
+  position: relative;
+  left: -37%;
+  width:350px;
+  background-color:rgba(0,0,0,.65);
+  color:#ffffff;
+  text-align:left;
+  padding:30px 45px;
+  border-radius:10px;
+  justify-items: center;
+  
+}
+
+.logo{
+  width:100%;
+  text-align:center;
+}
+
+.logo > img{
+  width:85px;
+}
+
+
+.sign-box{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  gap:40px;
+  text-transform:uppercase;
+  margin:30px 0;
+  font-size:.95em;
+}
+
+
+.sign-box > p{
+  padding:5px 0;
+  cursor:pointer;
+  transition:.1s;
+}
+
+.sign-box > p:nth-child(1){
+    border-bottom:2.3px solid rgb(170, 47, 47);
+}
+
+
+.sign-box > p:hover{
+  border-bottom:2.3px solid rgb(170, 47, 47);
+}
+
+
+.inp-Box{
+  position: relative;
+  color:transparent 0.5;
+  border:none;
+  outline:none;
+  width:100%;
+  font-size:1.1em;
+  padding:10px 20px;
+  border-radius:20px;
+  margin-bottom:15px;
+  box-shadow:0 0 15px #000;
+  transition:.1s;
+}
+
+
+.inp-Box:focus{
+  outline:2px solid rgb(170, 47, 47); 
+  background:#333;
+  color:#fff;
+  caret-color:  rgb(170, 47, 47);
+}
+
+
+
+.submit{
+  margin-top:15px;
+  text-transform:uppercase;
+  font-size:1em;
+  background:rgb(170, 47, 47);
+  color:#ffffff;
+  cursor:pointer;
+  transition: all ease-in-out;
+}
+
+
+.submit:hover{
+  background-color:rgba(0,0,0,.65) ;
+}
+
+.submit:active{
+  background:#000;
+  box-shadow:0 0 5px #000;
+}
+
+
+.submit:focus{
+  outline:none; 
+  background:#000;
+  color:#fff;
+  caret-color: none;
+}
+
+
+.forgot-Psd{
+  text-align:center;
+  text-transform:capitalize;
+  color:#444;
+  margin:15px 0;
+  font-size:.95em;
+  cursor:pointer;
+}
+
+.forgot-Psd:hover{
+  color:rgb(170, 47, 47);
+}

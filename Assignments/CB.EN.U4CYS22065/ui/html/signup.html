@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="../css/signupcss.css">
+  <style>
+    .Logo {
+      text-align: center;
+    }
+
+    .Logo img {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="main"></div>
+
+  <form id="login-form" action="index.html" method="GET">
+
+    <div class="Logo">
+      <img src="img/Logo_fin.png" alt="Logo">
+    </div>
+
+    <div class="sign-box">
+      <p id="signup-option">sign in</p>
+      <p>sign up</p>
+    </div>
+
+    <input type="text" name="username" placeholder="Username" class="inp-Box name" required/>
+
+    <br>
+
+    <input type="password" name="password" placeholder="Password" class="inp-Box psd" required/>
+
+    <br>
+
+    <input type="email" name="email" placeholder="Email" class="inp-Box name" required/>
+
+    <br>
+
+    <div class="check">
+      <input type="checkbox" id="check">
+      <label for="check" id="checkMsg">stay signed in</label>
+    </div>
+
+    <input type="submit" value="Sign in" class="inp-Box submit" id="submit-btn">
+
+  </form>
+
+  <p class="note">Please log in to listen to your favorite song...</p>
+
+  <script src="../js/signupjs.js"></script>
+</body>
+
+</html>
