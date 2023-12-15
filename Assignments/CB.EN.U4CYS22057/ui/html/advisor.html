@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, width=device-width, height=device-height"/>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../images/amrita.ico" sizes="192x192" />
+        <script src="../js/advisor.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+        <title>Advisor Home page</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="amrita_logo"></div>
+            <div class="welcome"><h3>Welcome : <span id="user"></span></h3></div>
+            <div class="TIFAC-logo"></div>
+            <div class="menu-icon" onmouseenter="toggleDropdown(this)" onmouseleave="toggleDropdown(this)">
+                <div class="dropdown-content">
+                    <div class="dropdown-item" onclick="logout()">Logout</div>
+                    <div class="dropdown-item" onclick="handleItemClick('Option 2')">Change Password</div>
+                </div>
+                <div class="icon"></div>
+            </div>
+        </div>
+        <div class="background_image">
+            <div class="content">
+                <div class="tabset">
+                    <input type="radio" name="tabset" id="tab1" aria-controls="PendingRequests" checked>
+                    <label for="tab1">Pending</label>
+                    <input type="radio" name="tabset" id="tab2" aria-controls="OlderRequests">
+                    <label for="tab2">Older</label>
+
+                    <div class="tab-panels">
+                        <section id="PendingRequests" class="tab-panel">
+                            <h2>Approve Requests</h2>
+                            <table id="requestTable">
+                                <thead>
+                                    <tr>
+                                        <th>Request Id</th>
+                                        <th>User Id</th>
+                                        <th>Type</th>
+                                        <th>Subtype</th>
+                                        <th>From</th>
+                                        <th>Slot</th>
+                                        <th>To</th>
+                                        <th>Slot</th>
+                                        <th>Date Applied</th>
+                                        <th>View Supporting Document</th>
+                                        <th>Cancel or approve Request</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody">
+                                    <td colspan="11" style="text-align: center;">No requests made yet</td>
+                                </tbody>
+                            </table>
+                        </section>
+                        <section id="OlderRequests" class="tab-panel">
+                            <h2>Older Requests</h2>
+                            <table id="requestTable2">
+                                <thead>
+                                    <tr>
+                                        <th>Request Id</th>
+                                        <th>User Id</th>
+                                        <th>Type</th>
+                                        <th>Subtype</th>
+                                        <th>From</th>
+                                        <th>Slot</th>
+                                        <th>To</th>
+                                        <th>Slot</th>
+                                        <th>Date Applied</th>
+                                        <th>View Supporting Document</th>
+                                        <th>Status</th>
+                                        <th>Cancel or approve Request</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody1">
+                                    <td colspan="12" style="text-align: center;">No requests are acted upon yet</td>
+                                </tbody>
+                            </table>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pdfModal" class="modal">
+            <div class="modal-content">
+              <div id="pdfViewerModal"></div>
+            </div>
+            <span class="close" onclick="closeModal()"></span>
+        </div>
+        <div class="footer">
+            Copyright © 2023 - 2024 Leave Management System<br>
+            S. Mohana Vamsi<br>
+            II B.Tech CSE (CYS)<br>
+            Part of 20CYS202 - User Interface Design<br>
+            Amrita Vishwa Vidyapeetham, Coimbatore<br>
+        </div>
+    </body>
+</html>

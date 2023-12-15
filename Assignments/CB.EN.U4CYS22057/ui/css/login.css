@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+}
+.header {
+    background-color: #AF0C3E;
+    height: 5vw;
+    min-height: 5vh;
+    position: relative;
+}
+
+.amrita_logo {
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    height: 4vw;
+    min-height: 4vh;
+    width: 18vw;
+    min-width: 18vh;
+    background-size: cover;
+    position: relative;
+    top: 0.5vw;
+    left: 2vw;
+}
+
+.TIFAC-logo {
+    background-image: url(../images/Logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 4vw;
+    min-height: 4vh;
+    min-width: 4vh;
+    width: 4vw;
+    position: absolute;
+    top: 0.5vw;
+    right: 2vw;
+    margin: 0;
+}
+
+.background_image{
+    background-image: url(../images/coimbatore-campus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: calc(100vh - 5vw);
+    max-height: calc(100vh - 5vh);
+    
+}
+
+input[type=text], input[type=password] {
+    size: fixed;
+    width: 25vw;
+    height: 5vh;
+    min-width: 250px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2vh;
+}
+button {
+background-color: #AF0C3E;
+color: white;
+height: 6vh;
+width: 15vw;
+min-width: 100px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 2vh;
+vertical-align: middle;
+}
+button:hover {
+background-color: #720929;
+}
+.signup-forgot {
+display: flex;
+justify-content: space-between;
+}
+.signup-forgot a {
+text-decoration: none;
+color: blue;
+}
+.content{
+    width: 25vw;
+    min-width: 250px;
+    background-color: rgb(242, 247, 251);
+    opacity: 95%;
+    border-radius: 10px;
+    padding: 20px;
+    font: bold15px arial,sans-serif;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer{
+    height: 15vh;
+    background-color: #272425;
+    color: white;
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 2vh;
+}
+.user{
+    display: block;
+}
+.otp{
+    display: none;
+}
+.change{
+    display: none;
+}
