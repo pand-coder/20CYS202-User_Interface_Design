@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="../css/sign_in.css">
+    <link rel="icon" type="image/x-icon" href="../img/coffeee.ico">
+</head>
+<body>
+    
+
+    <main class="main">
+        <div class="container">
+            <section class="wrapper">
+                <div class="heading">
+                    <h1 class="text text-large">Forgot Password</h1>
+                </div>
+                <form name="signin" class="form" action="c_login.html" method="post">
+
+                    <div class="input-control">
+                        <label for="email" class="input-label" hidden>Email Address</label>
+                        <input type="email" name="email" id="email" class="input-field" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-control">
+                        <label for="password" class="input-label" hidden>Password</label>
+                        <input type="password" name="password" id="password1" class="input-field" placeholder="Password" required>
+                    </div>
+                    <div class="input-control">
+                        <label for="password" class="input-label" hidden>Confirm Password</label>
+                        <input type="password" name="password" id="password2" class="input-field" placeholder="Confirm Password" onkeyup="checkPass(); return false;" required>
+                    </div>
+                    <div id="error-nwl"></div>
+                    <p class="text text-normal">Already have an account? <span><a href="c_login.html" class="text text-links">Sign in</a></span>
+                    </p>
+                    <br>
+                    <div class="input-control">
+                        <button type="submit" name="submit" class="input-submit" value="Change password">Change Password</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="../js/checkpass.js"></script>
+</body>
+</html>

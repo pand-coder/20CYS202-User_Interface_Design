@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/sign_in.css">
+    <link rel="icon" type="image/x-icon" href="../img/coffeee.ico">
+</head>
+<body>
+    
+
+    <main class="main">
+        <div class="container">
+            <section class="wrapper">
+                <div class="heading">
+                    <h1 class="text text-large">Sign In</h1>
+                    <p class="text text-normal">New user? <span><a href="signup.html" class="text text-links">Create an account</a></span>
+                    </p>
+                </div>
+                <form name="signin" class="form" action="coffee_home.html" method="post">
+                    <div class="input-control">
+                        <label for="email" class="input-label" hidden>Email Address</label>
+                        <input type="email" name="email" id="email" class="input-field" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-control">
+                        <label for="password" class="input-label" hidden>Password</label>
+                        <input type="password" name="password" id="password" class="input-field" placeholder="Password" required>
+                    </div>
+                    <div class="input-control">
+                        <a href="forgot_pass.html" class="text text-links">Forgot Password</a>
+                        <button type="submit" name="submit" class="input-submit" >Sign In</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
