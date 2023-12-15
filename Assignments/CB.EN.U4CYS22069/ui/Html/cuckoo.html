@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cuckoo Hashing - Insert Elements in Two Arrays</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .hash-table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    .hash-table th,
+    .hash-table td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+
+    .hash-table th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    .hash-table td.empty {
+      background-color: #e2e2e2;
+    }
+
+    .hash-table td:not(.empty):hover {
+      background-color: #f9f9f9;
+      cursor: pointer;
+    }
+
+    .insert-btn {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .insert-btn:hover {
+      background-color: #45a049;
+    }
+
+    .error {
+      color: red;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cuckoo Hashing - Insert Elements in Two Arrays</h1>
+  <div class="container">
+    <div class="form-group">
+      <label for="array1">Array 1:</label>
+      <input type="text" id="array1" placeholder="Enter comma-separated elements">
+    </div>
+    <div class="form-group">
+      <label for="array2">Array 2:</label>
+      <input type="text" id="array2" placeholder="Enter comma-separated elements">
+    </div>
+    <button class="insert-btn" onclick="insertElements()">Insert Elements</button>
+    <div id="table-container">
+      <table class="hash-table">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Array 1</th>
+            <th>Array 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows will be dynamically generated here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const tableSize = 7; // Change this value as per the size of your hash table
+const table = new Array(tableSize).fill(null).map(() => new Array(2).fill(null));
+
+function insertElements() {
+  const array1Input = document.getElementById('array1');
+  const array2Input = document.getElementById('array2');
+  const array1 = array1Input.value.split(',').map(e => e.trim());
+  const array2 = array2Input.value.split(',').map(e => e.trim());
+
+  if (array1.length !== array2.length) {
+    alert('Both arrays should have the same number of elements!');
+    return;
+  }
+
+  let count = 0;
+
+  while (count < tableSize) {
+    for (let i = 0; i < array1.length; i++) {
+      let index = hashFunction1(array1[i]);
+      
+      if (table[index][0] === null) {
+        table[index][0] = array1[i];
+        updateTable();
+        break;
+      } else {
+        const temp = table[index][0];
+        table[index][0] = array1[i];
+        array1[i] = temp;
+
+        index = hashFunction2(array1[i]);
+
+        if (table[index][1] === null) {
+          table[index][1] = array1[i];
+          updateTable();
+          break;
+        } else {
+          const temp = table[index][1];
+          table[index][1] = array1[i];
+          array1[i] = temp;
+
+          count++;
+        }
+      }
+    }
+
+    if (count === tableSize) {
+      alert('Table is full!');
+      break;
+    }
+
+    count = 0;
+
+    for (let i = 0; i < array2.length; i++) {
+      let index = hashFunction1(array2[i]);
+      
+      if (table[index][1] === null) {
+        table[index][1] = array2[i];
+        updateTable();
+        break;
+      } else {
+        const temp = table[index][1];
+        table[index][1] = array2[i];
+        array2[i] = temp;
+
+        index = hashFunction2(array2[i]);
+
+        if (table[index][0] === null) {
+          table[index][0] = array2[i];
+          updateTable();
+          break;
+        } else {
+          const temp = table[index][0];
+          table[index][0] = array2[i];
+          array2[i] = temp;
+
+          count++;
+        }
+      }
+    }
+    
+    if (count === tableSize) {
+      alert('Table is full!');
+      break;
+    }
+
+    count = 0;
+  }
+}
+
+function hashFunction1(element) {
+  return element.length % tableSize;
+}
+
+function hashFunction2(element) {
+  return (element.charCodeAt(0) % (tableSize - 1)) + 1;
+}
+
+function updateTable() {
+  const tableBody = document.querySelector('.hash-table tbody');
+  
+  // Clear existing rows
+  while (tableBody.firstChild) {
+    tableBody.removeChild(tableBody.firstChild);
+  }
+
+  // Generate new rows
+  for (let i = 0; i < tableSize; i++) {
+    const row = document.createElement('tr');
+    
+    const indexCell = document.createElement('td');
+    indexCell.textContent = i + 1;
+
+    const array1Cell = document.createElement('td');
+    
+    if (table[i][0] === null) {
+      array1Cell.classList.add('empty');
+    } else {
+      array1Cell.textContent = table[i][0];
+    }
+
+    const array2Cell = document.createElement('td');
+    
+    if (table[i][1] === null) {
+      array2Cell.classList.add('empty');
+    } else {
+      array2Cell.textContent = table[i][1];
+    }
+
+    row.appendChild(indexCell);
+    row.appendChild(array1Cell);
+    row.appendChild(array2Cell);
+
+    tableBody.appendChild(row);
+  }
+}
+
+  </script>
+</body>
+</html>

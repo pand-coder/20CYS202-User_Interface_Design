@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="stylesheet" href="../CSS/home.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: black;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+    }
+
+    .error-message {
+      color: red;
+      margin-top: 5px;
+    }
+
+    button[type="submit"] {
+      display: block;
+      width: 105%;
+      padding: 10px;
+      margin-top: 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #paymentStatus {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    #thankYouMsg {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-200px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .animated-form {
+      animation: slideIn 0.5s ease-out;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Payment Page</h1>
+
+  <form id="paymentForm" class="animated-form">
+    <label for="paymentMethod">Payment Method:</label>
+    <select id="paymentMethod" name="paymentMethod">
+      <option value="">-- Select Payment Method --</option>
+      <option value="gpay">Google Pay</option>
+      <option value="phonepe">PhonePe</option>
+      <option value="credit-card">Credit Card</option>
+      <option value="debit-card">Debit Card</option>
+      <option value="net-banking">Net Banking</option>
+    </select>
+    <p id="paymentMethodError" class="error-message"></p>
+
+    <div id="upiIdDetails" class="payment-details">
+      <label for="upiId">UPI ID:</label>
+      <input type="text" id="upiId" name="upiId" placeholder="Enter your UPI ID">
+      <p id="upiIdError" class="error-message"></p>
+    </div>
+
+    <div id="phonepeIdDetails" class="payment-details">
+      <label for="phonepeId">PhonePe ID:</label>
+      <input type="text" id="phonepeId" name="phonepeId" placeholder="Enter your PhonePe ID">
+      <p id="phonepeIdError" class="error-message"></p>
+    </div>
+
+    <div id="cardDetails" class="payment-details">
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number">
+      <p id="cardNumberError" class="error-message"></p>
+
+      <label for="cardHolder">Card Holder:</label>
+      <input type="text" id="cardHolder" name="cardHolder" placeholder="Enter the name on the card">
+      <p id="cardHolderError" class="error-message"></p>
+
+      <label for="expiryDate">Expiry Date:</label>
+      <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+      <p id="expiryDateError" class="error-message"></p>
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" placeholder="Enter the CVV">
+      <p id="cvvError" class="error-message"></p>
+    </div>
+
+    <div id="netBankingDetails" class="payment-details">
+      <label for="bank">Select Bank:</label>
+      <select id="bank" name="bank">
+        <option value="">-- Select Bank --</option>
+        <option value="bank1">Bank 1</option>
+        <option value="bank2">Bank 2</option>
+        <option value="bank3">Bank 3</option>
+      </select>
+      <p id="bankError" class="error-message"></p>
+    </div>
+
+    <button type="submit">Pay Now</button>
+  </form>
+
+  <script>
+    document.getElementById("paymentForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      var paymentMethod = document.getElementById("paymentMethod").value;
+      var paymentDetails = {};
+
+      document.getElementById("paymentMethodError").innerHTML = "";
+      document.getElementById("upiIdError").innerHTML = "";
+      document.getElementById("phonepeIdError").innerHTML = "";
+      document.getElementById("cardNumberError").innerHTML = "";
+      document.getElementById("cardHolderError").innerHTML = "";
+      document.getElementById("expiryDateError").innerHTML = "";
+      document.getElementById("cvvError").innerHTML = "";
+      document.getElementById("bankError").innerHTML = "";
+
+      var isValid = true;
+
+      if (!paymentMethod) {
+        document.getElementById("paymentMethodError").innerHTML = "Select a payment method";
+        isValid = false;
+      }
+
+      if (paymentMethod === "gpay") {
+        paymentDetails.upiId = document.getElementById("upiId").value;
+
+        if (!paymentDetails.upiId) {
+          document.getElementById("upiIdError").innerHTML = "Enter your UPI ID";
+          isValid = false;
+        }
+      } else if (paymentMethod === "phonepe") {
+        paymentDetails.phonepeId = document.getElementById("phonepeId").value;
+
+        if (!paymentDetails.phonepeId) {
+          document.getElementById("phonepeIdError").innerHTML = "Enter your PhonePe ID";
+          isValid = false;
+        }
+      } else if (paymentMethod === "credit-card" || paymentMethod === "debit-card") {
+        paymentDetails.cardNumber = document.getElementById("cardNumber").value;
+        paymentDetails.cardHolder = document.getElementById("cardHolder").value;
+        paymentDetails.expiryDate = document.getElementById("expiryDate").value;
+        paymentDetails.cvv = document.getElementById("cvv").value;
+
+        var today = new Date();
+        var currentMonth = today.getMonth() + 1;
+        var currentYear = today.getFullYear();
+
+        if (!(paymentDetails.cardNumber.length === 16 && /^\d+$/.test(paymentDetails.cardNumber))) {
+          document.getElementById("cardNumberError").innerHTML = "Enter card number correctly";
+          isValid = false;
+        }
+
+        if (!paymentDetails.cardHolder) {
+          document.getElementById("cardHolderError").innerHTML = "Enter card holder name";
+          isValid = false;
+        }
+
+        if (!(paymentDetails.expiryDate.length === 5 && /^\d{2}\/\d{2}$/.test(paymentDetails.expiryDate) &&
+          parseInt(paymentDetails.expiryDate.slice(0, 2)) <= 12 && parseInt(paymentDetails.expiryDate.slice(3, 5)) >= currentYear % 100)) {
+          document.getElementById("expiryDateError").innerHTML = "Enter expiry date correctly";
+          isValid = false;
+        }
+
+        if (!(paymentDetails.cvv.length === 3 && /^\d+$/.test(paymentDetails.cvv))) {
+          document.getElementById("cvvError").innerHTML = "Enter CVV correctly";
+          isValid = false;
+        }
+      } else if (paymentMethod === "net-banking") {
+        paymentDetails.bank = document.getElementById("bank").value;
+
+        if (!paymentDetails.bank) {
+          document.getElementById("bankError").innerHTML = "Select a bank";
+          isValid = false;
+        }
+      }
+
+      if (isValid) {
+        var paymentWindow = window.open("", "_blank", "width=400,height=200");
+        paymentWindow.document.write("<h2>Payment Done</h2>");6
+        paymentWindow.document.write("<p>Thank you for trusting our website!</p>");
+
+        document.getElementById("paymentForm").reset();
+      }
+    });
+
+    document.getElementById("paymentMethod").addEventListener("change", function () {
+      var paymentMethod = document.getElementById("paymentMethod").value;
+      var paymentDetails = document.getElementsByClassName("payment-details");
+
+      for (var i = 0; i < paymentDetails.length; i++) {
+        paymentDetails[i].style.display = "none";
+      }
+
+      if (paymentMethod === "gpay") {
+        document.getElementById("upiIdDetails").style.display = "block";
+      } else if (paymentMethod === "phonepe") {
+        document.getElementById("phonepeIdDetails").style.display = "block";
+      } else if (paymentMethod === "credit-card" || paymentMethod === "debit-card") {
+        document.getElementById("cardDetails").style.display = "block";
+      } else if (paymentMethod === "net-banking") {
+        document.getElementById("netBankingDetails").style.display = "block";
+      }
+    });
+  </script>
+</body>
+
+</html>
