@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bathing</title>
+	<style type="text/css">
+		*{
+			margin: 1;
+			padding: 1;
+			font-family: 'Poppins',sans-serif;
+			box-sizing: border-box;
+		}
+		.title{
+			background: white;
+			text-align: center;
+			text-decoration:overline;
+		}
+		.container{
+			width: 100%;
+			min-height: 70vh;
+			background: orange;
+			display: flex;
+			align-items: center;  
+			justify-content: center;
+		}
+		.design{
+			width: 100%;
+			max-width: 750px;
+			height: 350px;
+			display: flex;
+		}
+		.gallery{
+			flex-basis: 70%;
+			background: #241e20;
+			transform: scale(1.08);
+		}
+		.gallery img{
+			width: 100%;
+			height: 350px;
+			display: block;
+			border: solid;
+		}
+		.details{
+			flex-basis: 55%;
+			background: #fff;
+			padding:40px;
+			padding-left: 60px;
+		}
+		.btn {
+			width: 10rem;
+            height: 3rem;
+            margin: 0.1rem;
+            padding: .4rem;
+            letter-spacing: .1rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #fff;
+            background: black;
+            border: none;
+            border-radius: .5rem;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+        	background-color: #555;
+        }
+
+	</style>
+	<script type="text/javascript">
+		function showAlert() {
+			alert("Thank you for your interest! We will contact you to schedule a visit.");
+		}
+	</script>
+</head>
+<body>
+	<div class="title">
+		<h1 color="black">Designs For Bath</h1>
+	</div>
+	<div class="container">
+		<div class="design">
+			<div class="gallery">
+				<img src="../images/bt_img-1.jpeg">
+			</div>
+			<div class="details">
+				<h2>Bath design</h2>
+				<p>A good looking design which has decorative item's.</p>
+				<h4>Area required: 150 sq.ft.</h4><br>
+				<center><button class="btn" onclick="showAlert()">Get visit</button></center>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="design">
+			<div class="gallery">
+				<img src="../images/bt_img-2.jpeg">
+			</div>
+			<div class="details">
+				<h2>Bath design</h2>
+			<p>A attractive design. </p>
+				<h4>Area required: 180 sq.ft.</h4><br>
+				<center><button class="btn" onclick="showAlert()">Get visit</button></center>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
