@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tours & Travels | Custom Website</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo"><span>T</span>ravel</a>
+
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#book">book</a>
+      <a href="#packages">packages</a>
+      <a href="#services">services</a>
+      <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+    </div>
+
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="search here...">
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+  </header>
+  
+  <div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+      <h3>login</h3>
+      <input type="email" class="box" placeholder="enter your email">
+      <input type="password" class="box" placeholder="enter your password">
+      <input type="submit" value="login now" class="btn">
+      <input type="checkbox" id="remember">
+      <label for="remember">remember me</label>
+      <p>forget password? <a href="#">click here</a></p>
+      <p>don't have an account? <a href="#">register now</a></p>
+    </form>
+  </div>
+
+  <main>
+ 
+    <section class="home" id="home">
+      <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>discover new places with us, adventure awaits</p>
+      </div>
+
+      <div class="controls">
+        <span class="" data-src="./images/vid-1.mp4"></span>
+      </div>
+
+      <div class="video-container">
+        <video src="./images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+      </div>
+    </section>
+  
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>book</span>
+        <span class="space"></span>
+        <span>now</span>
+
+      <div class="row">
+        <div class="image">
+          <img src="./images/book-img.svg" alt="">
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <h3>where to</h3>
+            <input type="name" placeholder="place name">
+          </div>
+          <div class="inputBox">
+            <h3>how many</h3>
+            <input type="number" placeholder="number of guests">
+          </div>
+          <div class="inputBox">
+            <h3>arrivals</h3>
+            <input type="date">
+          </div>
+          <div class="inputBox">
+            <h3>leaving</h3>
+            <input type="date">
+          </div>
+          <input type="submit" value="book now" class="btn">
+        </form>
+      </div>
+    </section>
+  
+    <section class="packages" id="packages">
+      <h1 class="heading">
+        <span>PACKAGES</span>
+        
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="./images/p-1.jpg" alt="">
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> mumbai</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, aspernatur!</p>
+            
+            <div class="price">90.00 <span>120.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./images/p-2.jpg" alt="">
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> sydney</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, aspernatur!</p>
+            
+            <div class="price">90.00 <span>120.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./images/p-3.jpg" alt="">
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> hawaii</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, aspernatur!</p>
+          
+            <div class="price">90.00 <span>120.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./images/p-4.jpg" alt="">
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> paris</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, aspernatur!</p>
+          
+            <div class="price">90.00 <span>120.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+    <section class="services" id="services">
+      <h1 class="heading">
+        <span>SERVICES</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-hotel"></i>
+          <h3>affordable hotels</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus necessitatibus eveniet nisi? Ipsam, tenetur. Repellendus delectus reiciendis similique perferendis quidem!</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-utensils"></i>
+          <h3>food and drinks</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus necessitatibus eveniet nisi? Ipsam, tenetur. Repellendus delectus reiciendis similique perferendis quidem!</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-bullhorn"></i>
+          <h3>safety guide</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus necessitatibus eveniet nisi? Ipsam, tenetur. Repellendus delectus reiciendis similique perferendis quidem!</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-globe-asia"></i>
+          <h3>around the world</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus necessitatibus eveniet nisi? Ipsam, tenetur. Repellendus delectus reiciendis similique perferendis quidem!</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-plane"></i>
+          <h3>fastest travel</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus necessitatibus eveniet nisi? Ipsam, tenetur. Repellendus delectus reiciendis similique perferendis quidem!</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-hiking"></i>
+          <h3>adventures</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus necessitatibus eveniet nisi? Ipsam, tenetur. Repellendus delectus reiciendis similique perferendis quidem!</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h1 class="heading">
+        <span>CONTACT</span>
+
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="./images/contact-img.svg" alt="">
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="number">
+            <input type="text" placeholder="subject">
+          </div>
+          <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+          <input type="submit" value="send message" class="btn">
+        </form>
+      </div>
+    </section>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
