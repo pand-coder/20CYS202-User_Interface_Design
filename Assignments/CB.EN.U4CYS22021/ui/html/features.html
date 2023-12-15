@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>
+    /* Add animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animated {
+      animation: fadeInUp 1s ease-out;
+    }
+
+    /* Style for placeholder images */
+    .feature-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background:url("../images/rear.jpg");
+  /*background-size: 500px;*/
+  height:1000;
+  width:700;
+   /* Adjust the background size */
+  background-position: right top; 
+  background-repeat: none;
+}
+
+header {
+  background: #e5d4b4;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #130f40;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: rgb(11, 11, 139);
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+/* Add animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Style for placeholder images */
+.feature-image {
+  width: 200px;
+  height: 220px;
+  border-radius: 8px;
+  margin-top: 10px; /* Add space between text and image */
+}
+
+/* Additional styling for features */
+.feature {
+  margin-bottom: 40px;
+}
+
+.feature h2 {
+  color: #130f40;
+}
+
+.feature p {
+  color: #6d6d6d;
+  margin-bottom: 15px;
+}
+.container {
+      background-color: #fff;
+      padding: 90px;
+      width: 700px;
+      height: 1000px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+    border: 0px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 9%;
+    background: #e5d4b4;
+    box-shadow: var(--box-shadow);
+    background: linear-gradient(to right, #eff3f5, #6d4814);
+}
+
+.heading {
+    padding: 2rem 0;
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.heading span {
+    background: var(--blue);
+}
+
+.header .logo {
+    font-size: 2rem;
+    font-variant: var(--light-color);
+    text-shadow: 0 0 10px rgba(114, 110, 102, 0.97);
+}
+
+.header .logo i {
+    color: var(--black);
+}
+
+.header .navbar a {
+    font-size: 1.9rem;
+    margin: 0 1rem;
+    color: var(--black);
+    text-shadow: 0 0 10px rgba(175, 113, 113, 0.8);
+}
+
+.header .navbar a:hover {
+    color: var(--blue);
+}
+
+.header .icons div {
+    border: 0px solid;
+    height: 5.5rem;
+    width: 5.5rem;
+    line-height: 5.5rem;
+    border-radius: .9rem;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    background: linear-gradient(to left, #eff3f5, #6d4814);
+}
+
+.header .icons div:hover {
+    color: white;
+}
+
+#menu-btn {
+    display: none;
+}
+.button {
+  text-align: center;
+  padding-top: 2px;;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button button {
+  background: linear-gradient(to left, #eff3f5, #6d4814); /* Change to your desired background color */
+  color: #fff;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button button:hover {
+  /* Change to your desired hover background color */
+}
+
+
+  </style>
+  <title>Fashion Store Features</title>
+</head>
+<body >
+    <header class="header">
+        <a href="#" class="logo" style="color: black; font-size:35px ; text-decoration: none;" ><i class="fa fa-snowflake-o" aria-hidden="true"></i> Threads Store</a>
+      </header>
+  
+
+  <section class="container" class="main-content">
+    <h1 class="animated" style="color-scheme:initial; color: rgb(6, 60, 62);">Explore Our Exciting Features</h1>
+
+    <div class="feature animated">
+      <h2>1. Trendy Collections</h2>
+      <p>Discover the latest fashion trends with our curated and constantly updated collections. Stay in style with the hottest looks of the season.</p>
+      <img src="../images/feat.jpg" alt="Trendy Collections" class="feature-image">
+    </div>
+
+    <div class="feature animated">
+      <h2>2. Personalized Recommendations</h2>
+      <p>Experience personalized shopping recommendations based on your preferences and browsing history. Find the perfect outfits tailored just for you.</p>
+      <img src="../images/custom.jpg" alt="Personalized Recommendations" class="feature-image">
+    </div>
+
+    <div class="feature animated">
+      <h2>3. Easy Navigation</h2>
+      <p>Navigate our website effortlessly with an intuitive and user-friendly interface. Enjoy a seamless shopping experience from browsing to checkout.</p>
+      
+    </div>
+    
+    
+    <div class="button">
+      <a href="../index.html"><button type="button">Home</button></a>
+    </div>
+
+    
+
+  </section>
+  
+</body>
+</html>

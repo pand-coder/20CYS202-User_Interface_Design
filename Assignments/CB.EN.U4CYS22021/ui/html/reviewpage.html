@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threads Fashion Store - Review</title>
+    
+    <!-- CSS Styles -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background: url('../images/uyu.jpg');
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .review-section {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .review-form input,
+        .review-form textarea,
+        .review-form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .review-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .review-form button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo" style="color: rgb(232, 230, 230); font-size:35px ; text-decoration: none;"><i class="fa fa-snowflake-o" aria-hidden="true" ></i> Threads Store</a>
+    </header>
+
+    <section class="review-section">
+        <div class="review-form-container">
+            <h2>Write a Review</h2>
+            <form action="#" method="post" class="review-form" onsubmit="submitReview(event)">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">5 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="2">2 stars</option>
+                    <option value="1">1 star</option>
+                </select>
+
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Threads Fashion Store   |   Contact us: threads.store@gmail.com
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function submitReview(event) {
+            event.preventDefault();
+            
+            // Add your logic for handling the form submission here
+            // You may use AJAX to send the form data to the server
+            console.log("Review submitted!");
+            window.location.href='../index.html';
+
+        }
+    </script>
+    
+</body>
+</html>

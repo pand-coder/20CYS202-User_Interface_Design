@@ -1,0 +1,138 @@
+:root {
+    --blue: rgb(11, 11, 139);
+    --black: #130f40;
+    --light-color: #dbc7c7;
+    --box-shadow: 0 .1rem 1rem rgba(0, 0, 0.1);
+    --border: 2rem solid rgba(0, 0, 0.1);
+    --outline: .1rem solid rgba(0, 0, 0.1);
+}
+
+html {
+    font-size: 77.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url('../images/uyu.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container {
+    background-color: #fff;
+    padding: 70px;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.header {
+    border: 0px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 9%;
+    background: #e5d4b4;
+    box-shadow: var(--box-shadow);
+    background: linear-gradient(to right, #eff3f5, #6d4814);
+}
+
+.heading {
+    padding: 2rem 0;
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.heading span {
+    background: var(--blue);
+}
+
+.header .logo {
+    font-size: 2rem;
+    font-variant: var(--light-color);
+    text-shadow: 0 0 10px rgba(114, 110, 102, 0.97);
+}
+
+.header .logo i {
+    color: var(--black);
+}
+
+.header .navbar a {
+    font-size: 1.9rem;
+    margin: 0 1rem;
+    color: var(--black);
+    text-shadow: 0 0 10px rgba(175, 113, 113, 0.8);
+}
+
+.header .navbar a:hover {
+    color: var(--blue);
+}
+
+.header .icons div {
+    border: 0px solid;
+    height: 5.5rem;
+    width: 5.5rem;
+    line-height: 5.5rem;
+    border-radius: .9rem;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    background: linear-gradient(to left, #eff3f5, #6d4814);
+}
+
+.header .icons div:hover {
+    color: white;
+}
+
+#menu-btn {
+    display: none;
+}
