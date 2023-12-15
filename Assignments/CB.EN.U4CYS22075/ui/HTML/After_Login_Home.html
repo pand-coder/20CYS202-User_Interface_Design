@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/H.css">
+    <link rel="icon" type="image/x-icon" href="../Images/Comic Manga.ico">
+    <title>All Title</title>
+    
+</head>
+<body>
+    <header class="header">
+
+        <a href="maintenance.html" class="Logo"><img src="../Images/Comic Manga.ico" height="45" width="45"></a>
+        <h1 style="color: white;">Online Comics X Manga Store</h1>
+        <nav class="navbar">
+            <a href="news.html">News</a>
+            <a href="Login.html"><button>Log Out</button></a>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>All Titles</h1>
+        <nav class="nav">
+            <a href="After_Login_Home.html">All</a>
+            <a href="After_Login_Comic.html">Comic</a>
+            <a href="After_Login_Manga.html">Manga</a>
+            <a href="After_Login_GraphicsNovel.html">Novels</a>
+        </nav>
+    </div>
+    <div class="Preferences">
+        <h3>LANGUAGE:</h3>
+        <select>
+            <option value="All Languages">All Languages</option>
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Japanese">Japanese</option>
+        </select>
+        <h3> GENERE:</h3>
+        <select id="genre" onchange="redirectToPage()">
+            <option value="allGenres">All Genre</option>
+            <option value="adventure">Adventure</option>
+            <option value="action">Action</option>
+            <option value="mystery">Mystery</option>
+            <option value="sci-fi">Sci-Fi</option>
+            <option value="superhero">SuperHero</option>
+        </select>
+    </div>
+    <div class="store">
+        <div class="every">
+            <h4>SHARED BY:</h4>
+            <br>
+            <ul style="list-style-type:disc;">
+            <li><a href="maintenance.html">Everyone</a></li>
+            <li><a href="maintenance.html">Publishers</a></li>
+            <li><a href="maintenance.html">Creators</a></li>
+            <li><a href="maintenance.html">Small press</a></li>
+            </ul>
+            <br>
+            <h4>AVAILABILITY:</h4>
+            <br>
+            <ul>
+            <li><a href="After_Login_Home.html">All titles</a></li>
+            <li><a href="maintenance.html">Free</a></li>
+            <li><a href="maintenance.html">Paid</a></li>
+            </ul>
+            <br>
+            <h4>FORMAT/LAYOUT:</h4>
+            <br>
+            <ul>
+                <li><a href="After_Login_Home.html">All titles</a></li>
+                <li><a href="maintenance.html">Traditional/print</a></li>
+                <li><a href="maintenance.html">Vertical scroll</a></li>
+            </ul>
+        </div>
+        <div class="all">
+            <div class="Comic">
+                <img style="border-radius: 15px;" src="../Images/Naruto-Vol-52.jpg" height="250" width="150">
+                <a href="../pdf/Vol.53 Chapter 495  Dark Naruto Destroyed!! N.pdf">
+                <div class="hidden">
+                    <h3>Preview</h3>
+                    <h4>Naruto Shippuden</h4>
+                    <p>Manga &#8226;<b>Adventure</b></p>
+                    <p>2 Releases</p>
+                </div>
+            </a>
+                <div class="Subline">
+                    <p>By Masashi Kishimoto</p>
+                </div>
+            </div>
+            <div class="Comic">
+                <img style="border-radius: 15px;" src="../Images/Demon.jpg" height="250" width="150">
+                <a href="../pdf/Demon Slayer Kimetsu No Yaiba Manga (Volume.10).pdf">
+                <div class="hidden">
+                    <h3>Preview</h3>
+                    <h4>Demon Slayer</h4>
+                    <p>Manga &#8226;<b>Action</b></p>
+                    <p>2 Releases</p>
+                </div>
+            </a>
+                <div class="Subline">
+                    <p>By Koyoharu Gotouge</p>
+                </div>
+            </div>
+            <div class="Comic">
+                <img style="border-radius: 15px;" src="../Images/DeathNoteVol1.jpg" height="250" width="150">
+                <a href="../pdf/Death Note Vol. 01 (2005) (Digital TPB) (DarkZone-Empire).pdf">
+                <div class="hidden">
+                    <h3>Preview</h3>
+                    <h4>Death Note</h4>
+                    <p>Manga &#8226;<b>Mystery</b></p>
+                    <p>1 Releases</p>
+                </div>
+            </a>
+                <div class="Subline">
+                    <p>By Tsugumi Ohba</p>
+                </div>
+            </div>
+            <div class="Comic">
+                <img style="border-radius: 15px;" src="../Images/1piece.jpg" height="250" width="150">
+                <a href="../pdf/Ch - 1083 The Truth About That Day One Piece.pdf">
+                <div class="hidden">
+                    <h3>Preview</h3>
+                    <h4>One Piece</h4>
+                    <p>Manga &#8226;<b>Adventure</b></p>
+                    <p>2 Releases</p>
+                </div>
+            </a>
+                <div class="Subline">
+                    <p>By Eiichiro Oda</p>
+                </div>
+            </div>
+            <br>
+            <div class="Comic">
+                <img style="border-radius: 15px;" src="../Images/Avengers.jpg" height="250" width="150">
+                <a href="../pdf/Avengers.pdf">
+                <div class="hidden">
+                    <h3>Preview</h3>
+                    <h4>Avengers</h4>
+                    <p>Comics &#8226;<b>Superhero</b></p>
+                    <p>4 Releases</p>
+                </div>
+            </a>
+                <div class="Subline">
+                    <p>By Stan Lee</p>
+                </div>
+            </div>
+            <div class="Comic">
+                <img style="border-radius: 15px;" src="../Images/JL.jpg" height="250" width="150">
+                <a href="../pdf/JusticeLeague.pdf">
+                <div class="hidden">
+                    <h3>Preview</h3>
+                    <h4>Justice League</h4>
+                    <p>Comic &#8226;<b>Superhero</b></p>
+                    <p>1 Releases</p>
+                </div>
+            </a>
+                <div class="Subline">
+                    <p>By Gardner Fox</p>
+                </div>
+            </div>
+            <div class="Comic">
+                <img style="border-radius: 15px;" src="../Images/Spiderman.jpg" height="250" width="150">
+                <a href="../pdf/Marvel's_Spider_Man_City_at_War_2019_@marvelcomicpdf_Nayaan_rajpalia.pdf">
+                <div class="hidden">
+                    <h3>Preview</h3>
+                    <h4>Spiderman</h4>
+                    <p>Comic &#8226;<b>Superhero</b></p>
+                    <p>2 Releases</p>
+                </div>
+            </a>
+                <div class="Subline">
+                    <p>By Stan Lee</p>
+                </div>
+            </div>
+            <div class="Comic">
+                <a href="#"><img style="border-radius: 15px;" src="https://th.bing.com/th/id/OIP.uqRoY81HmM3RIZrXK0PAggHaLH?pid=ImgDet&rs=1" height="250" width="150"></a>
+                <a href="../pdf/Batman.pdf">
+                <div class="hidden">
+                    <h3>Preview</h3>
+                    <h4>Batman</h4>
+                    <p>Comic &#8226;<b>Superhero</b></p>
+                    <p>1 Releases</p>
+                </div>
+            </a>
+                <div class="Subline">
+                    <p>By Bob Kane</p>
+                </div>
+            </div>
+            <br>
+            <div class="Comic">
+                <img style="border-radius: 15px;" src="../Images/Fantastic.png" height="250" width="150">
+                <a href="../pdf/fantastic_beasts_and_where_to_find_them_.pdf">
+                <div class="hidden">
+                    <h3>Preview:</h3>
+                    <h4>Fantastic beast And Where To Find Them</h4>
+                    <p>Novel &#8226;<b>Adventure</b></p>
+                    <p>1 Releases</p>
+                </div>
+            </a>
+                <div class="Subline">
+                    <p>By Newt Scamander</p>
+                </div>
+            </div>
+            <div class="Comic">
+                <img style="border-radius: 15px;" src="../Images/Wrinkle of Time.jpg" height="250" width="150">
+                <a href="../pdf/A Wrinkle in Time - Full Novel.pdf">
+                <div class="hidden">
+                    <h3>Preview:</h3>
+                    <h4>A Wrinkle In Time</h4>
+                    <p>Novel &#8226;<b>Sci-Fi</b></p>
+                    <p>1 Releases</p>
+                </div>
+            </a>
+                <div class="Subline">
+                    <p>By Madeleine L'Engle</p>
+                </div>
+            </div>
+            <div class="Comic">
+                <img style="border-radius: 15px;" src="../Images/Harry_Potter.png" height="250" width="150">
+                <a href="../pdf/harry_potter_and_the_cursed_child.pdf">
+                <div class="hidden">
+                    <h3>Preview:</h3>
+                    <h4>Harry Potter And The Cursed Child</h4>
+                    <p>Novel &#8226;<b>Adventure</b></p>
+                    <p>1 Releases</p>
+                </div>
+            </a>
+                <div class="Subline">
+                    <p>By J. K. Rowling</p>
+                </div>
+            </div>
+            <div class="Comic">
+                <img style="border-radius: 15px;" src="../Images/Dune.jpg" height="250" width="150">
+                <a href="../pdf/Book 1 - Dune.pdf">
+                <div class="hidden">
+                    <h3>Preview:</h3>
+                    <h4>Dune</h4>
+                    <p>Comic &#8226;<b>Sci-Fi</b></p>
+                    <p>1 Releases</p>
+                </div>
+            </a>
+                <div class="Subline">
+                    <p>By Frank Herbert</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <div class="Action">
+        <h4>CATEGORY:</h4>
+        <br>
+        <input type="checkbox" id="actionCheckbox" value="Action"><a href="After_Login_Home_actionPage.html" onclick="toggleCheckbox('actionCheckbox')">Action</a><br>
+        <input type="checkbox" id="actionCheckbox" value="Adventure"><a href="After_Login_Home_Adventure.html" onclick="toggleCheckbox('actionCheckbox')">Adventure</a><br>
+        <input type="checkbox" id="actionCheckbox" value="Mystery"><a href="After_Login_Home_mysteryPage.html" onclick="toggleCheckbox('actionCheckbox')"></a>Mystery<br>
+        <input type="checkbox" id="actionCheckbox" value="Sci-Fi"><a href="After_Login_Home_ScifiPage.html" onclick="toggleCheckbox('actionCheckbox')"></a>Sci-Fi<br>
+        <input type="checkbox" id="actionCheckbox" value="Superhero"><a href="After_Login_Home_SuperHeroPage.html" onclick="toggleCheckbox('actionCheckbox')"></a>Superhero<br>
+
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+    <p>&copy; 2023 Comics X Manga World. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        function redirectToPage() {
+        var selectedGenre = document.getElementById("genre").value;
+
+        // Define the pages corresponding to each genre
+        var pages = {
+            "allGenres": "After_Login_Home.html",
+            "adventure": "After_Login_Home_Adventure.html",
+            "action": "After_Login_Home_actionPage.html",
+            "sci-fi": "After_Login_Home_ScifiPage.html",
+            "superhero": "After_Login_Home_SuperHeroPage.html",
+            "mystery": "After_Login_Home_mysteryPage.html"
+        };
+
+        // Redirect to the selected genre's page
+        window.location.href = pages[selectedGenre];
+    }
+
+    function toggleCheckbox(checkboxId) {
+            var checkbox = document.getElementById(checkboxId);
+            checkbox.checked = !checkbox.checked;
+        }
+    </script>
+</body>
+</html>

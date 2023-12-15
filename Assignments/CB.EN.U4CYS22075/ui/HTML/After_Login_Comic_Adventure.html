@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/H.css">
+    <link rel="icon" type="image/x-icon" href="../Images/Comic Manga.ico">
+    <title>Comics</title>
+    
+</head>
+<body>
+    <header class="header">
+
+        <a href="maintenance.html" class="Logo"><img src="../Images/Comic Manga.ico" height="45" width="45"></a>
+        <h1 style="color: white;">Online Comics X Manga Store</h1>
+        <nav class="navbar">
+            <a href="news.html">news</a>
+            <a href="Login.html"><button>Log Out</button></a>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>Comics</h1>
+        <nav class="nav">
+            <a href="After_Login_Home.html">All</a>
+            <a href="After_Login_Comic.html">Comic</a>
+            <a href="After_Login_Manga.html">Manga</a>
+            <a href="After_Login_GraphicsNovel.html">Novels</a>
+        </nav>
+    </div>
+    <div class="Preferences">
+        <h3>LANGUAGE:</h3>
+        <select>
+            <option value="All Languages">All Languages</option>
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Japanese">Japanese</option>
+        </select>
+        <h3> GENRE:</h3>
+        <select id="genre" onchange="redirectToPage()">
+            <option value="adventure">Adventure</option>
+            <option value="allGenres">All Genre</option>
+            <option value="superhero">Superhero</option>
+        </select>
+    </div>
+    <div class="store">
+        <div class="every">
+            <h4>SHARED BY:</h4>
+            <br>
+            <ul style="list-style-type:disc;">
+            <li><a href="maintenance.html">Everyone</a></li>
+            <li><a href="maintenance.html">Publishers</a></li>
+            <li><a href="maintenance.html">Creators</a></li>
+            <li><a href="maintenance.html">Small press</a></li>
+            </ul>
+            <br>
+            <h4>AVAILABILITY:</h4>
+            <br>
+            <ul>
+            <li><a href="After_Login_Home.html">All titles</a></li>
+            <li><a href="maintenance.html">Free</a></li>
+            <li><a href="maintenance.html">Paid</a></li>
+            </ul>
+            <br>
+            <h4>FORMAT/LAYOUT:</h4>
+            <br>
+            <ul>
+                <li><a href="After_Login_Home.html">All titles</a></li>
+                <li><a href="maintenance.html">Traditional/print</a></li>
+                <li><a href="maintenance.html">Vertical scroll</a></li>
+            </ul>
+        </div>
+        <div class="all">
+            <div class="Comic">
+                <img style="border-radius: 15px;" src="../Images/Star-wars.jpg" height="250" width="150">
+                <a href="../pdf/Star_Wars_Darth_Vader_v02_Into_The_Fire_@marvelcomicpdf_Nayaan_rajpalia.pdf">
+                <div class="hidden">
+                    <h3>Preview</h3>
+                    <h4>Star Wars</h4>
+                    <p>Comics &#8226;<b>Adventure</b></p>
+                    <p>2 Releases</p>
+                </div>
+            </a>
+                <div class="Subline">
+                    <p>By George Lucas</p>
+                </div>
+            </div>
+            <div class="Comic">
+                <img style="border-radius: 15px;" src="../Images/Godzillapng.png" height="250" width="150">
+                <a href="../pdf/Godzilla_Monsters_Protectors.pdf">
+                <div class="hidden">
+                    <h3>Preview</h3>
+                    <h4>Godzilla Monsters & Protectors</h4>
+                    <p>Comic &#8226;<b>Adventure</b></p>
+                    <p>4 Releases</p>
+                </div>
+            </a>
+                <div class="Subline">
+                    <p>By Erik Burnham</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="Action">
+        <h4>CATEGORY:</h4>
+        <br>
+        <input type="checkbox" id="actionCheckbox" value="Adventure"><a href="After_Login_Comic_Adventure.html" onclick="toggleCheckbox('actionCheckbox')">Adventure</a><br>
+        <input type="checkbox" id="actionCheckbox" value="Sci-Fi"><a href="After_Login_Comic_Superhero.html" onclick="toggleCheckbox('actionCheckbox')">Superhero</a><br>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+    <p>&copy; 2023 Comics X Manga World. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function redirectToPage() {
+            var selectedGenre = document.getElementById("genre").value;
+    
+            // Define the pages corresponding to each genre
+            var pages = {
+                "allGenres": "After_Login_Comic.html",
+                "adventure": "After_Login_Comic_Adventure.html",
+                "superhero": "After_Login_Comic_Superhero.html"
+            };
+    
+            // Redirect to the selected genre's page
+            window.location.href = pages[selectedGenre];
+        }
+        function toggleCheckbox(checkboxId) {
+            var checkbox = document.getElementById(checkboxId);
+            checkbox.checked = !checkbox.checked;
+        }
+    </script>
+</body>
+</html>
