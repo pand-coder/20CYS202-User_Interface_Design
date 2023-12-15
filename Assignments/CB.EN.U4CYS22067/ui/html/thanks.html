@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You for Your Interest</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; 
+      margin: 0; 
+      font-family: 'Arial', sans-serif;
+      background: url('../img/bgj.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    h1 {
+      color: #7edaca; 
+      font-size: 48px; 
+      font-weight: bold; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    }
+
+    p {
+      color: #acede2; 
+      font-size: 24px;
+	  font-style: italic; 
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Thank you for showing interest in P.A.W.S!</h1>
+
+  <p>One of our volunteers will reach out to you with the next steps.</p>
+  <a href="../index.html" class="button">Back to Home</a>
+  <script>
+    document.querySelector('.button').addEventListener('click', function(event) {
+      event.preventDefault();
+      window.location.href = '../index.html';
+    });
+  </script>
+
+</body>
+</html>
+

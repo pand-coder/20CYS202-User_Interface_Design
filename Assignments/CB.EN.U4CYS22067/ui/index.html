@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADOPTION CENTER</title>
+    <style>
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;                                                                 
+            text-align: center;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #25b4e4;
+        }
+        
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    .main-page {
+    font-family: Arial, sans-serif;
+    background-position: center;
+}
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            background-color: #90a9b8;
+            color: rgb(12, 12, 12);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .hero-section {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .hero-heading {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        .hero-subheading {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .property-listings {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .property-card {
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s forwards;
+            transition: opacity 0.3s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .property-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .property-card h2 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .property-card p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .contact-button {
+            background-color: #25b4e4;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color:blue;
+        }
+
+        .footer {
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
+            padding: 5px 0;
+        }
+        .main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.final {
+  width: 100%;
+  height: auto;
+}
+
+.img, .rectangle-2, .rectangle-3, .rectangle-4 {
+  position: relative;
+  width: 55px;
+  height: 52px;
+  object-fit: cover;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <div style="background-image: url('img/bgi.jpg'); background-size: cover;">
+
+
+
+
+    <div class="navbar">
+      <div class="hero-section">
+        <div class="container">
+            <div class="hero-heading"><b>P.A.W.S - PET & ANIMAL WELFARE SOCIETY</b></div>
+            <div class="hero-subheading"><b>Welcome to Our Pet Adoption Website<br />Find your new best friend today!</b></div>
+        </div>
+    </div>
+   
+        
+        </div>
+        
+    
+        <div class="container" style="display: flex; justify-content: space-between;">
+          <div class="property-card">
+              <h2>Explore our diverse options and make a difference in the life of a shelter pet today</h2>
+              <p>Find the perfect companion and experience the joy of giving a second chance at happiness.Every life saved is a story of resilience, and witnessing their transformation from fear to trust, from skittishness to playful exuberance, brings a joy unlike any other.</p>
+              <div class="footer">
+                <br>
+                  <button class="contact-button">OPTIONS</button>
+                  <br>
+               </div>
+          </div>
+          <div class="property-card">
+              <h2>Make a meaningful difference by donating today. </h2>
+              <p>Your generosity can change lives and support vital causes. Join us in making a positive impact and creating a brighter future for those in need. Every contribution matters, and together we can make a powerful difference.</p>
+              <div class="footer">
+                <br>
+                <br><br><br>
+                  <button class="contact-button">DONATE</button>
+                  <br>
+                  </div>
+          </div>
+          <div class="property-card">
+              <h2>Discover more about our mission and how you can get involved. </h2>
+              <p>Learn how your support can make a real difference and find out how you can play a part in changing lives. Together, we can create a better world for those in need. Get informed, get inspired, and join us in making a meaningful impact.</p>
+              <div class="footer">
+                <br><br><br><br>
+                  <button class="contact-button">MORE INFO</button>
+                  <br>
+                  </div>
+          </div>
+      </div>
+      
+
+<script>
+   document.querySelectorAll('.contact-button').forEach(button => {
+  button.addEventListener('click', function() {
+    if (button.textContent === 'OPTIONS') {
+      window.location.href = 'html/options.html';
+    } else if (button.textContent === 'MORE INFO') {
+      window.location.href = 'html/info.html';
+    } else if (button.textContent === 'DONATE') {
+      window.location.href = 'html/donation.html';
+    }
+  });
+});
+</script>
+
+<center>
+    <span style="color: white; font-size: 35px;">Contact Us</span>
+	<p>Terms & Conditions Apply</p>
+<br>
+        <a href="https://www.instagram.com"><img class="img" src="img/instagram.png" /></a> 
+        <a href="https://www.linkedin.com"><img class="rectangle-2" src="img/linkedin.png" /></a> 
+        <a href="https://twitter.com/i/flow/login"><img class="rectangle-3" src="img/x.png" /></a> 
+        <a href="https://wa.me"> <img class="rectangle-4" src="img/whatsapp.png"/></a> 
+      </center>
+      </div>
+    </div>
+</div>
+  </body>
+</html>

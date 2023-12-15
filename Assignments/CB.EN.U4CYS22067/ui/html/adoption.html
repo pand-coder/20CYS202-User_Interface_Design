@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="screen">
+      <div class="screen__content">
+        <form class="details" id="detailsForm">
+          <div class="details__field">
+            <i class="login__icon fas fa-user"></i>
+            <input type="text" class="details__input" placeholder="Full Name" id="fullName" required>
+          </div>
+          <div class="details__field">
+            <i class="login__icon fas fa-user"></i>
+            <input type="text" class="details__input" placeholder="Phone Number" id="phoneNumber" required>
+          </div>
+          <div class="details__field">
+            <i class="login__icon fas fa-user"></i>
+            <input type="email" class="details__input" placeholder="Email" id="email" required>
+          </div>
+          <button type="button" class="button details__submit" onclick="submitForm()">
+            <span class="button__text">Submit Details</span>
+            <i class="button__icon fas fa-chevron-right"></i>
+            </button>
+        </form>
+
+        <div class="container2">
+          <p>
+            <h2>Adoption Form Instructions:</h2>
+            <br>
+            Thank you for considering adoption! Your decision to provide a loving home to a deserving companion is truly commendable. To ensure a successful adoption process, please carefully follow the instructions below when completing the adoption form.
+            <br>
+            1.) Full Name:
+            <br>
+            Please enter your full legal name in the designated field.
+            <br>
+            <b>2.) Contact Information:</b>
+            <br>
+            a. Phone Number:
+            <br>
+            Include a valid and reachable phone number where we can contact you if needed.
+            <br>
+            b. Email Address:
+            <br>
+            Supply a valid and regularly monitored email address. This is essential for sending you confirmation and updates on your adoption status.
+            <br>
+            <b>3.) Proof of Identity:</b>
+            <br>
+            As part of our commitment to transparency and security, we require a valid document serving as proof of identity and containing your current address.
+            <br>
+            If you encounter any issues or have questions during the donation process, our support team is available to assist you <a href="html/info.html">@contact</a>.
+            <br>
+            Thank you for your generosity and commitment to making a positive impact.
+          </p>
+        </div>
+      </div>
+
+      <div class="screen__background">
+        <span class="screen__background__shape screen__background__shape4"></span>
+        <span class="screen__background__shape screen__background__shape3"></span>
+        <span class="screen__background__shape screen__background__shape2"></span>
+        <span class="screen__background__shape screen__background__shape1"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
+
