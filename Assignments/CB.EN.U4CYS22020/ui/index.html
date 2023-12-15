@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <title>Travel Photo Album</title>
+</head>
+
+<body>
+
+    <div class="container" id="columns">
+
+        <header>
+            <div class="navbar">
+                <a href="index.html" class="navtext" id="home" style="color:rgb(185, 65, 105);">
+                    <img src="./images/favicon.png" id="logocamera" alt="logo camera"><span> Home</span> </a>
+                <a href="./html/argentina.html" class="navtext">Argentina</a>
+                <a href="./html/australia.html" class="navtext">Australia</a>
+                <a href="./html/china.html" class="navtext">China</a>
+                <a href="./html/india.html" class="navtext">India</a>
+                <a href="./html/switzerland.html" class="navtext">Switzerland</a>
+                <a href="./html/about_us.html" class="navtext">About <span>Us</span></a>
+            </div>
+        </header>
+
+        <div id="slideshow-container">
+            
+            <div class="slide">
+            <a href="./html/india.html">
+              <img src="./images/India/ind1.jpg" alt="Slide Image 1" ></a>
+            </div>
+          
+            <div class="slide">
+            <a href="./html/argentina.html">
+              <img src="./images/argentina/arg2.jpg" alt="Slide Image 2" ></a>
+            </div>
+            <div class="slide">
+                <a href="./html/australia.html">
+                  <img src="./images/australia/1.jpg" alt="Slide Image 3" ></a>
+            </div>
+            <div class="slide">
+                <a href="./html/china.html">
+                  <img src="./images/china/4.jpg" alt="Slide Image 4" ></a>
+            </div>
+            <div class="slide">
+                <a href="./html/switzerland.html">
+                  <img src="./images/switzerland/5.jpg" alt="Slide Image 5" ></a>
+            </div>
+
+            <button class="prev" onclick="plusSlides(-1)">❮</button>
+            <button class="next" onclick="plusSlides(1)">❯</button>
+          </div>
+          
+        <div class="full">
+            <div id="overtext">
+                <h1>Travel Photography<img id="flag" src="./images/world/world.jpg" alt="world"></h1>
+                <div id="textfull">
+                    <p class="p1" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Embark on a captivating journey through Argentina's tango-filled streets and Patagonian wilderness, explore China's ancient wonders and modern marvels, witness India's vibrant colors from Delhi to Varanasi, experience Switzerland's majestic Alps, and delve into Australia's sun-kissed landscapes. Join us on a visual odyssey, capturing the essence of diverse nations and our shared humanity.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <span class="footer_text">Travel Photo Album</span>
+            <span class="footer_text">- by </span>
+            <span class="footer_text">Deepak Kumar & Agil Prasanna</a> </span>
+            <span class="footer_text">-</span>
+            <span class="footer_text">2023</span>
+        
+        </div>
+
+    </div>
+    <script src="./script/slide.js"></script>
+</body>
+</html>
