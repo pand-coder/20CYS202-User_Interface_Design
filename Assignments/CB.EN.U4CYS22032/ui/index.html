@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script>
+  window.onload = function() {
+
+    var firstName = prompt("Please enter your first name:");
+    var lastName = prompt("Please enter your last name:");
+    var email = prompt("Please enter your email:");
+    var phonenumber = prompt("Please enter your phone number:");
+    var address = prompt("Please enter your address:");
+
+    if (firstName && lastName && email && phonenumber && address) {
+      document.getElementById("first-name").value = firstName;
+      document.getElementById("last-name").value = lastName;
+      document.getElementById("email").value = email;
+      document.getElementById("phonenumber").value = phonenumber;
+      document.getElementById("address").value = address;
+      document.getElementById("content").style.display = "block";
+    } 
+    else {
+      alert("Please fill in all the required information.");
+      window.location.href = "error.html";
+    }
+  };
+
+  function displayAlert() {
+    alert("Thank you for your interest! We will contact you to schedule a service visit.");
+  }
+</script>
+
+
+
+
+
+
+  <title>KS interior's</title>
+</head>
+<body>
+
+  <div id="content" style="display: none;">
+
+    <input type="hidden" id="first-name" name="first-name">
+    <input type="hidden" id="last-name" name="last-name">
+    <input type="hidden" id="email" name="email">
+    <input type="hidden" id="phonenumber" name="phonenumber">
+    <input type="hidden" id="address" name="address">
+  </div>
+
+
+<header class="header fixed-top">
+
+<a href="#" class="logo"><img src="../images/LOGO.jpeg" alt=""></a>
+
+<nav>
+  <ul>
+    <b><li><a href="#home">home</a></li></b>
+    <b><li><a href="#about">about</a></li></b>
+    <b><li><a href="#service">services</a></li></b>
+    <b><li><a href="#project">projects</a></li></b>
+    <b><li><a href="#contact">Approach us</a></li></b>
+  </ul>
+</nav>
+
+
+</header>
+
+
+
+<section id="home" class="home container-fluid p-0">
+
+<div class="row hero">
+  <div class="col pl-3 ml-sm-5 p-0">
+    <h1 class="text1">Interior Design's</h1>
+    <h3 class="text2">Architechture services</h3>
+  </div>
+</div>
+
+<div class="counting">
+
+<div class="box">
+  <h1 class="count" data-count="10">10+</h1>
+  <h3>awards</h3>
+</div>
+
+<div class="box">
+  <h1 class="count" data-count="1000">1000+</h1>
+  <h3>clients</h3>
+</div>
+
+<div class="box">
+  <h1 class="count" data-count="15">15+</h1>
+  <h3>Branches</h3>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="about" class="about container">
+
+<h1 class="heading">about us</h1>
+
+<div class="row align-items-center">
+
+  <div class="col-md-6 image">
+    <img src="../images/about.jpg" width="90%" alt="">
+  </div>
+
+  <div class="col-md-6 info">
+    <h2>the best Interior Design in the city</h2>
+    <p>Elevating Spaces with Timeless Elegance
+
+At KS Interior, we take great pride in transforming ordinary spaces into extraordinary works of art. As a premier interior design company, our team of dedicated professionals possesses a passion for creating captivating environments that leave a lasting impression.
+
+With a keen eye for detail and a commitment to excellence, we bring your interior dreams to life. Our designs seamlessly blend functionality, style, and innovation, ensuring that every space we touch becomes a true reflection of your unique personality and vision.</p>
+    <p>Client satisfaction is our utmost priority. We strive to exceed expectations by delivering exceptional results within the agreed-upon timelines and budget. Our transparent and collaborative approach ensures open communication throughout the entire process, making every step a seamless and enjoyable experience,Choose KS Interior to embark on a transformative journey where your dreams become reality. Experience the joy of spaces that not only inspire but also leave an indelible mark of elegance and sophistication. With us, your interior aspirations will soar to new heights, leaving you with a sense of pride in your beautifully designed surroundings.</p>
+    <div class="icons">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+
+
+<section id="service" class="service">
+
+<h1 class="heading">our services</h1>
+<center><h2>If service required kindly press on them</h2></center>
+
+<div class="box-container mx-auto">
+
+  <div class="box" onclick="displayAlert()">
+    <div class="fas fa-palette"></div>
+    <h3>Paint works</h3>
+  </div>
+
+  <div class="box" onclick="displayAlert()">
+    <div class="fas fa-tools"></div>
+    <h3>Carpenter works</h3>
+  </div>
+
+  <div class="box" onclick="displayAlert()">
+    <div class="fas fa-house-user"></div>
+    <h3>pest control</h3>
+  </div>
+
+  <div class="box" onclick="displayAlert()">
+    <div class="fas fa-couch"></div>
+    <h3>Furniture works</h3>
+  </div>
+
+  <div class="box" onclick="displayAlert()">
+    <div class="fas fa-bath"></div>
+   <h3>Water works</h3>
+  </div>
+
+</div>
+
+</section>
+
+
+
+<section id="project" class="project">
+
+  <div class="heading">our projects</div>
+  
+  <div class="box-container mx-auto">
+
+  <div class="box">
+    <img src="../images/pr_img-1.jpg" alt="">
+    <div class="info">
+        <h2>Living room Designs</h2>
+        <button class="btn" onclick="window.open('../html/lr_designs.html')">
+   Get your's
+ </button>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="../images/pr_img-2.jpg" alt="">
+    <div class="info">
+        <h2>Balcony Designs</h2>
+        <button class="btn" onclick="window.open('../html/bl_designs.html')">Get Your's</button>
+    </div>
+  </div>
+  
+  <div class="box">
+      <img src="../images/pr_img-3.jpg" alt="">
+      <div class="info">
+        <h2>Pool Designs</h2>
+        <button class="btn" onclick="window.open('../html/pl_designs.html')">Get Your's</button>
+    </div>
+  </div>
+  
+  <div class="box">
+      <img src="../images/pr_img-4.jpg" alt="">
+      <div class="info">
+        <h2>Kitchen Designs</h2>
+        <button class="btn" onclick="window.open('../html/kt_designs.html')">Get Your's</button>
+    </div>
+  </div>
+  
+  <div class="box">
+      <img src="../images/pr_img-5.jpg" alt="">
+      <div class="info">
+        <h2>Bath Designs</h2>
+        <button class="btn" onclick="window.open('../html/bt_designs.html')">Get Your's</button>
+    </div>
+  </div>
+  
+  <div class="box">
+      <img src="../images/pr_img-6.jpg" alt="">
+      <div class="info">
+        <h2>Backyard Designs</h2>
+        <button class="btn" onclick="window.open('../html/by_designs.html')">Get Your's</button>
+    </div>
+  </div>
+  
+  </div>
+  
+  </section>
+
+
+<section id="contact" class="contact">
+
+<h1 class="heading">Approach us</h1>
+
+<div class="contact-box-container mx-auto">
+
+<div class="contact-box">
+  <i class="fas fa-map-marker-alt"></i>
+  <h3>Coimbatore, india - 400104</h3>
+</div>
+
+<div class="contact-box">
+  <i class="fas fa-envelope"></i>
+  <h3>interiors.ks@gmail.com</h3>
+</div>
+
+<div class="contact-box">
+  <i class="fas fa-phone"></i>
+  <h3>+919456734534</h3>
+</div>
+
+</div>
+
+<div class="form-container mx-auto">
+
+<form action="">
+
+  <div class="inputBox">
+    <input type="text" placeholder="first name">
+    <input type="text" placeholder="last name">
+  </div>
+  <input type="email" placeholder="e-mail">
+  <textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
+  <input type="submit" value="send">
+
+</form>
+
+</div>
+
+
+</section>
+
+
+
+<section class="container-fluid footer">
+
+<div class="row">
+
+<div class="col-md-3">
+  <h2><img src="../images/LOGO.jpeg" alt=""></h2>
+  <p align="center">Whether it's a luxurious residence, a vibrant commercial space, or a cozy boutique hotel, KS Interior has the expertise and creativity to breathe life into your vision. We have earned a stellar reputation for our exceptional work and unwavering commitment to excellence.</p>
+</div>
+
+<div class="col-md-3">
+  <h2>our location</h2>
+  <div class="list">
+    <a href="#">coimbatore</a>
+    <a href="#">chennai</a>
+    <a href="#">Nellore</a>
+    <a href="#">Guntur</a>
+    <a href="#">Bangalore</a>
+
+    <a href="#">hyderabad</a>
+    <a href="#">vizag</a>
+    <a href="#">Trivandrum</a>
+  </div>
+</div>
+
+<div class="col-md-3">
+  <h2>follow us</h2>
+  <div class="list">
+    <a href="#">facebook</a>
+    <a href="#">twitter</a>
+    <a href="#">instagram</a>
+    <a href="#">pinterest</a>
+  </div>
+</div>
+
+<div class="col-md-3 text-center text-md-left letter">
+  <h2>Membership</h2>
+  <p>join for latest updates</p>
+  <input type="email" placeholder="enter your email">
+  <input type="submit" placeholder="subscribe">
+</div>
+
+</div>
+
+<h1 class="credit"><span>KS designer's</span> | all rights reserved. </h1>
+
+</section>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="../javascript/main.js"></script>
+
+
+
+</body>
+</html>
