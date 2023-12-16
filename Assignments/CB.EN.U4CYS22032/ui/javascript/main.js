@@ -5,10 +5,31 @@ $(document).ready(function(){
     $('nav').toggleClass('nav-toggle');
   });
 
-  $(window).on('scroll load',function(){
-    $('.fa-bars').removeClass('fa-times');
-    $('nav').removeClass('nav-toggle');
+  document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+  
+    var outputMessage = "Thank you for submitting the form! We will contact you soon.";
+  
+    alert(outputMessage);
+  
+    document.getElementById('firstName').value = '';
+    document.getElementById('lastName').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
   });
+  
+  document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+  
+    
+    var email = document.getElementById('emailInput').value;
+  
+    alert("Thank you for subscribing!");
+  
+ 
+    document.getElementById('emailInput').value = '';
+  });
+  
 
   $('.count').each(function() {
     var $this = $(this),
