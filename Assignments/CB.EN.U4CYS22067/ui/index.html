@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ADOPTION CENTER</title>
+    <title>P.A.W.S</title>
     <style>
         .navbar {
             background-color: #333;
@@ -51,7 +51,7 @@
             background-color: rgba(0, 0, 0, 0.5);
             color: white;
             text-align: center;
-            padding: 50px 0;
+            padding: 20px 0;
         }
 
         .hero-heading {
@@ -62,7 +62,7 @@
 
         .hero-subheading {
             font-size: 1.5em;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-family: 'Courier New', Courier, monospace;
         }
 
@@ -147,12 +147,17 @@
 
 .img, .rectangle-2, .rectangle-3, .rectangle-4 {
   position: relative;
-  width: 55px;
-  height: 52px;
+  width: 35px;
+  height: 35px;
   object-fit: cover;
-  margin-top: 20px; /* Adjust the margin as needed */
+  margin-top: 20px; 
 }
-
+.footer2 {
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
+            padding: 10px 0;
+        }
 
     </style>
 </head>
@@ -182,12 +187,12 @@
               <p>Find the perfect companion and experience the joy of giving a second chance at happiness.Every life saved is a story of resilience, and witnessing their transformation from fear to trust, from skittishness to playful exuberance, brings a joy unlike any other.</p>
               <div class="footer">
                 <br>
-                  <button class="contact-button">OPTIONS</button>
+                  <button class="contact-button">ADOPT</button>
                   <br>
                </div>
           </div>
           <div class="property-card">
-              <h2>Make a meaningful difference by donating today. </h2>
+              <h2>Make a meaningful difference by donating today </h2>
               <p>Your generosity can change lives and support vital causes. Join us in making a positive impact and creating a brighter future for those in need. Every contribution matters, and together we can make a powerful difference.</p>
               <div class="footer">
                 <br>
@@ -197,7 +202,7 @@
                   </div>
           </div>
           <div class="property-card">
-              <h2>Discover more about our mission and how you can get involved. </h2>
+              <h2>Discover more about our mission and how you can get involved </h2>
               <p>Learn how your support can make a real difference and find out how you can play a part in changing lives. Together, we can create a better world for those in need. Get informed, get inspired, and join us in making a meaningful impact.</p>
               <div class="footer">
                 <br><br><br><br>
@@ -211,7 +216,7 @@
 <script>
    document.querySelectorAll('.contact-button').forEach(button => {
   button.addEventListener('click', function() {
-    if (button.textContent === 'OPTIONS') {
+    if (button.textContent === 'ADOPT') {
       window.location.href = 'html/options.html';
     } else if (button.textContent === 'MORE INFO') {
       window.location.href = 'html/info.html';
@@ -223,16 +228,34 @@
 </script>
 
 <center>
-    <span style="color: white; font-size: 35px;">Contact Us</span>
-	<p>Terms & Conditions Apply</p>
+    <span style="color: white; font-size: 20px;">Contact Us</span>
+	
 <br>
         <a href="https://www.instagram.com"><img class="img" src="img/instagram.png" /></a> 
         <a href="https://www.linkedin.com"><img class="rectangle-2" src="img/linkedin.png" /></a> 
         <a href="https://twitter.com/i/flow/login"><img class="rectangle-3" src="img/x.png" /></a> 
         <a href="https://wa.me"> <img class="rectangle-4" src="img/whatsapp.png"/></a> 
-      </center>
+        <br>
+        <br>
+        <br>
+        </center>
       </div>
+     
     </div>
 </div>
+
+
+    <div class="footer2">
+        <b> Copyright &copy; 2023-2024
+         <br>
+         P.A.W.S - Meera & Amita
+         <br>
+         II B.Tech CSE(CYS)
+         <br>
+         Part of 20CYS202 - User Interface Design
+         <br>
+         Amrita Vishwa Vidyapeetham, Coimbatore
+        </b>
+    </div>
   </body>
 </html>
