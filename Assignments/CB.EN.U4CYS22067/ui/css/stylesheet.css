@@ -12,6 +12,11 @@ body {
   overflow: hidden;
 }
 
+.test {
+	color: #2c6448;
+	
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -24,10 +29,10 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
-  max-width: 600px;
+  max-width: 700px;
   position: fixed;
   top: 110px; 
-  right: 150px; 
+  right: 260px; 
   color: #2c6448;
 }
 
@@ -43,7 +48,7 @@ body {
   z-index: 1;
   position: relative;
   height: 100%;
-  left: 0; /* Adjusted left value */
+  left: 0; 
 }
 
 .screen__background {
@@ -67,8 +72,8 @@ body {
   height: 520px;
   width: 520px;
   background: #FFF;
-  top: 30px;
-  left: -40px;
+  top: 60px;
+  left: -105px;
   border-radius: 0 72px 0 0;
 }
 
@@ -161,9 +166,16 @@ body {
 
 .button__icon {
   font-size: 24px;
-  margin-left: auto;
+  text-align: center
   color: #75b5a5;
 }
+
+.footer2 {
+            background-color:#d1d4d3;
+            color: #fffff;
+            text-align: center;
+            padding: 10px 0;
+        }
 
 /* Media query for desktop view */
 @media screen and (min-width: 768px) {
