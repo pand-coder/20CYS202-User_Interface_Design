@@ -64,6 +64,8 @@ songs.addNode(12, "Putt Jatt Da");
 songs.addNode(13, "Baarishein");
 songs.addNode(14, "Vaaste");
 songs.addNode(15, "Dugga Elo");
+songs.addNode(16, "Samajavaragamana");
+songs.addNode(17, "Rakkamma Kayyi");
 
 // add other songs to the linked list
 
