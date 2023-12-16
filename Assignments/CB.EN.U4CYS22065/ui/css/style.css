@@ -708,3 +708,13 @@ header .song_side .all_song .al_song li h5 #artist {
 #repeat.active {
   color: #36e2ec;
 }
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(52, 47, 47);
+  color: white;
+  text-align: center;
+}
+
