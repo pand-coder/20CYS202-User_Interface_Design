@@ -13,9 +13,10 @@
 		<h1>HEALTH HUB</h1>
 		<nav>
             <a href="about.html" target="_blank">About</a>
-            
             <span>&nbsp;</span>
-            <a href="https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design">Contact</a> 
+            <a href="https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design">Contact</a>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span> 
         </nav>
     </header><br><br><br><br>
     <div class="frame1">
@@ -34,11 +35,12 @@
                         <td>: <input type="password" id="password" required ></td>
                     </tr>
                     <tr>
+                        <td><a href="signup.html" target="_blank">Sign up</a></td>
                         <td>
                             <!-- Attach the validateLogin function to the button click event -->
                             <button type="button" onclick="validateLogin()" target="_blank">Login</button>
                         </td>
-                        <td><a href="signup.html" target="_blank">Sign up</a></td>
+                        
                     </tr>
                     <tr>
                         <td><a href="forgot_password.html" target="_blank" style="color:#FDCD55">Forgot my password</a></td>
@@ -46,15 +48,20 @@
                 </table>
             </form>
         </div>
-    </div>
-
+    </div><br>
+    <footer>
+        <p>&copy; Copyright - 2023 </p>
+        <p>Health Hub - Parthiv Kumar & Lalitha</p>
+        <p>Amrita Vishwa Vidyapeetham, Coimbatore</p>
+        
+    </footer>
     <script>
         function validateLogin() {
             var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
 
             if (username === "admin" && password === "admin") {
-                window.location.href = "index.html";
+                window.location.href = "../index.html";
             }
             else if (username === "" && password === "") {
                 alert("the fieldes should not be empty");
