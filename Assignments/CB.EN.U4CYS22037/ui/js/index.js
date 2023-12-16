@@ -7,13 +7,16 @@ function updateStepsPerformance() {
   
     let performanceLevel = '';
     let performanceColor = ''; // New variable to store performance color
-  
-    if (enteredSteps >= 12000) {
+    
+    if (enteredSteps >= 25000) {
+        performanceLevel = 'Outstanding';
+        performanceColor = 'green';
+    } else if (enteredSteps > 12000) {
         performanceLevel = 'Excellent';
-        performanceColor = '#4ee44e';
+        performanceColor = 'orange';
     } else if (enteredSteps >= 7000) {
         performanceLevel = 'Good';
-        performanceColor = 'orange';
+        performanceColor = 'rgb(226, 199, 140)';
     } else if (enteredSteps >= 3000) {
         performanceLevel = 'Need Improvement';
         performanceColor = 'yellow';
@@ -47,38 +50,41 @@ function updateStepsPerformance() {
               heartCondition = 'Age < 18 - Consult doctor';
           } else if (age >= 18 && age <= 30) {
               if (heartRate >= 60 && heartRate <= 100) {
-                  heartCondition = 'Your Herat is normal in condition';
+                  heartCondition = 'Your Heart is normal in condition';
               } else {
-                  heartCondition = 'Your Herat is Abnormal in condition';
+                  heartCondition = 'Your Heart is Abnormal in condition';
               }
           } else if (age > 30 && age <= 50) {
               if (heartRate >= 50 && heartRate <= 90) {
-                  heartCondition = 'Your Herat is normal in condition';
+                  heartCondition = 'Your Heart is normal in condition';
               } else {
-                  heartCondition = 'Your Herat is Abnormal in condition';
+                  heartCondition = 'Your Heart is Abnormal in condition';
               }
           } else if (age > 50 && age <= 65) {
               if (heartRate >= 45 && heartRate <= 85) {
-                  heartCondition = 'Your Herat is normal in condition';
+                  heartCondition = 'Your Heart is normal in condition';
               } else {
-                  heartCondition = 'Your Herat is Abnormal in condition';
+                  heartCondition = 'Your Heart is Abnormal in condition';
               }
           } else if (age > 65) {
               if (heartRate >= 40 && heartRate <= 80) {
-                  heartCondition = 'Your Herat is normal in condition';
+                  heartCondition = 'Your Heart is normal in condition';
               } else {
-                  heartCondition = 'Your Herat is Abnormal in condition';
+                  heartCondition = 'Your Heart is Abnormal in condition';
               }
           } else {
-              heartCondition = 'Your Herat is Abnormal in condition';
+              heartCondition = 'Your Heart is Abnormal in condition';
           }
   
           // Check for 'Abnormal' heart condition and set the output to red
-          if (heartCondition === 'Your Herat is Abnormal in condition' || heartCondition === 'Age < 18 - Consult doctor') {
+          if (heartCondition === 'Age < 18 - Consult doctor') {
               heartCondition = '<span style="color: red;">' + heartCondition + '</span>';
           }
-          if (heartCondition === 'Your Herat is normal in condition') {
+          if (heartCondition === 'Your Heart is normal in condition') {
             heartCondition = '<span style="color: #00ff08;">' + heartCondition + '</span>';
+        }
+        if (heartCondition === 'Your Heart is Abnormal in condition') {
+            heartCondition = '<span style="color: red;">' + heartCondition + '</span>';
         }
   
       } else {
