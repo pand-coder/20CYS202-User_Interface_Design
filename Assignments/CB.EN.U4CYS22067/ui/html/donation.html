@@ -3,45 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Donation</title>
   <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
-  <script>
-    function validateForm() {
-      var fullName = document.getElementById("fullName").value;
-      var phoneNumber = document.getElementById("phoneNumber").value;
-      var amount = document.getElementById("amount").value;
-
-      if (fullName === "" || phoneNumber === "" || amount === "") {
-        alert("All fields are required");
-        return false;
-      }
-
-      if (isNaN(phoneNumber) || phoneNumber.length !== 10) {
-        alert("Invalid phone number. Please enter a 10-digit number.");
-        return false;
-      }
-
-      if (parseInt(amount) <= 0) {
-        alert("Invalid amount. Please donate a positive amount.");
-        return false;
-      }
-function redirectToThanks() {
-    window.location.href = "html/thanks.html";
-}
-
-function submitForm() {
-if (validateForm()) {
-  redirectToThanks();
-}
-    }
-	
-  </script>
+  <script src="../js/scriptd.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="screen">
       <div class="screen__content">
-        <form class="details" action="thanks.html" method="get" onsubmit="return validateForm()">
+	     <form class="details" action="thanks.html" method="get" onsubmit="return validateForm()">
+		 <div class="test"> <h1>Donation Form</h1> <br><br></div>
           <div class="details__field">
             <i class="login__icon fas fa-user"></i>
             <input type="text" class="details__input" placeholder="Full Name" id="fullName" required>
@@ -55,14 +26,15 @@ if (validateForm()) {
             <input type="number" class="details__input" min="0" placeholder="Amount in Rupees" id="amount" required>
           </div>
            <button type="button" class="button details__submit" onclick="submitForm()">
-            <span class="button__text">Submit Details</span>
+            <span class="button__text" style="display: flex; justify-content: center; padding: 2px 2px;">Submit Details</span>
+
             <i class="button__icon fas fa-chevron-right"></i>
             </button>
         
 
         </form>
         <div class="container2">
-          <p><h2>Donation Form Instructions:</h2><br>
+          <p><h2>Instructions:</h2><br>
             Thank you for choosing to make a donation! To ensure a smooth and accurate processing of your contribution, please carefully follow the instructions below when filling out the donation form.
             <br><b>
             1.) Full Name:</b>
@@ -83,7 +55,7 @@ if (validateForm()) {
             <br>
             As part of our commitment to transparency and security, we require a valid document serving as proof of identity and containing your current address. 
             <br>
-            If you encounter any issues or have questions during the donation process, our support team is available to assist you <a href="html/info.html">@contact</a>.
+            If you encounter any issues or have questions during the donation process, our support team is available to assist you <a href="info.html">@contact</a>.
             <br>
             Thank you for your generosity and commitment to making a positive impact. 
             </p>
@@ -99,5 +71,6 @@ if (validateForm()) {
 
     </div>
   </div>
+   
 </body>
 </html>
