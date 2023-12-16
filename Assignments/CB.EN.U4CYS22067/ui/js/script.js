@@ -16,7 +16,7 @@ function validateForm() {
     return true;
   }
 function redirectToThanks() {
-    window.location.href = "../html/thanks.html";
+    window.location.href = "thanks.html";
 }
 
 function submitForm() {
