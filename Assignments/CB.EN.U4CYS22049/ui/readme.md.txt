@@ -1,0 +1,1 @@
+All pages require internet connection for viewing  whatsapp widgets.

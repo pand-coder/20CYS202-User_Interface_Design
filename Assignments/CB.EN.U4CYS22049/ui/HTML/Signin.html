@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VEC_Signin</title>
+  <link rel="stylesheet" href="../CSS/Signin.css">
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <style>
+    body {
+      margin: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      transition: background-image 1s ease-in-out; 
+    }
+  </style>
+</head>
+<body>
+  <div class="elfsight-app-dec11a4c-a0ba-491f-8e86-4d9d805a7cd3" data-elfsight-app-lazy></div>
+  <div class="container">
+    <img src="../IMAGES/elderly-senior-care-logo-free-vector.jpg" alt="vijaya Elderly Care">
+    <h1 id="fh">Vijaya Elderly Care</h1>
+    
+    <form action="#" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter Username">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter Password">
+
+      <a href="Forgotpswd.html">Forgot password?</a>
+      <br>
+      <button type="submit">Login</button>
+    </form>
+    <p class="home-link"><a href="../index.html">Home Page</a></p>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Array of online image URLs
+      var imagePaths = [
+  '../IMAGES/1530018548137.jpeg',
+  '../IMAGES/DSC_0068.webp',
+  '../IMAGES/medical-checkup.webp',
+  '../IMAGES/DSC00649-1-scaled.jpg',
+  '../IMAGES/Mann-ka-Tilak-9.webp'
+];
+
+
+      var currentIndex = 0;
+
+      function changeBackground() {
+        document.body.style.backgroundImage = 'url("' + imagePaths[currentIndex] + '")';
+        currentIndex = (currentIndex + 1) % imagePaths.length;
+      }
+
+      // Change background every 5 seconds (5000 milliseconds)
+      setInterval(changeBackground, 2000);
+    });
+  </script>
+</body>
+</html>
