@@ -18,10 +18,10 @@
     }
 
     .header_class {
-      background-color: wheat;
+      background-color:#333;
       text-align: center;
       height: 150px;
-      color:#4caf50;
+      color: antiquewhite;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -37,6 +37,7 @@
     top: 50%;
     transform: translateY(-50%);
     left: 1em; 
+    padding-top: 0px;
 }
     
 
@@ -64,7 +65,7 @@
         }
 
         button {
-            background-color: #4caf50;
+            background-color:darksalmon;
             color: white;
             padding: 10px 15px;
             font-size: 16px;
@@ -75,7 +76,7 @@
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color:#333;
         }
 
         #output {
@@ -92,7 +93,7 @@
             margin-top: 20px;
             display: inline-block;
             padding: 10px;
-            background-color: #4caf50;
+            background-color:rosybrown;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -101,7 +102,7 @@
         }
 
         .nav-link:hover {
-            background-color: #45a049;
+            background-color:#333;
         }
 
   </style>
@@ -114,27 +115,26 @@
     <a href="../index.html">
       <img id="logo" src="../images/logo_white-removebg-preview.png" alt="Logo">
     </a>
-    <h1>Welcome to BMI Calculator</h1>
-    <p>Calculate your Body Mass Index (BMI) here.</p>
+    <h1>Escape Fitness</h1>
+    <p>Welcome to BMI Calculator</p>
   </header>
 
     <div class="wrapper">
     
-        <p>Enter your details below:</p>
+        <p style="color: #333;"><b>Calculate your Body Mass Index (BMI) here</b></p>
 
         <p>Height in CM:
-            <input type="number" id="height" placeholder="Enter height"><br><span id="height_error"></span>
+            <input type="number" id="height" placeholder="Enter height in cm"><br><span id="height_error"></span>
         </p>
 
         <p>Weight in KG:
-            <input type="number" id="weight" placeholder="Enter weight"><br><span id="weight_error"></span>
+            <input type="number" id="weight" placeholder="Enter weight in kg"><br><span id="weight_error"></span>
         </p>
 
         <button id="btn" onclick="calculateBMI()">Calculate BMI</button>
         <p id="output"></p>
 
-        <!-- Navigation Links -->
-        <a href="../html/diet.html" class="nav-link">Nutrient-Rich Wellness</a>
+        <a href="../html/diet_1.html" class="nav-link">Nutrient-Rich Wellness</a>
         <a href="../html/workout_3.html" class="nav-link">Active Living Adventures</a>
         <a href="../html/get_3.html" class="nav-link">Inner Self Odyssey</a>
     </div>

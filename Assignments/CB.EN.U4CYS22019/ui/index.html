@@ -5,159 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escape Fitness</title>
-    <link rel="stylesheet" href="../UI/css/style.css">
-    <link rel="icon" href="../UI/images/logo_white-removebg-preview.png">
+    <link rel="stylesheet" href="../ui/css/style.css">
+    <link rel="icon" href="../ui/images/logo_white-removebg-preview.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-        
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            color: #fff;
-            text-align: left;
-            padding: 1em;
-            position: relative;
-            height: 150px;
-        }
-        
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        
-        nav ul li {
-            margin-right: 20px;
-        }
-        
-        .options-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        
-        .option {
-            flex: 1 0 300px;
-            text-align: center;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 20px;
-            transition: transform 0.3s ease;
-        }
-        
-        .option:hover {
-            transform: scale(1.05);
-        }
-        
-        #logo {
-            width: 190px;
-            height: 190px;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 1em;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-left: 100px;
-            margin-left: auto;
-        }
-        
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            font-size: 16px;
-            transition: color 0.3s ease;
-        }
-        
-        nav a:hover {
-            color: #3498db;
-        }
-        
-        section {
-            margin: 20px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        section:hover {
-            transform: scale(1.02);
-        }
-        
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            display: grid;
-            grid-gap: 20px;
-        }
-        
-        input,
-        textarea,
-        button {
-            width: 100%;
-            padding: 12px;
-            box-sizing: border-box;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            background-color: #f9f9f9;
-            transition: border-color 0.3s ease, background-color 0.3s ease;
-        }
-        
-        input:focus,
-        textarea:focus {
-            border-color: #3498db;
-            background-color: #ecf0f1;
-        }
-        
-        button {
-            background-color: #3498db;
-            color: #fff;
-            cursor: pointer;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-        }
-        
-        button:hover {
-            background-color: #2980b9;
-        }
-        
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
+    </head>
 
 <body>
     <header>
         <h1 style="padding-left: 200px; font-size: 30px;">
             ESCAPE FITNESS
         </h1>
-        <img id="logo" src="../UI/images/logo_white-removebg-preview.png" alt="Logo">
+        <img id="logo" src="../ui/images/logo_white-removebg-preview.png" alt="Logo">
 
         <nav>
             <ul>
@@ -173,23 +31,23 @@
     <section id="home">
         <div id="container">
             <div class="options-container">
-                <div class="option" onclick="navigateToPage('../UI/html/index2.html')">
-                    <img src="../UI/images/BMICAL.jpeg" alt="Body Harmony Navigator">
+                <div class="option" onclick="navigateToPage('../ui/html/index2.html')">
+                    <img src="../ui/images/BMICAL.jpeg" alt="Body Harmony Navigator">
                     <p><b>Body Harmony Navigator</b> - Explore Your Health Journey with BMI Calculator</p>
                 </div>
 
-                <div class="option" onclick="navigateToPage('../UI/html/diet.html')">
-                    <img src="../UI/images/Diet.jpeg" alt="Nutrient-Rich Wellness">
+                <div class="option" onclick="navigateToPage('../ui/html/diet_1.html')">
+                    <img src="../ui/images/Diet.jpeg" alt="Nutrient-Rich Wellness">
                     <p><b>Nutrient-Rich Wellness</b> - Discover the Secrets of a Wholesome Diet</p>
                 </div>
 
-                <div class="option" onclick="navigateToPage('../UI/html/workout_3.html')">
-                    <img src="../UI/images/Ex.jpeg" alt="Active Living Adventures">
+                <div class="option" onclick="navigateToPage('../ui/html/workout_3.html')">
+                    <img src="../ui/images/Ex.jpeg" alt="Active Living Adventures">
                     <p><b>Active Living Adventures</b> - Transform Your Lifestyle with Invigorating Exercise</p>
                 </div>
 
-                <div class="option" onclick="navigateToPage('../UI/html/get_3.html')">
-                    <img src="../UI/images/Get.jpeg" alt="Inner Self Odyssey">
+                <div class="option" onclick="navigateToPage('../ui/html/get_3.html')">
+                    <img src="../ui/images/Get.jpeg" alt="Inner Self Odyssey">
                     <p><b>Inner Self Odyssey</b> - Embark on a Journey to Understand and Enhance Yourself</p>
                 </div>
             </div>
@@ -235,7 +93,7 @@
         <p>
             Contact Escape Fitness today for a free consultation and discover how we can help you reach your fitness goals!
         </p>
-        <form id="contactForm">
+        <form id="contactForm" class="content">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -251,10 +109,19 @@
             <button type="submit">Submit</button>
         </form>
     </section>
-
-    <footer>
-        <p>&copy; 2023 Escape Fitness</p>
+&emsp;
+    <footer class="footer">
+       
+        <p>&copy; Copyright-2023 <br>
+        Escape Fitness - Sree Chandan & Hansica<br>
+        II Year Btech CSE(CYS)<br>
+        Part of 20CYS202 - User Interface Design <br>
+       Amrita Vishwa Vidyapeetham, Coimbatore</p>
+   
+        
     </footer>
+
+ 
 
     <script>
         function navigateToPage(page) {

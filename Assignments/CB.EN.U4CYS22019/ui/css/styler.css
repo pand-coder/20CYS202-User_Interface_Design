@@ -11,7 +11,7 @@ section{
     min-height: 100vh;
     width: 100%;
     
-    background: url('../IMAGES/login_bg.jpg')no-repeat;
+    background: url('../images/login_bg.jpg')no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -113,4 +113,21 @@ button{
 }
 .register p a:hover{
     text-decoration: underline;
+}
+header {
+    background-color: #333;
+    position: relative;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    height:80px;
+}
+
+#logo {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1em; 
 }

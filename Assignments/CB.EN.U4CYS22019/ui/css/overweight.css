@@ -5,7 +5,7 @@ body {
 }
 
 .background {
-    background-image: url('../IMAGES/uw_background2.jpg');
+    background-image: url('../images/uw_background2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -18,7 +18,7 @@ body {
 }
 
 .heading-secondary {
-    color: darksalmon;
+    color:darkslategray;
     font-family: serif;
     
 }
@@ -52,25 +52,44 @@ td {
     }
 }
 header {
-    background-color:wheat;
+    background-color: #333;
     position: relative;
     padding: 1em;
     text-align: center;
     position: relative;
-    height: 150px;
-    color:brown;
+    height:80px;
 }
 
 #logo {
-    width: 190px;
-    height: 190px;
+    width: 120px;
+    height: 120px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 1em; 
 }
 .main_header{
-padding-top: 32px;
+    
+    color: antiquewhite;
+    
+    }
+    
 
-}
 
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+    
+        50% {
+            transform: scale(1.05);
+        }
+    
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .pulse {
+        animation: pulse 1s infinite;
+    }

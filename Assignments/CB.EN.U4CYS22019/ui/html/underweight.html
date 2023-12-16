@@ -15,7 +15,7 @@
 </header>
 <body>
     <div class="background">
-        <h2>Here's a list of foods that can be beneficial:</h2>
+        <h2 style="color:darkslategray;">Here's a list of foods that can be beneficial:</h2>
        <center>
             
             <table border="1">
@@ -115,6 +115,26 @@
                             </tr>
                 </table>
             </center>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    // Get all the images in the table
+                    var images = document.querySelectorAll('table img');
+            
+                    // Add event listeners to each image
+                    images.forEach(function (image) {
+                        image.addEventListener('mouseover', function () {
+                            // Apply the zoom effect when hovering over the image
+                            this.style.transform = 'scale(1.1)';
+                            this.style.transition = 'transform 0.3s ease';
+                        });
+            
+                        image.addEventListener('mouseout', function () {
+                            // Remove the zoom effect when not hovering over the image
+                            this.style.transform = 'scale(1)';
+                        });
+                    });
+                });
+            </script>       
         </body>
         
     </html>

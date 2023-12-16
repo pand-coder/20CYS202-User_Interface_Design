@@ -14,7 +14,6 @@
             color: #333;
         }
         
-        
         header {
             background-color: #333;
             position: relative;
@@ -64,6 +63,8 @@
         
         .workout-plan {
             margin-bottom: 30px;
+            cursor: pointer;
+            position: relative;
         }
         
         .workout-plan h2 {
@@ -73,45 +74,19 @@
             cursor: pointer;
         }
         
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .modal-content {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        .close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-        }
-        
         .timer-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             margin-top: 15px;
         }
         
         .timer {
-            font-size: 20px;
-            color: #333;
+            font-size: 18px;
+            color: #e74c3c;
+            border: 2px solid #e74c3c;
+            padding: 8px;
+            border-radius: 5px;
         }
         
         .stop-btn {
@@ -122,17 +97,65 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        .main_header{
+        
+        .main_header {
             color: white;
             padding-top: 32px;
         }
+        
         #logo {
             width: 190px;
             height: 190px;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            left: 1em; 
+            left: 1em;
+        }
+        
+        .enlarged-exercise {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 2;
+        }
+        
+        .enlarged-exercise h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        
+        .enlarged-exercise-content {
+            margin-top: 20px;
+        }
+        
+        .enlarged-timer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+        
+        .enlarged-timer {
+            font-size: 20px;
+            color: #333;
+        }
+        
+        .enlarged-stop-btn {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -141,15 +164,18 @@
 
     <header>
         <h1 class="main_header">Workout Plans</h1>
-        <a href="../index.html"> 
+        <a href="../index.html">
             <img id="logo" src="../images/logo_white-removebg-preview.png" alt="Logo">
         </a>
     </header>
-    
+
     <main>
 
-        <div class="workout-plan" onclick="showModal('Beginner Workout Plan', 'A simple workout plan for beginners to get started on their fitness journey.', 'Warm-up: 5 minutes of light cardio', 'Exercise 1: Push-ups - 3 sets of 10 reps', 'Exercise 2: Bodyweight Squats - 3 sets of 12 reps', 'Exercise 3: Plank - 3 sets of 30 seconds')">
+        <div class="workout-plan" onclick="showEnlargedExercise('Beginner Workout Plan', 'A simple workout plan for beginners to get started on their fitness journey.', 'Warm-up: 5 minutes of light cardio', 'Exercise 1: Push-ups - 3 sets of 10 reps', 'Exercise 2: Bodyweight Squats - 3 sets of 12 reps', 'Exercise 3: Plank - 3 sets of 30 seconds', 300)">
             <h2>Beginner Workout Plan</h2>
+            <div class="timer-container">
+                <div class="timer" id="timer">05:00</div>
+            </div>
             <p>A simple workout plan for beginners to get started on their fitness journey.</p>
             <ul>
                 <li>Warm-up: 5 minutes of light cardio</li>
@@ -157,11 +183,14 @@
                 <li>Exercise 2: Bodyweight Squats - 3 sets of 12 reps</li>
                 <li>Exercise 3: Plank - 3 sets of 30 seconds</li>
             </ul>
-            <button onclick="startWorkout('Beginner Workout Plan')">Start Workout</button>
+            <button onclick="startWorkout('Beginner Workout Plan', 300)">Start Workout</button>
         </div>
 
-        <div class="workout-plan" onclick="showModal('Intermediate Workout Plan', 'Take your fitness to the next level with this intermediate workout plan.', 'Warm-up: 10 minutes of light cardio', 'Exercise 1: Dumbbell Bench Press - 4 sets of 12 reps', 'Exercise 2: Lunges - 4 sets of 15 reps per leg', 'Exercise 3: Plank with Leg Lifts - 4 sets of 30 seconds')">
+        <div class="workout-plan" onclick="showEnlargedExercise('Intermediate Workout Plan', 'Take your fitness to the next level with this intermediate workout plan.', 'Warm-up: 10 minutes of light cardio', 'Exercise 1: Dumbbell Bench Press - 4 sets of 12 reps', 'Exercise 2: Lunges - 4 sets of 15 reps per leg', 'Exercise 3: Plank with Leg Lifts - 4 sets of 30 seconds', 600)">
             <h2>Intermediate Workout Plan</h2>
+            <div class="timer-container">
+                <div class="timer" id="timer">10:00</div>
+            </div>
             <p>Take your fitness to the next level with this intermediate workout plan.</p>
             <ul>
                 <li>Warm-up: 10 minutes of light cardio</li>
@@ -169,11 +198,14 @@
                 <li>Exercise 2: Lunges - 4 sets of 15 reps per leg</li>
                 <li>Exercise 3: Plank with Leg Lifts - 4 sets of 30 seconds</li>
             </ul>
-            <button onclick="startWorkout('Intermediate Workout Plan')">Start Workout</button>
+            <button onclick="startWorkout('Intermediate Workout Plan', 600)">Start Workout</button>
         </div>
 
-        <div class="workout-plan" onclick="showModal('Advanced Workout Plan', 'Challenge yourself with this advanced workout plan designed for experienced fitness enthusiasts.', 'Warm-up: 15 minutes of dynamic stretching', 'Exercise 1: Deadlifts - 5 sets of 5 reps', 'Exercise 2: Pull-ups - 5 sets to failure', 'Exercise 3: Plank to Pike - 5 sets of 20 seconds')">
+        <div class="workout-plan" onclick="showEnlargedExercise('Advanced Workout Plan', 'Challenge yourself with this advanced workout plan designed for experienced fitness enthusiasts.', 'Warm-up: 15 minutes of dynamic stretching', 'Exercise 1: Deadlifts - 5 sets of 5 reps', 'Exercise 2: Pull-ups - 5 sets to failure', 'Exercise 3: Plank to Pike - 5 sets of 20 seconds', 900)">
             <h2>Advanced Workout Plan</h2>
+            <div class="timer-container">
+                <div class="timer" id="timer">15:00</div>
+            </div>
             <p>Challenge yourself with this advanced workout plan designed for experienced fitness enthusiasts.</p>
             <ul>
                 <li>Warm-up: 15 minutes of dynamic stretching</li>
@@ -181,11 +213,14 @@
                 <li>Exercise 2: Pull-ups - 5 sets to failure</li>
                 <li>Exercise 3: Plank to Pike - 5 sets of 20 seconds</li>
             </ul>
-            <button onclick="startWorkout('Advanced Workout Plan')">Start Workout</button>
+            <button onclick="startWorkout('Advanced Workout Plan', 900)">Start Workout</button>
         </div>
 
-        <div class="workout-plan" onclick="showModal('Workout Plan for Overweight Individuals', 'A tailored workout plan for individuals looking to lose weight and improve fitness.', 'Warm-up: 10 minutes of brisk walking', 'Exercise 1: Bodyweight Squats - 3 sets of 12 reps', 'Exercise 2: Walking Lunges - 3 sets of 10 reps per leg', 'Exercise 3: Modified Push-ups - 3 sets of 8 reps')">
+        <div class="workout-plan" onclick="showEnlargedExercise('Workout Plan for Overweight Individuals', 'A tailored workout plan for individuals looking to lose weight and improve fitness.', 'Warm-up: 10 minutes of brisk walking', 'Exercise 1: Bodyweight Squats - 3 sets of 12 reps', 'Exercise 2: Walking Lunges - 3 sets of 10 reps per leg', 'Exercise 3: Modified Push-ups - 3 sets of 8 reps', 600)">
             <h2>Workout Plan for Overweight Individuals</h2>
+            <div class="timer-container">
+                <div class="timer" id="timer">10:00</div>
+            </div>
             <p>A tailored workout plan for individuals looking to lose weight and improve fitness.</p>
             <ul>
                 <li>Warm-up: 10 minutes of brisk walking</li>
@@ -193,11 +228,14 @@
                 <li>Exercise 2: Walking Lunges - 3 sets of 10 reps per leg</li>
                 <li>Exercise 3: Modified Push-ups - 3 sets of 8 reps</li>
             </ul>
-            <button onclick="startWorkout('Workout Plan for Overweight Individuals')">Start Workout</button>
+            <button onclick="startWorkout('Workout Plan for Overweight Individuals', 600)">Start Workout</button>
         </div>
 
-        <div class="workout-plan" onclick="showModal('Workout Plan for Underweight Individuals', 'A workout plan designed to help underweight individuals build muscle and gain strength.', 'Warm-up: 5 minutes of light cardio', 'Exercise 1: Compound Exercises - 4 sets of 8-10 reps (e.g., Squats, Deadlifts)', 'Exercise 2: Dumbbell Rows - 3 sets of 12 reps', 'Exercise 3: Plank - 3 sets of 30 seconds')">
+        <div class="workout-plan" onclick="showEnlargedExercise('Workout Plan for Underweight Individuals', 'A workout plan designed to help underweight individuals build muscle and gain strength.', 'Warm-up: 5 minutes of light cardio', 'Exercise 1: Compound Exercises - 4 sets of 8-10 reps (e.g., Squats, Deadlifts)', 'Exercise 2: Dumbbell Rows - 3 sets of 12 reps', 'Exercise 3: Plank - 3 sets of 30 seconds', 300)">
             <h2>Workout Plan for Underweight Individuals</h2>
+            <div class="timer-container">
+                <div class="timer" id="timer">05:00</div>
+            </div>
             <p>A workout plan designed to help underweight individuals build muscle and gain strength.</p>
             <ul>
                 <li>Warm-up: 5 minutes of light cardio</li>
@@ -205,21 +243,17 @@
                 <li>Exercise 2: Dumbbell Rows - 3 sets of 12 reps</li>
                 <li>Exercise 3: Plank - 3 sets of 30 seconds</li>
             </ul>
-            <button onclick="startWorkout('Workout Plan for Underweight Individuals')">Start Workout</button>
+            <button onclick="startWorkout('Workout Plan for Underweight Individuals', 300)">Start Workout</button>
         </div>
 
-        <div class="modal" id="exerciseModal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2 id="modalTitle"></h2>
-                <p id="modalContent"></p>
-                <ul id="modalExercises"></ul>
-
-                <!-- Timer and Stop Button -->
-                <div class="timer-container">
-                    <div class="timer" id="timer">10:00</div>
-                    <button class="stop-btn" onclick="stopWorkout()">Stop</button>
-                </div>
+        <div class="enlarged-exercise" id="enlargedExercise">
+            <span class="close" onclick="hideEnlargedExercise()">&times;</span>
+            <h2 id="enlargedTitle"></h2>
+            <div class="enlarged-exercise-content" id="enlargedContent"></div>
+            <!-- Timer and Stop Button -->
+            <div class="enlarged-timer-container">
+                <div class="enlarged-timer" id="enlargedTimer">10:00</div>
+                <button class="enlarged-stop-btn" onclick="stopWorkout()">Stop</button>
             </div>
         </div>
 
@@ -229,17 +263,17 @@
         let globalTimer; // Variable to store the global timer
         let remainingTime = 600; // 10 minutes in seconds
 
-        function updateTimerDisplay() {
-            const minutes = Math.floor(remainingTime / 60);
-            const seconds = remainingTime % 60;
+        function updateTimerDisplay(timerId, time) {
+            const minutes = Math.floor(time / 60);
+            const seconds = time % 60;
             const timerDisplay = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-            document.getElementById('timer').textContent = timerDisplay;
+            document.getElementById(timerId).textContent = timerDisplay;
         }
 
-        function startTimer(duration, callback) {
+        function startTimer(duration, callback, timerId) {
             globalTimer = setInterval(function() {
                 remainingTime--;
-                updateTimerDisplay();
+                updateTimerDisplay(timerId, remainingTime);
                 if (remainingTime <= 0) {
                     clearInterval(globalTimer);
                     callback();
@@ -247,39 +281,34 @@
             }, 1000);
         }
 
-        function startWorkout(plan) {
-            remainingTime = 600; // Reset the timer duration to 10 minutes
-            showModal(plan, '', 'Placeholder Exercise'); // Placeholder exercise for demonstration
+        function startWorkout(plan, duration) {
+            remainingTime = duration; // Set the timer duration based on the workout plan
+            showEnlargedExercise(plan, '', 'Placeholder Exercise'); // Placeholder exercise for demonstration
             startTimer(remainingTime, function() {
                 alert('Workout completed!'); // You can customize this message or call another function
-                closeModal();
+                hideEnlargedExercise();
                 // Additional logic after workout completion
-            });
+            }, 'enlargedTimer');
         }
 
-        function showModal(title, content, ...exercises) {
-            const modalTitle = document.getElementById('modalTitle');
-            const modalContent = document.getElementById('modalContent');
-            const modalExercises = document.getElementById('modalExercises');
+        function showEnlargedExercise(title, content, ...exercises) {
+            const enlargedTitle = document.getElementById('enlargedTitle');
+            const enlargedContent = document.getElementById('enlargedContent');
 
-            modalTitle.textContent = title;
-            modalContent.textContent = content;
-
-            modalExercises.innerHTML = '';
+            enlargedTitle.textContent = title;
+            enlargedContent.innerHTML = `<p>${content}</p>`;
 
             exercises.forEach((exercise, index) => {
-                const li = document.createElement('li');
-                li.textContent = exercise;
-                modalExercises.appendChild(li);
+                enlargedContent.innerHTML += `<p>${exercise}</p>`;
             });
 
-            const modal = document.getElementById('exerciseModal');
-            modal.style.display = 'flex';
+            const enlargedExercise = document.getElementById('enlargedExercise');
+            enlargedExercise.style.display = 'block';
         }
 
-        function closeModal() {
-            const modal = document.getElementById('exerciseModal');
-            modal.style.display = 'none';
+        function hideEnlargedExercise() {
+            const enlargedExercise = document.getElementById('enlargedExercise');
+            enlargedExercise.style.display = 'none';
 
             // Clear the global timer when the modal is closed
             clearInterval(globalTimer);
@@ -287,17 +316,10 @@
 
         function stopWorkout() {
             clearInterval(globalTimer);
-            updateTimerDisplay();
-            closeModal();
+            updateTimerDisplay('enlargedTimer', remainingTime);
+            hideEnlargedExercise();
             alert('Workout stopped.');
         }
-
-        window.onclick = function(event) {
-            const modal = document.getElementById('exerciseModal');
-            if (event.target === modal) {
-                stopWorkout(); // Stop the workout if the modal is closed by clicking outside
-            }
-        };
     </script>
 
 </body>

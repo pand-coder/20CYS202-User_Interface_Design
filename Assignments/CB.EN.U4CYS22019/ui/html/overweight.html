@@ -114,6 +114,23 @@
             
         </table>
     </center>
+
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const images = document.querySelectorAll('table img');
+
+            images.forEach(img => {
+                img.addEventListener('mouseover', function () {
+                    img.classList.add('pulse');
+                });
+
+                img.addEventListener('mouseout', function () {
+                    img.classList.remove('pulse');
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
