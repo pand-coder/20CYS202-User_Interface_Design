@@ -36,13 +36,13 @@ body{
   #hyp4{
     text-decoration:none;
     color:white;
-    padding-right:200px;
+    padding-right:180px;
   }
   #B1{
     background-color:rgb(188, 53, 76);
     color:white;
-    height: 20px;
-    width: 50px;
+    height: 25px;
+    width: 60px;
   }
 
 /* navbar css ends here*/
@@ -373,4 +373,3 @@ body{
 .contact-info a:hover {
     text-decoration: underline;
 }
-
