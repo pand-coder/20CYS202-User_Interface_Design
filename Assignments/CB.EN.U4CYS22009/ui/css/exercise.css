@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+  }
+  
+  h1 {
+    color: #e20d77;
+    text-shadow: 0 0 20px #ff4da6;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .exercise-container {
+    margin-bottom: 30px;
+  }
+  
+  .exercise-container h2 {
+    color: pink;
+    margin-top: 0;
+  }
+  
+  .exercise-container p {
+    margin-top: 5px;
+  }
+  
+  .exercise-container code {
+    background-color: #f9f9f9;
+    padding: 2px 4px;
+    color: #555;
+  }
+  
+  .exercise-container pre {
+    background-color: #f9f9f9;
+    padding: 10px;
+    color: #555;
+    white-space: pre-wrap;
+  }
