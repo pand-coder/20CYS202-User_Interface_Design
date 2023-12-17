@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    color: white;
+  }
+  
+  h1 {
+    color: pink;
+    font-size: 28px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  h1:hover {
+    color: lightpink;
+  }
+  
+  p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
