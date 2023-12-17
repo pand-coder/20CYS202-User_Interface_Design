@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.header {
+    overflow: hidden;
+    background-color: #182c25;
+    height: fit-content;
+    width: 100%;
+    padding: 10px 20px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: #74C69D;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    margin: 0 10px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #455b55;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: #74C69D;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+}
+
+.mainhead{
+    text-align: center;
+    font-size: 2em;
+    color: #40916C;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    text-decoration: solid;
+}
+
+section{
+    height: 100vh;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+.link{
+  text-decoration: none;
+  color: #74C69D;
+}
+.openingpage{
+    background: url(../Assets/Pictures/accident.gif);
+    background-size: cover;
+    background-position: center;
+}
+.openingpage h1{
+    z-index: 20;
+    font-size: 6em;
+    text-align: center;
+    padding-top: 15%;
+    color: #fff;
+}
+.openingpage h3{
+    z-index: 20;
+    font-size: 2em;
+    text-align: center;
+    color: #306844
+}
+#fallout{
+  background-color: black;
+}
+#fallout .content{
+  display: flex;
+}
+#fallout .content img{
+  width: 550px;
+  height: 320px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#fallout .content .points{
+  list-style: none;
+  margin-left: 100px;
+  width: 500px;
+  font-size: 1em;
+  color: #fff;
+}
+#fallout .player{
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  background: whitesmoke;
+  color: #182c25;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+#chernobyl{
+  background-color: black;
+}
+#chernobyl .content{
+  display: flex;
+}
+#chernobyl .content img{
+  width: 550px;
+  height: 320px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#chernobyl .content .points{
+  list-style: none;
+  margin-left: 100px;
+  width: 500px;
+  font-size: 1em;
+  color: #fff;
+}
+#chernobyl .player{
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  background: whitesmoke;
+  color: #182c25;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+#fukushima{
+  background-color: black;
+}
+#fukushima .content{
+  display: flex;
+}
+#fukushima .content img{
+  width: 550px;
+  height: 320px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#fukushima .content .points{
+  list-style: none;
+  margin-left: 100px;
+  width: 500px;
+  font-size: 1em;
+  color: #fff;
+}
+#fukushima .player{
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  background: whitesmoke;
+  color: #182c25;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+#castleBravo{
+  background-color: black;
+}
+#castleBravo .content{
+  display: flex;
+}
+#castleBravo .content img{
+  width: 550px;
+  height: 320px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#castleBravo .content .points{
+  list-style: none;
+  margin-left: 100px;
+  width: 500px;
+  font-size: 1em;
+  color: #fff;
+}
+#castleBravo .player{
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  background: whitesmoke;
+  color: #182c25;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+#radiate{
+  background-color: black;
+}
+#radiate .content{
+  display: flex;
+}
+#radiate .content img{
+  width: 550px;
+  height: 320px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#radiate .content .points{
+  list-style: none;
+  margin-left: 100px;
+  width: 500px;
+  font-size: 1em;
+  color: #fff;
+}
+#radiate .player{
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  background: whitesmoke;
+  color: #182c25;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+.videoright{
+  background-color: black;
+}
+.videoright .videosec{
+width: 100%;
+display: flex;
+left: 0;
+}
+.videoright .videosec ul{
+  width: 500px;
+  padding-top: 70px;
+  padding-left: 100px;
+  font-size: 1.2em;
+  list-style: square;
+  color: #fff;
+}
+.videoright .video{
+  width: 650px;
+  height: 350px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 50px;
+}
+.videoright.videopos{
+  z-index: 10;
+  margin-left: 120px;
+  width: 650px;
+  height: 350px;
+  background-color: #081C15;
+  border-radius: 20px;
+  right: 0;
+}

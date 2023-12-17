@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+} /*for scroll container*/
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #182c25;
+    height: fit-content;
+    width: 100%;
+    padding: 10px 20px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: #74C69D;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    margin: 0 10px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #455b55;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: #74C69D;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+  /*For the individual sections in common*/
+section{
+    height: 100vh;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+.mainhead{
+    text-align: center;
+    font-size: 2em;
+    color: #40916C;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    text-decoration: solid;
+}
+/*for each individual page*/
+.openingpage{
+    background: url(../Assets/Pictures/hist.jpg);
+    background-size: contain;
+    background-position: center;
+}
+.openingpage h1{
+    z-index: 20;
+    font-size: 6em;
+    text-align: center;
+    padding-top: 15%;
+    color: black;
+}
+.openingpage h3{
+    z-index: 20;
+    font-size: 2em;
+    text-align: center;
+    color: #306844
+}
+
+.videomain{
+    background-color: #1B4332;
+}
+
+.videosec p{
+    width: 700px;
+    text-align: center;
+}
+.video{
+    width: 650px;
+    height: 350px;
+    border-radius: 20px;
+}
+.videopos{
+    z-index: -10;
+    margin-left: 320px;
+    width: 650px;
+    height: 350px;
+    background-color: #081C15;
+    border-radius: 20px;
+}
+.carousel{
+    background-color: #1B4332;
+}
+.gallery{
+    width: 60%;
+    height: 60vh;
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgbox{
+    width: 100px;
+    height: 370px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(../Assets/Pictures/Atomback.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+.imgbox:nth-child(2){
+    background: url(../Assets/Pictures/Fusion\ reactor.png);
+}
+.imgbox:nth-child(3){
+    background: url(../Assets/Pictures/Castlebravo.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.imgbox:nth-child(4){
+    background: url(../Assets/Pictures/Fukushima.jpg);
+}
+.imgbox h3{
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 150px;
+    opacity: 0;
+    transition: bottom 0.5s,opacity 0.5s;
+    cursor: pointer;
+}
+.imgbox:hover h3{
+    opacity: 1;
+    bottom: 170px;
+    left: 150px;
+    font-size: 3em;
+}
+.imgbox a{
+    color: black;
+    position: absolute;
+    text-decoration: none;
+    left: 190px;
+    bottom: 120px;
+    opacity: 0;
+    transition: bottom 0.5s,opacity 0.5s;
+    padding: 10px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.imgbox:hover a{
+    opacity: 1;
+    bottom: 100px;
+    color: #081C15;
+    background-color: #74C69D;
+}
+.imgbox:hover a:hover{
+    background-color: #182c25;
+    color: #74C69D;
+}
+.imgbox:hover{
+    width: 500px;
+    cursor: pointer;
+}
+.madeby{
+    background-color: #1B4332;
+}
+.card-cont{
+    display: flex;
+    gap: 10px;
+}
+.card{
+    position: relative;
+    margin-left: 270px;
+    width: 250px;
+    height: 330px;
+    background-color: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    border-radius: 30px;
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+.card:hover{
+    transform: translateX(50%);
+}
+.card .imagebox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    background: #182c25;
+    border-radius: 30px;
+    box-shadow: 10px 20px 40px rgba(24, 44, 37, 0.5);
+    transition: 1s;
+}
+.card:hover .imagebox{
+    transform: rotateY(-180deg);
+}
+.card .imagebox img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+.card .imagebox img:nth-child(2){
+    transform: rotateY(180deg);
+}
+
+.card .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .details .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card .details .content h2{
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 1em;
+}
+.card .details .content h2 span{
+    color: #306844;
+    text-decoration: wavy;
+    font-size: 0.8em;
+}
+.card .details .content .social-icons{
+    position: relative;
+    display: flex;
+    padding-top: 10px;
+}
+.card .details .content .social-icons a{
+    display: inline-block;
+    width: 35px;
+    height:35px;
+    background: #2c4c3b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+.card .details .content .social-icons a:hover{
+    background-color: #306844;
+}
