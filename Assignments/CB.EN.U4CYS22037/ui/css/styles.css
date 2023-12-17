@@ -7,15 +7,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 footer{
     background-color: rgb(0, 0, 0);
     width: 100%;
     text-align: center;
     color: rgb(250, 250, 250);
+    line-height: 0.25;
 
 }
+.custom-small,
+    .custom-small-another,
+    .frame3,
+    .frame4,
+    .frame5,
+    .frame_forgot_password,
+    .frame2 ,
+    .frame1,
+    .frame_signup{
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+    }
 
+    .custom-small:hover,
+    .custom-small-another:hover,
+    .frame3:hover,
+    .frame4:hover,
+    .frame5:hover,
+    .frame_forgot_password:hover,
+    .frame2:hover ,
+    .frame1:hover,
+    .frame_signup:hover{
+        transform: scale(1.1);
+    }
 header {
     display: flex;
     justify-content: space-between;
