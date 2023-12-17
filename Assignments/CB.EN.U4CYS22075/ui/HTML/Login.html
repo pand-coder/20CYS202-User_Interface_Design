@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" width="width=device-width,initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/Login.css">
+        <link rel="icon" type="image/x-icon" href="../Images/Comic Manga.ico">
+        <script src="../JavaScript/login.js"></script>
+    </head>
+
+    <body>
+        <div class="body">
+            <div class="login">
+                <form id="loginForm" onsubmit="return checkSignUp()">
+                    <h2>Login</h2>
+                    <div class="sign-in">
+                        <input type="text" id="username" required>
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="sign-in">
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="remember">
+                        <label for=""><input type="checkbox" required>Remember Me</label>
+                    </div>
+                    <button type="submit">Login</button>
+                    <div class="sign-UP">
+                        <p>Don't have an Account? <a href="../index.html" class="sign-up Link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    
+</html>

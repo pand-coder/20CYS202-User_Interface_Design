@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" width="width=device-width,initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/CreateAccount.css">
+        <link rel="icon" type="image/x-icon" href="../Images/Comic Manga.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../JavaScript/signup.js"></script>
+    </head>
+
+    <body>
+        <div class="body">
+            <div class="login">
+                <form id="signupForm">
+                    <h2>Sign Up</h2>
+                    <div class="sign-UP">
+                        <input type="text" id="username" required>
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="sign-UP">
+                        <input type="text" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="sign-UP">
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="remember">
+                        <label for="terms"><input type="checkbox" id="terms" required>Read Terms and Conditions</label>
+                    </div>
+                    <button type="button" onclick="saveUserData()">Sign Up</button>
+                    <div class="sign-in">
+                        <p>Have an Account? <a href="../HTML/Login.html" class="sign-up Link">sign in</a></p>
+                    </div>
+                    <p style="text-align: center;">----------------------------OR---------------------------</p>
+                    <div class="Other-Login">
+                        <a href="../HTML/maintenance.html" class="fa fa-google"></a>
+                        <a href="../HTML/maintenance.html" class="fa fa-facebook"></a>
+                        <a href="../HTML/maintenance.html" class="fa fa-instagram"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

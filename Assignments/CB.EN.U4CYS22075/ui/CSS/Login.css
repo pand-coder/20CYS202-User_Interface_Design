@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://wallpaperaccess.com/full/2634177.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.body{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 0 10px orange;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+h2{
+    font-size: 35px;
+    color: center;
+    color: black;
+    text-align: center;
+}
+
+.sign-in{
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid black;
+}
+
+.sign-in label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.sign-in input{
+    background-color: transparent;
+    font-size: 16px;
+    width: 320px;
+    height: 40px;
+    color: black;
+    padding: 0 5px;
+    border: none;
+    outline: none; 
+
+}
+
+.remember{
+    margin: -5px 0 15px 5px;
+}
+
+.remember label{
+    color: black;
+    font-size: 14px;
+}
+
+button{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: orange;
+    box-shadow: 0 0 10px orange;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 35px;
+}
+.remember input{
+    accent-color: orange;
+}
+
+.sign-UP{
+    font-size: 14px;
+    margin: 10px;
+    text-align: center;
+}
+.sign-UP p{
+    color: black;
+}
+.sign-UP p a{
+    color: orange;
+    text-decoration: none;
+    font-weight: 500;
+}
+.sign-UP p a:hover{
+    text-decoration: underline;
+}
+.sign-in input:focus~label,
+.sign-in input:valid~label
+{
+    top:-5px;
+}
