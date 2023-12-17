@@ -1,0 +1,108 @@
+/* Resetting some default browser styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #555;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px;
+  }
+  nav {
+    margin-left: 960px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .header-content h1 {
+    margin: 0;
+  }
+  
+  /* Main layout */
+  .contact-us {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Contact Information section */
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 40px 0;
+  }
+  
+  .address,
+  .phone-email {
+    width: 30%;
+  }
+  
+  /* Contact Picture */
+  .Map img {
+    width: 80%;
+    max-width: 800px;
+    height: 40%;
+    border-radius: 5px;
+    margin-bottom: 40px;
+  }
+  
+  /* Enquiry Form */
+  .enquiry-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .enquiry-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }

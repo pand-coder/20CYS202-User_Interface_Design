@@ -1,0 +1,151 @@
+/* styles.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #ffffff;
+  color: #000;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 4px solid;
+  text-align: center;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+header a:active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+header #branding h1 span {
+  color: #e8491d;
+}
+
+header a:focus {
+  outline: none;
+}
+
+header #branding h1 {
+  line-height: 60px;
+  margin: 0;
+}
+
+header nav {
+  line-height: 60px;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.main {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.signup-form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group button {
+  background: #e8491d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background: #333;
+}
+
+p {
+  font-size: 14px;
+  color:#e8491d
+}
+
+a {
+  color: #f2f0ef;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}

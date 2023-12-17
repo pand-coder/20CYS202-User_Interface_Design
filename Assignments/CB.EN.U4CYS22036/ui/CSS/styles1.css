@@ -1,0 +1,150 @@
+/* Resetting some default browser styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.logo img {
+  max-width: 80px;
+  border-radius: 50%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+.header-content h1{
+  margin-right: 550px ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header-content h6{
+  margin-right: 400px ;
+}
+
+nav {
+  margin-left: auto;
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url(../IMAGES/panorama.jpg);
+  background-position: center;
+  height: 6cm;
+  padding: 60px 40px;
+  text-align: center;
+  font-style: oblique;
+  font-size: xx-large;
+}
+
+/* About section styles */
+.about {
+  padding: 40px 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-text {
+  width: 60%;
+  font-style:italic
+}
+
+.about-image {
+  width: 35%; /* Adjust width for image */
+}
+
+.about-image img {
+  max-width: 500px; 
+  max-height: 500px;
+  border-radius: 100%; /* Apply border-radius if needed */
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Stack content on smaller screens */
+  }
+  .about-text,
+  .about-image {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px; /* Add space between sections */
+  }
+}
+
+/* Features section styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1000px; /* Reducing the maximum width of containers */
+  margin: 0 auto; /* Center the containers on the page */
+  gap: 20px; /* Adding gap between items */
+}
+
+.feature {
+  width: calc(50% - 10px); /* To accommodate for spacing between items */
+  margin-bottom: 20px; /* Adjusting margin for better spacing */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding subtle box shadow */
+}
+
+.feature img {
+  width: 100%;
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.feature-text {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.feature-text h2 {
+  margin-top: 0;
+}
+
+.feature-text p {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .feature {
+    width: 100%; /* Make each feature take full width on smaller screens */
+  }
+}
+
+/* ... (other styles remain unchanged) */
+
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
