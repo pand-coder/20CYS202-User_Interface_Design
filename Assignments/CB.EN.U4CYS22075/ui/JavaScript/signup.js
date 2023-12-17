@@ -25,5 +25,5 @@ function saveUserData() {
     localStorage.setItem('userData', userDataString);
 
     // Redirect to the sign-in page
-    window.location.href = "../ui/HTML/Login.html";
+    window.location.href = "/HTML/Login.html";
 }
