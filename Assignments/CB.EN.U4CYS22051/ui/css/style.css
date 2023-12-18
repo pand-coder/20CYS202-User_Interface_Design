@@ -1,0 +1,155 @@
+*{
+  margin: 0%;
+  position:static;
+}
+body {
+  font-family: Helvetica;
+  margin: 0;
+  background-image: url('../images/amrita_univerty.jpg');
+  background-size: 100% 100%;
+  background-attachment:fixed;
+}
+a{
+  text-decoration: none;
+  position: relative;
+  list-style: none;
+  font-family: 'poppins',sans-serif;
+  color: rgb(173, 169, 169);
+  font-size: 18px;
+  letter-spacing: o.5px;
+  padding: 0 6px;
+}
+a::after {
+  content: "";
+  position: absolute;
+  background-color: #d4c6c6;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.5s ease;
+}
+.site-header { 
+  background-color: #AA1945;
+  border-bottom: 1px solid #ccc;
+  padding: .5em 1em;
+}
+
+.site-header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.site-identity {
+  float: left;
+}
+
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: .7em 0 .3em 0;
+  display: inline-block;
+}
+
+.site-identity img {
+  max-width: 81px;
+  float: left;
+  margin: 0 15px 0 0;
+  height: 70px;
+}
+
+.site-navigation {
+  float: right;
+}
+
+.site-navigation ul, li {
+  margin: 0; 
+  padding: 0;
+}
+
+.site-navigation li {
+  display: inline-block;
+  margin: 1.4em 1em 1em 1em;
+}
+
+
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.login-box {
+  background-color: #fff;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(160, 33, 33, 0.2);
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+label {
+  display: block;
+}
+
+
+input[type="text"],input[type="password"]
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="text"]:focus,input[type="password"]:focus
+input[type="submit"]:focus {
+  outline: none;
+}
+
+.footer {
+   /* Footer background color */
+  color:white; /* Footer text color */
+  text-align: center; /* Center the text */
+  padding: 20px 0; /* Add some padding */
+  margin-top: 25%;/*Align to the bottom */
+  position: absolute;
+  bottom: 0%;
+  width: 100%;        }
+
+.footer-content {
+  margin: 0 auto; /* Center the footer content if needed */
+  max-width: 1200px; /* Max-width can be adjusted as needed */
+}
+
+.footer-content p {
+  margin: 10px 0; /* Add space between paragraphs */
+}
+
+.footer a {
+  color: #fff; /* Match the text color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
+}

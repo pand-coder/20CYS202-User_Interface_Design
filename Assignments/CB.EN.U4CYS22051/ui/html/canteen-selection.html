@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Portal</title>
+    <link rel="stylesheet" href="../css/canteen-selection.css">
+</head>
+<body>
+    <header class="header">
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <img src="../images/amrita.svg" alt="Logo" class="logo">
+    <nav class="navbar">
+        <a href="../index.html"> Home </a>
+        <a href="canteen-selection.html"> Canteens </a>
+        <a href="about-us.html"> About Us </a>
+        <a href="login.html"> Login </a>
+    </nav>
+    </header>
+    <div class="dropdown" id="dropdown-menu">
+        <a href="maintenance.html">Profile</a>
+        <a href="maintenance.html">Your Orders</a>
+        <a href="maintenance.html">Cart</a>
+        <a href="maintenance.html">Previous Orders</a>
+        <!-- Add more options as needed -->
+    </div>
+    <!-- Place this section just below your header and above the main content -->
+    <div class="banner">
+        <div class="banner-content">
+            <h1>AMRITA VISHWA VIDYAPEETHAM</h1>
+            <p style="font-size: 20px;">Canteen Management System</p>
+        </div>
+    </div>
+
+    <div class="login-portals">
+        <div class="title-container">
+            <h2 style="color: crimson;">Canteen Login Portals</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="image-gallery">
+            <a href="Main_canteen.html" class="image-link">
+                <img src="../images/m.jpg" alt="Main" class="gallery-image">
+                <span class="image-caption">Main Canteen</span>
+            </a>
+            <a href="MBA.html" class="image-link">
+                <img src="../images/MBA.jpeg" alt="MBA" class="gallery-image">
+                <span class="image-caption">MBA Canteen</span>
+            </a>
+            <a href="It.html" class="image-link">
+                <img src="../images/IT.jpg" alt="IT" class="gallery-image">
+                <span class="image-caption">IT Canteen</span>
+            </a>
+            <!-- Image links as shown in the previous example -->
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2023 Amrita Vishwa Vidyapeetham. All rights reserved.</p>
+            <p>Follow us on: <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+        </div>
+    </footer>
+    <script>
+        // Toggle the dropdown menu visibility
+        function toggleMenu() {
+            var dropdown = document.getElementById("dropdown-menu");
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

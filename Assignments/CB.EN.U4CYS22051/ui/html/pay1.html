@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: whitesmoke; /* Set your desired background color */
+    }
+
+    .custom-container {
+      width: 800px; /* Adjust the width of the container */
+      max-width: 800px; /* Set a maximum width for larger screens */
+      margin: 0 auto;
+      margin-right: 650px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      background-color: white; /* Set your desired container background color */
+    }
+
+    .custom-login-box {
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img {
+      width: 35%; /* Make the logo responsive */
+      margin-left: 250px;
+    }
+
+    .title-container h1 {
+      font-size: 24px; /* Adjust the font size for smaller screens */
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      width: 100%; /* Make the input fields and button responsive */
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box; /* Include padding and border in the width */
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    @media (max-width: 600px) {
+      .custom-container {
+        width: 100%;
+      }
+
+      .logo img {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-container">
+    <div class="custom-login-box">
+      <form action="#" method="post">
+        <div class="logo"><img src="../images/am_logo.png" alt="Logo"></div>
+        <div class="title-container">
+          <h1>Student Payment</h1>
+        </div>
+        <div class="form-group">
+          <label for="rollNumber">Roll Number:</label><br>
+          <input type="text" id="rollNumber" name="rollNumber" placeholder="Enter your College Roll Number (Format:CB.EN.U4XXXYYYYY)" required>
+        </div><br>
+        <div class="form-group">
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" placeholder="Enter your password (Format: 4 Digit Number)" required>
+        </div><br>
+        <div class="form-group">
+          <input type="submit" value="Pay Amount" onclick="processPayment()">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function processPayment() {
+      const rollNumberInput = document.getElementById('rollNumber');
+      const passwordInput = document.getElementById('password');
+
+      const rollNumberPattern = /[A-Za-z]{2}\.[A-Za-z]{2}\.U[1-4]+[A-Za-z]{3}[0-9]{5}/;
+      const passwordPattern = /\d{4}/;
+
+      const isValidRollNumber = rollNumberPattern.test(rollNumberInput.value);
+      const isValidPassword = passwordPattern.test(passwordInput.value);
+
+      if (isValidRollNumber && isValidPassword) {
+        alert('Payment successful!');
+      } else {
+        alert('Invalid credentials. Please check your Roll Number and Password.');
+      }
+    }
+  </script>
+</body>
+</html>

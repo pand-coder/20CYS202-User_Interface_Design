@@ -1,0 +1,403 @@
+* {
+            padding : 0%;
+            margin : 0%;
+            height : 0%;
+            position: sticky;
+            box-sizing:border-box
+        }
+        .header {
+            background-color: crimson;
+            position: relative;
+            padding: 10px 15px;
+            margin: 0%;
+            padding-bottom: 2.59%;
+            font-size: 30px;
+            color : White;
+            display: flex;
+            justify-content:space-between;
+        }
+        .navbar {
+            font-size: 13px;
+            margin-left: 50%;
+            font-size: 20px;
+            position:sticky;
+            padding: 10px 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color:white;
+            margin-right : 30px;
+        }
+        .logo {
+            height: 40px; /* Adjust the size as needed */
+            margin-right: auto; /* Adds some space between the logo and the text */
+        }
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            margin-top: 5px;
+            margin-right: 20px;
+        }
+        .dropdown {
+            display:none;
+            position:fixed;
+            background-color: #bbb;
+            height: 250px;
+            background-color: gray;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 2; 
+            max-height:180px; /*size of drop down menu */
+        }
+        .dropdown a {
+            color: white;
+            padding: 13px 20px;
+            text-decoration: none;
+            display: block;
+            height: auto;
+            margin-right: 10px;
+        }
+        .dropdown a:hover {
+            background-color: #555;
+        }
+        .title-container {
+            position: static;
+            text-align: left;
+            font-size: 17px; /* Adjust the font size as needed */
+            font-weight: bold; /* Make the title bold */
+            text-transform: uppercase; /* Uppercase letters for the title */
+            margin-left: 330px; /* Remove default margins if needed */
+            margin-top: 10px;
+            margin-bottom: 42px;
+            padding: 10px 0; /* Add some padding above and below the title */
+            color: #000; /* Set the color of the title */
+    /* Additional styles can be added as needed */
+        }
+
+        .breadcrumb-container {
+            background-color: #f0f0f0; /* Light grey background */
+            display: flex;
+            align-items: center;
+            padding: 5px 10px; /* Padding inside the breadcrumb container */
+            padding-top: 10px;
+            padding-bottom: 25px;
+            font-size: 16px; /* Adjust as needed */
+            color: #808080; /* Grey text color */
+            margin-top: 20px;
+            margin-bottom: 5px;
+            margin-left: 330px;
+            margin-right: 380px;
+        }
+
+        .breadcrumb-icon {
+            padding-top: 8px;
+            padding-bottom: 15px;
+            padding-right: 5px; /* Space between the icon and the text */
+            font-size: 20px; /* Adjust the size of the icon as needed */
+        }
+
+        .breadcrumb-text {
+            /* Additional styles for the breadcrumb text if needed */
+            padding-left: 10px;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position:relative;
+            margin: 20px 0px 40px 450px;
+            height: auto;
+            margin-left: 550px;
+            margin-top: 30px;
+            margin-bottom: 1px;
+        }
+
+/* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+/* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            height: auto;
+        }
+
+/* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+/* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: grey;/* rgba(0,0,0,0.8);*/
+        }
+
+
+/* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+/* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+/* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        .title-container1 {
+            display: inline-block;
+            position: sticky;
+            padding-bottom: 0px; /* Space between title and underline */
+        }
+
+        .title-container1 h2 {
+            margin-top: 5%;
+            margin-bottom: 4%;
+            margin-left: 990px;
+            font-size: 35px;
+            display: inline-block; /* Aligns title with underline */
+        }
+
+        .title-underline {
+            width: 70px; /* Width of the underline */
+            height: 4px; /* Height of the underline */
+            background-color: orange; /* Color of the underline */
+            bottom: 0;
+            left: 160%;
+            position: sticky;
+            transform: translateX(-50%); /* Centers the underline */
+        }
+        .feature-section {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            margin-bottom: 20px; /* Space between each feature section */
+        }
+
+        .feature-image {
+            flex: 1; /* Allocate equal space for image and content */
+            padding: 10px;
+        }
+
+        .feature-image img {
+            width: 50%; /* Make image responsive */
+            margin-left: 350px;
+            margin-top: 30px;
+            height: auto;
+            border-radius: 10px; /* Optional: if you want rounded corners on the image */
+        }
+
+        .feature-content {
+            flex: 1; /* Allocate equal space for image and content */
+            padding: 100px;
+            padding-top: 2.5%;
+            padding-bottom: 10%;
+            padding-left: 20px;
+            padding-right: 30px;
+            margin-top: 17%;
+            margin-right:420px;
+            /*background-color: #F0F2F5;  Light grey background for the text content area */
+            border-radius: 10px; /* Optional: if you want rounded corners on the content area */
+            margin-left: 20px; /* Space between the image and the content area */
+        }
+
+        .feature-content h2 {
+            color: #333; /* Dark grey color for the title */
+            margin-top: -40px;
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+
+        .feature-content p {
+            margin-top: 0px;
+            font-size: 22px;
+            color: #666; /* Lighter grey color for the paragraph */
+        }
+----------------------------------------------------------------------------------------------------------------------------------------------
+        .feature-section1 {
+            display: flex;
+            align-items: center;
+            padding-bottom: 10%;
+            position: sticky;
+            margin-bottom: 20px; /* Space between each feature section */
+        }
+
+        .feature-image1 {
+            flex: 1; /* Allocate equal space for image and content */
+            padding: 10px;
+        }
+
+        .feature-image1 img {
+            width: 19.5%; /* Make image responsive */
+            margin-left: 1255px;
+            margin-right: auto;
+            margin-top: 380px;
+            margin-bottom: 50px;
+            height: auto;
+            border-radius: 10px; /* Optional: if you want rounded corners on the image */
+        }
+
+        .feature-content1 {
+            flex: 1; /* Allocate equal space for image and content */
+            padding: 100px;
+            padding-top: 2.5%;
+            padding-bottom: 11%;
+            padding-left: 20px;
+            padding-right: 550px;
+            margin-top: 18%;
+            margin-bottom: 20px;
+            margin-right:405px;
+            /*background-color: #F0F2F5;  Light grey background for the text content area */
+            border-radius: 10px; /* Optional: if you want rounded corners on the content area */
+            margin-left: 10px; /* Space between the image and the content area */
+        }
+
+        .feature-content1 h2 {
+            color: #333; /* Dark grey color for the title */
+            margin-top: -40px;
+            margin-left: 330px;
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+
+        .feature-content1 p {
+            margin-top: 0px;
+            font-size: 22px;
+            margin-left: 330px;
+            color: #666; /* Lighter grey color for the paragraph */
+        }
+        ----------------------------------------------------------------------------------------------------------------------------------------------
+        .feature-section2 {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            margin-bottom: 20px; /* Space between each feature section */
+        }
+
+        .feature-image2 {
+            flex: 1; /* Allocate equal space for image and content */
+            padding: 10px;
+        }
+
+        .feature-image2 img {
+            width: 19%; /* Make image responsive */
+            margin-left: 350px;
+            margin-top: 570px;
+            height: auto;
+            border-radius: 10px; /* Optional: if you want rounded corners on the image */
+        }
+
+        .feature-content2 {
+            flex: 1; /* Allocate equal space for image and content */
+            padding: 100px;
+            text-align:left;
+            padding-top: 2.5%;
+            padding-bottom: 10%;
+            padding-left: 20px;
+            padding-right: 30px;
+            margin-top: 24%;
+            margin-right:380px;
+            /*background-color: #F0F2F5;  Light grey background for the text content area */
+            border-radius: 10px; /* Optional: if you want rounded corners on the content area */
+            margin-left: 840px; /* Space between the image and the content area */
+        }
+
+        .feature-content2 h2 {
+            color: #333; /* Dark grey color for the title */
+            margin-top: 0px;
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+
+        .feature-content2 p {
+            margin-top: 0px;
+            font-size: 22px;
+            color: #666; /* Lighter grey color for the paragraph */
+        }
+
+        .footer {
+            background-color: #333; /* Footer background color */
+            color: #fff; /* Footer text color */
+            text-align: center; /* Center the text */
+            padding: 20px 0; /* Add some padding */
+            position: absolute;  /*Position relative for absolute positioning inside */
+            margin-top: 39%;/*Align to the bottom */
+            height: fit-content;
+            width: 100%;        }
+
+        .footer-content {
+            margin: 0 auto; /* Center the footer content if needed */
+            max-width: 1200px; /* Max-width can be adjusted as needed */
+        }
+
+        .footer-content p {
+            margin: 10px 0; /* Add space between paragraphs */
+        }
+
+        .footer a {
+            color: #fff; /* Match the text color */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .footer a:hover {
+            text-decoration: underline; /* Add underline on hover for links */
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                margin-left: 0;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .navbar a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .title-container1 h2 {
+                margin-left: 0;
+            }
+
+            .feature-content,
+            .feature-content1,
+            .feature-content2 {
+                margin-right: 0;
+            }
+        }

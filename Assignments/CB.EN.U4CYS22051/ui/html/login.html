@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .custom-container {
+            width: 800px; /* Adjust the width of the container */
+            margin: 0 auto; /* Center align the container */
+            padding: 50px; /* Add padding for spacing */
+            margin-top: 100px;
+            box-shadow: 15px rgba(190, 35, 35, 0.2);
+            height:auto;
+        }
+        .custom-login-box {
+            position:fixed;
+            background-color: white; /* Change the background color of the login box */
+            padding: 20px;
+            height: 650px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+        }
+        .logo img {
+            width:40%;
+            margin-left: 210px;
+        }
+        .title-container h1{
+            margin-top: 15px;
+            font-size: 45px;
+            margin-left: 0px;
+        }
+        .pp{
+            margin-top: 5px;
+        }
+        .options{
+            border-radius: 10%;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            margin-left: 0px;
+        }
+        .options a{
+            text-decoration: none;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .custom-container {
+                width: 90%;
+            }
+
+            .custom-login-box {
+                height: auto;
+            }
+
+            .title-container h1 {
+                font-size: 24px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<div class="custom-container">
+    <div class="custom-login-box">
+        <form action="#" method="post">
+            <div class="logo"><img src="../images/am_logo.png"></div>
+            <div class="title-container">
+                <h1>Login Page</h1>
+                <br>
+            </div>
+            <div class="form-group">
+                <label for="Email">Email:</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Enter your College Email Address" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <a href="../index.html"><button type="submit" class="btn btn-primary" value="Login" style="width: 100px; color: white;">Login</button></a>
+            <div class="pp">
+                <a href="login.html">Forgot Password?</a>
+            </div><br>
+        </form>
+            <p>Other Options:</p>
+            <div class="options">
+                <a href="https://accounts.google.com/v3/signin/identifier?hl=en-gb&ifkv=ASKXGp2Nv7g3wCDK_urUz8kaA6K6c3IuhmEXzK2_wzdKmXGkQ8xfQ3XM4vk-vrBvQp3-ftr5AS5zmA&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1157262031%3A1702659742811692&theme=glif"><input type="submit" id="google" value="Sign-In via Google" style="font-size: 20px; background-color: crimson; width:180px;"></a>
+            </div>
+            <div class="options">
+                <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=18&ct=1702660478&rver=7.0.6738.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fcobrandid%3dab0455a0-8d03-46b9-b18b-df2f57b9e44c%26nlp%3d1%26RpsCsrfState%3dda7519ba-6f81-49cc-1c3d-e4f08fe3c64a&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c"><input type="submit" id="Outlook" value="Sign-In via Outlook" style="font-size: 20px; background-color: darkblue;"></a>
+            </div>
+    </div>
+</div>
+
+
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2023 Amrita Vishwa Vidyapeetham. All rights reserved.</p>
+        <p>Follow us on: <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    </div>
+  </footer>
+</html>

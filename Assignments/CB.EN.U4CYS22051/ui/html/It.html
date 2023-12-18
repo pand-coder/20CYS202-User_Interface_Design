@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Canteen</title>
+  <link rel="stylesheet" href="../css/menustyle.css">
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .food-items-heading {
+      text-align: left;
+    }
+    @media screen and (max-width: 768px) {
+      .navbar {
+        display: flex;
+      }
+      .navbar a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <img src="../images/amrita.svg" alt="Logo" class="logo">
+    <nav class="navbar">
+        <a href="../index.html"> Home </a>
+        <a href="canteen-selection.html"> Canteens </a>
+        <a href="about-us.html"> About Us </a>
+        <a href="login.html"> Login </a>
+    </nav>
+    </header>
+    <div class="dropdown" id="dropdown-menu">
+        <a href="maintenance.html">Profile</a>
+        <a href="maintenance.html">Your Orders</a>
+        <a href="maintenance.html">Cart</a>
+        <a href="maintenance.html">Previous Orders</a>
+        <!-- Add more options as needed -->
+    </div>
+  <main>
+    <h1>Amrita IT Canteen</h1>
+    <div class="underline"></div>
+    
+    <h2 class="food-items-heading">Food Items</h2>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width: 950px;">Chapati</td>
+          <td class="price">Rs.14</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Fried Rice</td>
+          <td class="price">Rs.70</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Battura</td>
+          <td class="price">Rs.18</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Ghee Roast</td>
+          <td class="price">Rs.60</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Parotta</td>
+          <td class="price">Rs.30</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Paneer Butter Masala</td>
+          <td class="price">Rs.60</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Dosa</td>
+          <td class="price">Rs.15</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Channa Masala</td>
+          <td class="price">Rs.45</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+        
+        <!-- Add more rows for additional products if needed -->
+      </tbody>
+    </table>
+    <br>
+    <h2 class="food-items-heading">Snacks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tr>
+        <td style="width: 950px;">Veg Puff</td>
+        <td class="price">Rs.15</td>
+        <td>
+          <div class="quantity">
+            <button class="decrement">-</button>
+            <span class="quantity-value">0</span>
+            <button class="increment">+</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Samosa</td>
+        <td class="price">Rs.20</td>
+        <td>
+          <div class="quantity">
+            <button class="decrement">-</button>
+            <span class="quantity-value">0</span>
+            <button class="increment">+</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Veg Roll</td>
+        <td class="price">Rs.20</td>
+        <td>
+          <div class="quantity">
+            <button class="decrement">-</button>
+            <span class="quantity-value">0</span>
+            <button class="increment">+</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Vada</td>
+        <td class="price">Rs.12</td>
+        <td>
+          <div class="quantity">
+            <button class="decrement">-</button>
+            <span class="quantity-value">0</span>
+            <button class="increment">+</button>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <br>
+    <h2 class="food-items-heading">Drinks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width: 950px;">Appy Fizz</td>
+          <td class="price">Rs.30</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Badam Milk</td>
+          <td class="price">Rs.20</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Pista Milk</td>
+          <td class="price">Rs.20</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Lime Juice</td>
+          <td class="price">Rs.20</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Grape Juice</td>
+          <td class="price">Rs.20</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Watermelon Juice</td>
+          <td class="price">Rs.20</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Rose Milk</td>
+          <td class="price">Rs.20</td>
+          <td>
+            <div class="quantity">
+              <button class="decrement">-</button>
+              <span class="quantity-value">0</span>
+              <button class="increment">+</button>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+      </table>
+      <br><br>
+      <div id="total-amount" style="font-size: 20px; padding-bottom: 10px;"></div>
+      <a href="pay1.html"><button type="submit" id="submit" style="font-size: 20px; padding: 10px;" onclick="addToCart()">Proceed to Payment</button></a>
+      
+  </main>
+  <script src="../js/menuscripts.js">
+    </script>
+  <footer class="footer">
+    <div class="footer-content">
+        <p>© 2023 Amrita Vishwa Vidyapeetham. All rights reserved.</p>
+        <p>Follow us on: <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    </div>
+  </footer>
+</body>
+</html>

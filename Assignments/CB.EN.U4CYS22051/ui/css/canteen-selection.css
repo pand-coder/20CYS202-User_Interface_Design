@@ -1,0 +1,222 @@
+* {
+            padding : 0%;
+            margin : 0%;
+            height : 35%;
+            position: relative;
+        }
+        .header {
+            background-color: crimson;
+            position: sticky;
+            padding: 10px 15px;
+            font-size: 30px;
+            color : White;
+            display: flex;
+            justify-content:space-between;
+        }
+        .body {
+            margin : 0;
+            padding : 0;
+            height : 100%;
+        }
+        .wrapper {
+            min-height: 100%;
+            position: relative;
+        }
+        .navbar {
+            font-size: 13px;
+            margin-left: 50%;
+            font-size: 20px;
+            position:sticky;
+            padding: 10px 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color:white;
+            margin-right : 30px;
+        }
+        .logo {
+            height: 40px; /* Adjust the size as needed */
+            margin-right: auto; /* Adds some space between the logo and the text */
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px; /* Adjust the space between images */
+        }
+
+        .image-link {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #000; /* Caption text color */
+        }
+
+        .gallery-image {
+            width : 400px;
+            max-width: 400px;
+            height : 250px;
+            margin-top: 10%; /* Adjust the image size as needed */
+            border-radius: 5px;
+            
+            transition: transform 0.3s ease; /* Smooth transition for scaling */
+        }
+
+        .image-caption {
+            display: block; /* Ensure the caption is on a new line */
+            font-size : 30px;
+            margin-top:13px;
+        }
+
+        .image-link:hover .gallery-image {
+            transform: scale(1.1); /* Increase the size of the image on hover */
+        }
+        .login-portals {
+            text-align: center;
+            margin-bottom: 20px; /* Adjust as needed */
+        }
+
+        .title-container {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 120px; /* Space between title and underline */
+        }
+
+        .title-container h2 {
+            margin-top: 30%;
+            font-size: 30px;
+            display: inline-block; /* Aligns title with underline */
+        }
+
+        .title-underline {
+            width: 50px; /* Width of the underline */
+            height: 4px; /* Height of the underline */
+            background-color: orange; /* Color of the underline */
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%); /* Centers the underline */
+        }
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            margin-top: 5px;
+            margin-right: 20px;
+        }
+        .dropdown {
+            display: none;
+            position:fixed;
+            background-color: grey;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 2; 
+            max-height:180px; /*size of drop down menu */
+        }
+        .dropdown a {
+            color: white;
+            padding: 13px 20px;
+            text-decoration: none;
+            display: block;
+            height: auto;
+            margin-right: 10px;
+        }
+        .dropdown a:hover {
+            background-color: #555;
+        }
+        .banner {
+            background: url('../images/ettimadai.jpg') no-repeat center center;
+            background-size: cover;
+            height:350%; /* Adjust the height as needed */
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            position: relative;
+            color: white; /* Assuming white text for contrast */
+        }
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+            z-index: 1; /* Ensure it's above the background image but below the text */
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2; /* Ensure the text appears above the overlay */
+            width: 100%; /* Use the full width of the banner */
+            padding: 0 15px; /* Add some padding on the sides if needed */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .banner h1 {
+            margin: 0 15px;
+            padding: 0;
+            width:100%;
+            font-size: 2em; /* Adjust font size as needed */
+        }
+        .footer {
+            background-color: #333; /* Footer background color */
+            color: #fff; /* Footer text color */
+            text-align: center; /* Center the text */
+            padding: 20px 0; /* Add some padding */
+            position: absolute;  /*Position relative for absolute positioning inside */
+            margin-top: 25%;/*Align to the bottom */
+            width: 100%;        }
+
+        .footer-content {
+            margin: 0 auto; /* Center the footer content if needed */
+            max-width: 1200px; /* Max-width can be adjusted as needed */
+        }
+
+        .footer-content p {
+            margin: 10px 0; /* Add space between paragraphs */
+        }
+
+        .footer a {
+            color: #fff; /* Match the text color */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .footer a:hover {
+            text-decoration: underline; /* Add underline on hover for links */
+        }
+        @media screen and (max-width: 768px) {
+        /* Styles for screens up to 768px wide */
+        .navbar {
+            margin-left: 0;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            margin-right: 10px;
+        }
+
+        .menu-icon {
+            margin-right: 0;
+        }
+
+        .wrapper {
+            padding: 0;
+        }
+
+        .image-gallery {
+            gap: 20px;
+        }
+
+        .gallery-image {
+            width: 100%;
+            max-width: none;
+            margin-top: 5%;
+        }
+
+        .banner h1 {
+            font-size: 1.5em;
+        }
+    }

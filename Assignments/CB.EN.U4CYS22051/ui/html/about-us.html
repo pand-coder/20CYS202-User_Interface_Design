@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Canteen Portal</title>
+    <style>
+        /* Your existing styles */
+        * {
+            margin : 0;
+            position: sticky;
+            box-sizing:border-box;
+        }
+        .header {
+            background-color: crimson;
+            position: sticky;
+            padding: 10px 15px;
+            font-size: 30px;
+            color : White;
+            display: flex;
+            justify-content:space-between;
+        }
+        .navbar {
+            font-size: 13px;
+            margin-left: 50%;
+            font-size: 20px;
+            position:sticky;
+            padding: 10px 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color:white;
+            margin-right : 30px;
+        }
+        .logo {
+            height: 40px; /* Adjust the size as needed */
+            margin-right: auto; /* Adds some space between the logo and the text */
+        }
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            margin-top: 5px;
+            margin-right: 20px;
+        }
+        .dropdown {
+            display: none;
+            position:absolute;
+            background-color: grey;
+            min-width: 180px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 2; 
+            max-height:220px; /*size of drop down menu */
+        }
+        .dropdown a {
+            color: white;
+            padding: 13px 20px;
+            text-decoration: none;
+            display: block;
+            height: auto;
+            margin-right: 10px;
+        }
+        .dropdown a:hover {
+            background-color: #555;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .about-section {
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .team-section {
+            background-color: #f9f9f9;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .team-member {
+            margin-bottom: 20px;
+        }
+
+        .team-member h3 {
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: #333; /* Footer background color */
+            color: #fff; /* Footer text color */
+            text-align: center; /* Center the text */
+            padding: 20px 0; /* Add some padding */
+            position: absolute;  /*Position relative for absolute positioning inside */
+            margin-bottom:auto;/*Align to the bottom */
+            height: fit-content;
+            width: 100%;
+            margin-top: 10px;    
+        }
+
+        .footer-content {
+            margin: 0 auto; /* Center the footer content if needed */
+            max-width: 1200px; /* Max-width can be adjusted as needed */
+        }
+
+        .footer-content p {
+            margin: 10px 0; /* Add space between paragraphs */
+        }
+
+        .footer a {
+            color: #fff; /* Match the text color */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .footer a:hover {
+            text-decoration: underline; /* Add underline on hover for links */
+        }
+        @media screen and (max-width: 768px) {
+            .navbar {
+                margin-left: 0;
+                text-align: center;
+                font-size: 16px;
+                padding: 10px 0;
+            }
+
+            .navbar a {
+                margin-right: 10px;
+            }
+
+            .menu-icon {
+                margin-right: 0;
+            }
+
+            .wrapper {
+                padding: 0;
+            }
+
+            .about-section,
+            .team-section {
+                padding: 30px 10px;
+            }
+        }
+        /* Add more styles as needed for your specific content */
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <img src="../images/amrita.svg" alt="Logo" class="logo">
+        <nav class="navbar">
+            <a href="../index.html"> Home </a>
+            <a href="canteen-selection.html"> Canteens </a>
+            <a href="about-us.html"> About Us </a>
+            <a href="login.html"> Login </a>
+        </nav>
+    </header>
+    <div class="dropdown" id="dropdown-menu">
+        <a href="maintenance.html">Profile</a>
+        <a href="maintenance.html">Your Orders</a>
+        <a href="maintenance.html">Cart</a>
+        <a href="maintenance.html">Previous Orders</a>
+        <!-- Add more options as needed -->
+    </div>
+    <div class="about-section">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to the Canteen Portal, your one-stop solution for a delightful dining experience. Our mission is to provide high-quality and diverse food options to the Amrita Vishwa Vidyapeetham community.</p>
+            <p>Our journey began with a vision to create a vibrant and inclusive space where students, faculty, and staff could not only satisfy their appetite but also engage in a shared experience of culinary delight. Through meticulous attention to quality, freshness, and flavor, we've curated a menu that caters to a spectrum of tastes and preferences.</p>
+            <p>With a focus on excellence, we strive to create a welcoming atmosphere where students, faculty, and staff can enjoy delicious meals prepared with fresh ingredients and served with a smile.</p>
+        </div>
+    </div>
+
+    <div class="team-section">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <h3>Sree Sharvesh S S</h3>
+            <p>B.Tech CSE(CYS)</p>
+        </div>
+        <div class="team-member">
+            <h3>Sruthi R</h3>
+            <p>B.Tech CSE(CYS)</p>
+        </div>
+        <!-- Add more team members as needed -->
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2023 Amrita Vishwa Vidyapeetham. All rights reserved.</p>
+            <p>Follow us on: <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+        </div>
+      </footer>
+
+    <script>
+        function toggleMenu() {
+            var dropdown = document.getElementById("dropdown-menu");
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+
+</html>
