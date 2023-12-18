@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>real Estates</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1 style="margin-left: 80px;"><img src="images/logo.png" width="30px"> realEstates.</h1>
+    <nav style="margin-right: 70px;">
+        <a href="#home"><abbr title="Home"><img src="images/home.png" width="30px"></abbr></a>
+        <a href="html/login.html"><abbr title="Login"><img src="images/login.png" width="30px"></abbr></a>
+        <a href="html/signup.html"><abbr title="Sign up"><img src="images/signup.png" width="30px"></abbr></a>
+    </nav>
+</header>
+<div id="home"></div>
+<div class="welcome-section">
+    <div class="welcome-text">
+        <nav>
+            <a href="#buy" class="nav1">Buy.</a>
+            <a href="#rent" class="nav1">Rent.</a>
+            <a href="#sell" class="nav1">Sell.</a>
+        </nav>
+    </div>
+    <div><h2>Welcome to realEstates, your one-stop shop for all things real estate in India. <br> We are a team of passionate and experienced professionals dedicated to helping you find your dream home, sell your current property, or navigate the complexities of the real estate market.</h2></div>
+</div>
+
+<!--Buy Proprities section-->
+<section id="buy">
+<div class="space" ></div>
+<div class="heading"><span class="heading-style">Buy</span> Properties</div>
+<div class="houses-section">
+    <div class="house-box">
+        <img class="house-image" src="images/img-1.jpg" alt="House 1">
+        <div class="house-box-info">
+            <p>₹55,25,000<br>
+                <b>Modern Apartments</b><br> 
+                Hebbal, Bengalore, India - 560024</p>
+        </div>
+        <div class="button-box">
+            <!--button-->
+            <div class="button-box-features">Request Info</div>
+            <div class="button-box-features">View Details</div>
+        </div>
+    </div>
+
+    <div class="house-box">
+        <img class="house-image" src="images/img-2.jpg" alt="House 2">
+        <div class="house-box-info">
+            <p>₹61,25,000<br>
+                <b>Modern Apartments</b><br> 
+                Hebbal, Bengalore, India - 560024</p>
+        </div>
+        <div class="button-box">
+            <!--button-->
+            <div class="button-box-features">Request Info</div>
+            <div class="button-box-features">View Details</div>
+        </div>
+    </div>
+
+    <div class="house-box">
+        <img class="house-image" src="images/img-3.jpg" alt="House 2">
+        <div class="house-box-info">
+            <p>₹89,13,000 <br>
+                <b>Modern Apartments</b><br> 
+                Hebbal, Bengalore, India - 560024</p>
+        </div>
+        <div class="button-box">
+            <!--button-->
+            <div class="button-box-features">Request Info</div>
+            <div class="button-box-features">View Details</div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Rent proprities go here -->
+<section id="rent">
+<div class="space"></div>
+<div class="heading"><span class="heading-style">Rent</span> Properties</div>
+<div class="houses-section">
+    <div class="house-box">
+        <img class="house-image" src="images/img-4.jpg" alt="House 1">
+        <div class="house-box-info">
+            <p>₹85,000/Mo <br>
+                <b>Modern Apartments</b><br> 
+                Hebbal, Bengalore, India - 560024</p>
+        </div>
+        <div class="button-box">
+            <!--button-->
+            <div class="button-box-features">Request Info</div>
+            <div class="button-box-features">View Details</div>
+        </div>
+    </div>
+
+    <div class="house-box">
+        <img class="house-image" src="images/img-5.jpg" alt="House 2">
+        <div class="house-box-info">
+            <p>₹72,000/Mo <br>
+                <b>Modern Apartments</b><br> 
+                Hebbal, Bengalore, India - 560024</p>
+        </div>
+        <div class="button-box">
+            <!--button-->
+            <div class="button-box-features">Request Info</div>
+            <div class="button-box-features">View Details</div>
+        </div>
+    </div>
+
+    <div class="house-box">
+        <img class="house-image" src="images/img-6.jpg" alt="House 2">
+        <div class="house-box-info">
+            <p>₹67,000/Mo <br>
+                <b>Modern Apartments</b><br> 
+                Hebbal, Bengalore, India - 560024</p>
+        </div>
+        <div class="button-box">
+            <!--button-->
+            <div class="button-box-features">Request Info</div>
+            <div class="button-box-features">View Details</div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Rest of your website content goes here -->
+<section id="sell">
+<div class="space"></div>
+<div class="heading"><span class="heading-style">Sell</span> Properties</div>
+<div class="houses-section">
+    <div>
+        <form>
+            <label for="name">Seller's Name:</label>
+            <input type="text" id="name" name="name" maxlength="24" required>
+    
+            <label for="state">Property's State:</label>
+            <select id="state" name="state" required>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Bihar">Bihar</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Gujarat">Gujarat</option>
+            </select>
+    
+            <label for="Address">Property's Address</label>
+            <textarea name="" id="" cols="30" rows="10" required></textarea>
+
+            <label for="image">Property's Images</label>
+            <input type="file" required>
+            
+            <label for="mobile number">Mobile Number:</label>
+            <input type="tel" id="mobile number" name="mobile number" required>
+            
+            <label for="Email">Email Address:</label>
+            <input type="email" id="mobile number" name="mobile number" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    
+    </div>
+</div>
+</section>
+
+<script src="js/script.js"></script>
+
+
+<div class="space"></div>
+<div class="footer">
+    Copyright © 2023 - Amal Ritessh A P & Ananth R<br>
+    Projects - Part of 20CYS202 - User Interface Design <br>
+    Amrita Vishwa Vidyapeetham, Coimbatore, Tamil Nadu, India 
+</div>
+</body>
+</html>
