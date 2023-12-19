@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Our Solar System</title>
+    </head>
+    <link rel="stylesheet" href="../css/mystyle.css">
+    <script src="../script/script2.js" defer></script>
+    <script src="https://kit.fontawesome.com/2bf16c5900.js" crossorigin="anonymous"></script>
+    <body class="b">
+        <div>
+        <nav id="navbar" class="navbar background">
+        <div>
+        <img src="../images/logo-removebg-preview.png" class="im1">
+        <h6 class="t1">COSMICFACTSHUB.com</cosmicfactshub></h6>
+        </div>
+        <ul class="nav-list" style="margin-left: 15%;">
+        <button class="button button1" onclick="location.href='../index.html'">Home</button>
+        <div class="dropdown">
+        <button class=" button button1">Science</button>
+  <div class="dropdown-content">
+    <a href="solar.html">Solar System</a>
+    <a href="asterr.html">Asteroid,Comet,Meteroids</a>
+  </div>
+  </div>
+        <button class="button button1" onclick="location.href='signup.html'">SignIn/SignUp</button>
+   
+        </ul>
+    </nav>
+    </div>
+    <script>
+        //To hide navigation bar;
+        var lastScrollTop;
+navbar = document.getElementById('navbar');
+window.addEventListener('scroll',function(){
+var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+if(scrollTop > lastScrollTop){
+navbar.style.top='-80px';
+}
+else{
+navbar.style.top='0';
+}
+lastScrollTop = scrollTop;
+});
+    </script>
+    <div>
+        <video autoplay muted loop plays-inline class="vb1" style="top: -20px;">
+            <source src="../images/157827 (1080p)_resized.mp4" type="video/mp4">
+        </video>
+        <h1 class="imss">Our Solar System</h1>
+    </div>
+    <div></div><br><br>
+    <div>
+    <table>
+        <tr>
+        <th>Planets</th>
+        <th>Moons</th>
+        <th>Asteroids</th>
+        <th>Comets</th>
+        </tr>
+        <td>8</td>
+        <td>200+</td>
+        <td>1,283,154</td>
+        <td>3,872</td>
+    </table>
+</div><br><br><br>
+<div class="s1">
+    <h1 style="margin-top: 20px;">Overview</h1>
+    <p>The planetary system we call home is located in an outer spiral arm of the Milky Way galaxy.
+
+        Our solar system consists of our star, the Sun, and everything bound to it by gravity – the planets Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune; dwarf planets such as Pluto; dozens of moons; and millions of asteroids, comets, and meteoroids.
+        
+        Beyond our own solar system, there are more planets than stars in the night sky. So far, we have discovered thousands of planetary systems orbiting other stars in the Milky Way, with more planets being found. Most of the hundreds of billions of stars in our galaxy are thought to have planets of their own, and the Milky Way is but one of perhaps 100 billion galaxies in the universe.
+        
+        While our planet is in some ways a mere speck in the vast cosmos, we have a lot of company out there. It seems that we live in a universe packed with planets – a web of countless stars accompanied by families of objects, perhaps some with life of their own.</p>
+    </div>
+    <div>
+        <img src="../images/mw.jpg" style="float: right;margin-top: -650px;padding-left: 120px;width: 55%;height: 70%;">
+    </div><br><br>
+    <div class="s2">
+        <h1 style="margin-top: 20px;">Moons</h1>
+        <p>
+        There are more than 200 known moons in our solar system and several more awaiting confirmation of discovery. Of the eight planets, Mercury and Venus are the only ones with no moons. The giant planets Jupiter and Saturn lead our solar system’s moon counts. In some ways, the swarms of moons around these worlds resemble mini versions of our solar system. Pluto, smaller than our own moon, has five moons in its orbit, including the Charon, a moon so large it makes Pluto wobble. Even tiny asteroids can have moons. In 2017, scientists found asteroid 3122 Florence had two tiny moons.</p>
+    </div>
+    <div>
+        <img src="../images/moon.jpg" style="float: left;margin-top: -490px;margin-left: 50px;">
+    </div><br><br><br><br>
+    <div class="s1" style="text-align: center;margin-left: 24%;">
+        <h1 >Planets</h1>
+    </div>
+    <div class="cover">
+    <div class="wrapper">
+        <i  id="left" class="fa-solid fa-caret-left"></i>
+        <div class="carous1">
+            <a type="button" id="p1"><img src="../images/mercury.jpg" alt="img"></a>
+            <a type="button" id="p2"><img src="../images/venus.jpg" alt="img"></a>
+            <a type="button" id="p3"><img src="../images/earth.jpg" alt="img"></a>
+            <a type="button" id="p4"><img src="../images/mars.jpg" alt="img"></a>
+            <a type="button" id="p5"><img src="../images/jupiter.jpg" alt="img"></a>
+            <a type="button" id="p6"><img src="../iamges/saturn.jpg" alt="img"></a>
+            <a type="button" id="p7"><img src="../images/uranus2.png" alt="img"></a>
+            <a type="button" id="p8"><img src="../images/nerptune.jpg" alt="img"></a>
+        </div>
+        <i id="right" class="fa-solid fa-caret-right" ></i>
+    </div>
+    </div><br><br><br>
+    <div class="sp" style="text-align: center;justify-content: center;">
+        <h3 id="tt">More on planets</h3>
+        <p id="pp">There are more planets than stars in our galaxy. The current count orbiting our star: eight.
+
+            The inner, rocky planets are Mercury, Venus, Earth, and Mars. NASA's newest rover — Perseverance — landed on Mars on Feb. 18, 2021. The outer planets are gas giants Jupiter and Saturn and ice giants Uranus and Neptune.
+            
+            Beyond Neptune, a newer class of smaller worlds called dwarf planets reign, including longtime favorite Pluto. Thousands more planets have been discovered beyond our solar system. Scientists call them exoplanets </p>
+    </div>
+
+    <div class="last">
+        <ul style="display: flex;margin-left: 30%;">
+            <li>About us</li>
+            <li>contact</li>
+            <li>copyright</li>
+            <li>privacy policy</li>
+            <li>Glossary</li>
+        </ul>
+    </div>
+
+</html>
