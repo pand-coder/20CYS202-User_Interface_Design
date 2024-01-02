@@ -6,7 +6,7 @@
 
 ![](https://img.shields.io/badge/Template-Partial-silver)
 
-### UID-DBMS-[PAWS](https://amrita-tifac-cyber-blockchain.github.io/20CYS202-User_Interface_Design/Assignments/CB.EN.U4CYS22067/ui/)
+### UID-[PAWS](https://amrita-tifac-cyber-blockchain.github.io/20CYS202-User_Interface_Design/Assignments/CB.EN.U4CYS22067/ui/)
 
 ### Done By:
 - [N Meera](https://github.com/Meera-N)
