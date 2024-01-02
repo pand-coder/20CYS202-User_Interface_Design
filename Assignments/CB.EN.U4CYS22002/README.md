@@ -1,6 +1,6 @@
 # 20CYS202 - User Interface Design ![](https://img.shields.io/badge/-Live-green)
 ![](https://img.shields.io/badge/Batch-22CYS-lightgreen) ![](https://img.shields.io/badge/UG-blue) ![](https://img.shields.io/badge/Subject-UID-blue) <br/>
-![](https://img.shields.io/badge/Template-Partial-grey)
+![](https://img.shields.io/badge/Template-Partial-silver)
 
 20CYS202  - User Interface Design - 3rd Sem - B.E. CSE(CYS) - ASE, CBE
 
@@ -27,4 +27,6 @@
 - [Images](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22002/ui/images)
 - [CSS](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22002/ui/css)
 - [HTTP Codes](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22002/ui/html)
+
+
 
