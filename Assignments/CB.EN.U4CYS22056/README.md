@@ -17,9 +17,9 @@
 | CO5 | Develop and deploy web applications | 
 
 #### Done By:
--[REDDICHERLA THANUJ - CB.EN.U4CYS22056](https://github.com/Thanujj)
+-[REDDICHERLA THANUJ - CB.EN.U4CYS22056](https://thanujj.github.io)
 
--[NANDANA MAHESH - CB.EN.U4CYS22070](https://github.com/NANDANA-MAHESH)
+-[NANDANA MAHESH - CB.EN.U4CYS22070](https://nandana-mahesh.github.io)
 
 #### Quick Refreshers
 
