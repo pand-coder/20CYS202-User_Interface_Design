@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    background-color:  #0056b3;
+  }
+  .card {
+  width: 300px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 200px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-header {
+  position: relative;
+}
+
+.card-header img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-header h2 {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #666666;
+}
+
+.card-footer {
+  padding: 16px;
+  background-color: #f2f2f2;
+}
+
+.card-footer .button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.card-footer .button:hover {
+  background-color: #0056b3;
+}
+
+
+</style>
+<body>
+  <center>
+  <div class="card">
+    <div class="card-header">
+      
+      <br>
+    </div>
+    <div class="card-content">
+      <h2>Thank You!</h2>
+      <p>Your details has been sucessfully submitted</p>
+    </div>
+    <div class="card-footer">
+      <a href="index.html" class="button">OK</a>
+    </div>
+  </div>
+</center>
+  
+  </div>
+</body>
+</html>

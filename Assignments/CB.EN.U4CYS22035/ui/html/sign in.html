@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SIGN UP</title>
+  <link rel="stylesheet" href="../css/sign.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h2>Sign Up</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="form-control">
+			<input type="text" placeholder="Enter name" id="name" />
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<input type="email" placeholder="Enter email" id="email" />
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<input type="password" placeholder="Password" id="password"/>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<input type="password" placeholder="Confirm Password" id="confirm"/>
+			<small>Error message</small>
+		</div>
+		<button onclick="reloc()">Submit</button>
+	</form>
+</div>
+  <script  src="../javascript/sign.js"></script>
+  <script>
+	function reloc(){
+		window.location.assign("login page.html")
+	}
+  </script>
+</body>
+</html>
