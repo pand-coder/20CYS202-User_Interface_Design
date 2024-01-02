@@ -2,8 +2,6 @@
 ![](https://img.shields.io/badge/Batch-22CYS-lightgreen) ![](https://img.shields.io/badge/UG-blue) ![](https://img.shields.io/badge/Subject-UID-blue) <br/>
 
 
-20CYS202  - User Interface Design - 3rd Sem - B.E. CSE(CYS) - ASE, CBE
-
 ### Teacher: Course Instructor:  Ms. Hemalatha P, Assistant Professor, TIFAC-CORE in Cyber Security.
 
 ![](https://img.shields.io/badge/Template-Partial-silver)
