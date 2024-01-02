@@ -13,7 +13,7 @@
 - [PARTHIV KUMAR NIKKU - CB.EN.U4CYS22046](https://parthivkumar123.github.io/)
 - [LALITHA K - CB.EN.U4CYS22037](https://lalitha0614.github.io/)
 
-### Quick Refreshers
+### Codes:
 
 - [Scripts](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22037/ui/js)
 - [Images](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22037/ui/images)
