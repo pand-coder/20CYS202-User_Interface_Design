@@ -26,7 +26,7 @@
 - [Scripts](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22036/ui/JAVASCRIPT)
 - [Images](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22036/ui/IMAGES)
 - [CSS](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22036/ui/CSS)
-- [HTTP Codes](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22036/ui/HTML)
+- [HTML Codes](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22036/ui/HTML)
 
 ### :References and details for webapge and designing
  - **Reference :** (https://www.leapwellness.com/#:~:text=Leap%20Wellness%20Studio%20%E2%80%93%20A%20pioneer,strength%20and%20body%20conditioning%20programs.)
