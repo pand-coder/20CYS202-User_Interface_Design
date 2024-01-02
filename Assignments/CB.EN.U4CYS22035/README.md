@@ -30,4 +30,4 @@
 
   
 ### :References and details for webapge and designing
- - **Reference :** (https://aoap.amrita.edu/capug-23/index/)https://aoap.amrita.edu/capug-23/index/)
+ - **Reference :** (https://aoap.amrita.edu/capug-23/index/)
