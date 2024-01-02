@@ -10,7 +10,7 @@
 - [G.Hamsini]()
 
 ### Deliverable 
-- [User Interface](UI/)
+- [User Interface](https://amrita-tifac-cyber-blockchain.github.io/20CYS202-User_Interface_Design/Assignments/CB.EN.U4CYS22021/ui/)
 
 ### Credentials
 None
