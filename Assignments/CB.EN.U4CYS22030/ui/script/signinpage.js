@@ -3,7 +3,7 @@
             if (validateSignIn()) {
                 alert('Login successful!');
                 
-                window.location.href = 'main.html';
+                window.location.href = '../html/main.html';
             } else {
                 alert('Login failed. Please check your username and password.');
             }
