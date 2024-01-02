@@ -1,6 +1,6 @@
 # 20CYS202 - User Interface Design ![](https://img.shields.io/badge/-Live-green)
 ![](https://img.shields.io/badge/Batch-22CYS-lightgreen) ![](https://img.shields.io/badge/UG-blue) ![](https://img.shields.io/badge/Subject-UID-blue) <br/>
-![](https://img.shields.io/badge/Lecture-1-orange) ![](https://img.shields.io/badge/Practical-3-orange) ![](https://img.shields.io/badge/Credits-2-orange) ![](https://img.shields.io/badge/Additional_Coverage-GitHub-purple)
+![](https://img.shields.io/badge/Template-Partial-silver)
 
 20CYS202  - User Interface Design - 3rd Sem - B.E. CSE(CYS) - ASE, CBE
 
