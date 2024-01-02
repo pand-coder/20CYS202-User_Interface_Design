@@ -26,7 +26,7 @@
 - [Scripts](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22002/ui/js)
 - [Images](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22002/ui/images)
 - [CSS](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22002/ui/css)
-- [HTTP Codes](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22002/ui/html)
+- [HTML](https://github.com/Amrita-TIFAC-Cyber-Blockchain/20CYS202-User_Interface_Design/tree/main/Assignments/CB.EN.U4CYS22002/ui/html)
 
 
 
