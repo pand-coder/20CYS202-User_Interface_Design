@@ -13,7 +13,7 @@
 
 ### Credential
 - **For payment page:**
-  - **Roll.no :** CB.EN.UX2XXXX
+  - **Roll.no :** CB.EN.UXYYY2XXXX
   - **Password:** XXXX(4 digit number)
 
 - **For login page :**
