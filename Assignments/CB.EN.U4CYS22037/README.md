@@ -6,6 +6,16 @@
 
 ![](https://img.shields.io/badge/Template-Partial-silver)
 
+### :books: Course Outcome
+
+| CO#  | CO Description |
+|------|----------------|
+| CO1 | Understand the basics of World Wide Web |
+| CO2 | Develop interactive Web pages using HTML |
+| CO3 | Present a professional document using Cascaded Style Sheets |
+| CO4 | Construct websites for user interactions using JavaScript |
+| CO5 | Develop and deploy web applications |
+
 ### Project:
 - [Health HUB](https://amrita-tifac-cyber-blockchain.github.io/20CYS202-User_Interface_Design/Assignments/CB.EN.U4CYS22037/ui/)
 
