@@ -12,4 +12,4 @@
 - [User Interface](ui/)
 
 ### Credential
-- Login required
+- Login required(any username any password)
