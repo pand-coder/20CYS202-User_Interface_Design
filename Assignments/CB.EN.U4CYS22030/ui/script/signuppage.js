@@ -2,7 +2,7 @@
             event.preventDefault();
             if (validateSignUp()) {
                 
-                window.location.href = 'SignInPage.html';
+                window.location.href = '../html/signInPage.html';
             }
         });
 
