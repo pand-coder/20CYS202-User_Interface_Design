@@ -25,8 +25,8 @@
   
 ### Credential
 - **Login Credentials**
-    Username  :  admin
-    Password  :  admin
+-   Username  :  admin
+-   Password  :  admin
 
 ### References 
  - https://www.youtube.com/
